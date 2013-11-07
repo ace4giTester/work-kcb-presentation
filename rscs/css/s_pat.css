@@ -1,0 +1,118 @@
+@charset "euc-kr";
+
+/* ========== [참여마당] ========== */
+/* 자주하는질문 */
+.patFavorite {}
+.patFavorite-title {margin-bottom:6px; font-size:18px; font-family:webfontNGB; color:#333;}
+
+/* 1:1Q&A */
+.pat1n1QNA {}
+
+/* 열린Q&A */
+.patOpenQNA {}
+
+/* 제안과토록방 */
+.patDiscuss {}
+
+/* 제안과토록방-메인 */
+.patDiscuss-main {width:100%;}
+.patDiscuss-main:after {content:""; clear:both; display:block;}
+.patDiscuss-main .region1 {float:left; width:598px;}
+.patDiscuss-main .region2 {float:right; width:200px;}
+/* 제안과토록방-메인-토론중인글 */
+.patDiscuss-main .hotSpot {position:relative; width:100%; margin-bottom:36px;}
+.patDiscuss-main .hotSpot .box {overflow:hidden; height:5px; background-image:url("../images/pat/patDiscussMain_hotSpot_bg.gif"); background-repeat:no-repeat;}
+.patDiscuss-main .hotSpot .box-t {background-position:0 0;}
+.patDiscuss-main .hotSpot .box-b {background-position:0 -5px;}
+.patDiscuss-main .hotSpot .box-m {min-height:1px; padding-bottom:38px; border-left:3px solid #eae6e3; border-right:3px solid #eae6e3;}
+.patDiscuss-main .hotSpot .status {position:absolute; top:23px; left:23px; width:75px; height:57px; padding-top:8px; text-align:center; font-size:16px; line-height:20px; font-family:webfontNGB; color:white; background:url("../images/pat/patDiscussMain_hotSpot_status.png") 0 0 no-repeat;}
+.patDiscuss-main .hotSpot .list {min-height:1px; padding:22px 90px 33px 113px; background:url("../images/pat/patDiscussMain_hotSpot_bg2.gif") bottom left repeat-x;}
+.patDiscuss-main .hotSpot .list .title {margin-bottom:10px; font-size:16px; line-height:20px; font-family:webfontNGB;}
+.patDiscuss-main .hotSpot .list .writer {}
+.patDiscuss-main .hotSpot .list .recommend {position:absolute; top:23px; right:23px;}
+.patDiscuss-main .hotSpot .content {min-height:232px; padding:14px 20px 30px; line-height:24px; color:#777;}
+.patDiscuss-main .hotSpot .buttons {text-align:center;}
+/* 제안과토록방-메인-제안글 */
+.patDiscuss-main .suggest {width:200px; margin-bottom:40px; padding-top:5px; text-align:center; background:url("../images/pat/patDiscussMain_suggest_bg.gif") 0 0 no-repeat;}
+.patDiscuss-main .suggest .inner {padding:23px 0 29px; background:url("../images/pat/patDiscussMain_suggest_bg.gif") bottom left no-repeat;}
+.patDiscuss-main .suggest h3 {font-size:14px; line-height:21px; color:#555; font-family:webfontNGB;}
+.patDiscuss-main .suggest .buttons {margin-top:15px;}
+/* 제안과토록방-메인-지난토론글 */
+.patDiscuss-main .oldDiscuss {position:relative; width:100%;}
+.patDiscuss-main .oldDiscuss h3 {margin-bottom:11px; padding-bottom:8px; font-size:16px; line-height:20px; font-family:webfontNGB; color:#333; border-bottom:1px solid #ddd;}
+.patDiscuss-main .oldDiscuss .list {}
+.patDiscuss-main .oldDiscuss .list li {line-height:24px; height:22px; padding-left:9px; background:url("../images/common/bul_dot.gif") 0 10px no-repeat;}
+.patDiscuss-main .oldDiscuss .list li a {overflow:hidden; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; color:#777; text-decoration:none;}
+.patDiscuss-main .oldDiscuss .more {position:absolute; top:0; right:0; line-height:20px; font-size:12px;}
+.patDiscuss-main .oldDiscuss .more a {color:#888; text-decoration:none;}
+
+/* 추천 */
+.patRecommendSty-wrap {margin:60px 0 26px; text-align:center;}
+.patRecommendSty-wrap a {text-decoration:none;}
+.patRecommendSty-wrap .patRecommendSty-icon,
+.patRecommendSty-wrap .patRecommendSty-btn {margin:0 3px;}
+
+.patRecommendSty-wrap .share {display:inline-block;}
+.patRecommendSty-wrap .share .tit {display:inline-block; margin:0 5px 0 16px; vertical-align:middle; color:#888;}
+.patRecommendSty-wrap .share a {} *+html .patRecommendSty-wrap .share a {margin-right:-4px;}
+
+/* 추천-추천 아이콘/버튼 */
+.patRecommendSty-icon {display:inline-block; width:56px; height:28px; padding-top:28px; text-align:center; font-family:webfontNGB; vertical-align:middle; color:white; background:url("../images/pat/patRecommendSty_bg.png") 0 0 no-repeat;}
+.patRecommendSty-btn {display:inline-block; height:51px; padding-left:55px; vertical-align:middle; background:url("../images/pat/patRecommendSty_btn.png") 0 0 no-repeat; cursor:pointer;}
+.patRecommendSty-btn .bg {display:inline-block; height:51px; padding:0 27px 0 5px; line-height:51px; color:#555; font-family:webfontNGB; background:url("../images/pat/patRecommendSty_btn.png") 100% 0 no-repeat; cursor:pointer;}
+
+/* 추천-추천 아이콘/버튼 */
+.patRecommendSty-icon2 {display:inline-block; height:30px; padding-left:37px; text-align:center; line-height:29px; vertical-align:middle; color:white; background:url("../images/pat/patRecommendSty_bg2.gif") 0 0 no-repeat;}
+.patRecommendSty-icon2 .bg {display:inline-block; height:30px; padding-right:10px; font-size:13px; font-family:webfontNGB; white-space:nowrap; background:url("../images/pat/patRecommendSty_bg2.gif") 100% 0 no-repeat;}
+
+.patRecommendSty-btn2 {display:inline-block; height:30px; padding-left:49px; line-height:29px; vertical-align:middle; background:url("../images/pat/patRecommendSty_btn2.gif") 0 0 no-repeat; cursor:pointer;}
+.patRecommendSty-btn2 .bg {display:inline-block; height:51px; padding-right:20px; font-size:13px; font-family:webfontNGB; color:#777; white-space:nowrap; background:url("../images/pat/patRecommendSty_btn2.gif") 100% 0 no-repeat; cursor:pointer;}
+
+/* 제안과토록방-쓰기 */
+.patDiscuss-write {}
+.patDiscuss-write .bbsType-write-expl {margin:35px 0 -5px;}
+
+/* 제안과토록방-쓰기-제안완료 */
+.patDiscuss-write-complete {padding:23px 0 24px; text-align:center; font-size:20px; color:#666; line-height:30px;}
+
+/* KCB토론보안센터 */
+.patKCBSecurity {}
+
+/* KCB토론보안센터-KCB보안등급안내 */
+#patKCBSecurity-guide {}
+#patKCBSecurity-guide .msg {margin:33px 0 35px; text-align:center; font-size:20px; line-height:30px; color:#666;}
+#patKCBSecurity-guide .list {padding-top:40px; border-top:2px solid #a9a9a9; border-bottom:2px solid #a9a9a9;}
+#patKCBSecurity-guide .list li {width:100%; margin-bottom:20px; padding-bottom:21px; background:url("../images/common/divider.gif") bottom left repeat-x;}
+#patKCBSecurity-guide .list li:after {content:""; display:block; clear:both;}
+#patKCBSecurity-guide .list li.last-child {padding-bottom:20px; background:none;}
+#patKCBSecurity-guide .list li .thum {float:left;}
+#patKCBSecurity-guide .list li .thum img {vertical-align:top;}
+#patKCBSecurity-guide .list li .dl {margin-left:299px; zoom:1;}
+#patKCBSecurity-guide .list li .dl dt {margin-bottom:10px; font-size:20px; line-height:25px; font-family:webfontNGB; color:#555;}
+#patKCBSecurity-guide .list li .dl dd.txt,
+#patKCBSecurity-guide .list li .dl dd.txt-last {margin-bottom:23px; line-height:23px; color:#888;}
+#patKCBSecurity-guide .list li .dl dd.txt-last {margin-bottom:0;}
+
+/* KCB토론보안센터-보안프로그램 다운로드 */
+#patKCBSecurity-program {margin-top:30px;}
+#patKCBSecurity-program .buttonType {font-size:13px;}
+#patKCBSecurity-program .tableType tbody th,
+#patKCBSecurity-program .tableType tbody td {color:#777; vertical-align:baseline;}
+#patKCBSecurity-program .tableType tbody th {padding-left:1.786em; color:#333;}
+#patKCBSecurity-program .tableType tbody td {letter-spacing:0;}
+#patKCBSecurity-program .tableType tbody tr.ctrl-program td {color:#333;}
+#patKCBSecurity-program .tableType tbody tr.ctrl-guide td strong {color:#555;}
+
+/* 공지사항 */
+.patNotice {}
+/* 공지사항-뷰-제목 */
+.patNotice-view-title {}
+.patNotice-view-title .topLine {overflow:hidden; height:2px; background:#a9a9a9;}
+.patNotice-view-title .topLine div {overflow:hidden; width:30px; height:2px; background:#ef8233;}
+.patNotice-view-title h3 {position:relative; width:100%; padding:14px 0 13px; font-size:14px; line-height:19px; border-bottom:1px solid #a9a9a9; background:#fef6f1;}
+.patNotice-view-title h3 .category {position:absolute; top:14px; left:0; width:75px; text-align:center; color:#333; font-family:webfontNGB;}
+.patNotice-view-title h3 .title {display:block; margin:0 140px 0 94px; color:#555;}
+.patNotice-view-title h3 .date {position:absolute; top:14px; right:20px; color:#888;}
+
+
+

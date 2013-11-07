@@ -1,0 +1,38 @@
+@charset "euc-kr";
+
+/* ========== [기타] ========== */
+/* 회사소개 */
+.etcComp {}
+
+/* 이용약관 */
+.agree-use {}
+
+/* 개인정보취급방침 */
+.agree-personInfo-treat {}
+
+/* 개인정보처리방침 */
+.agree-personInfo-progress {}
+
+/* 신용정보활용체제 */
+.etcCreditInfo-utilize {}
+
+/* 신용평가체계공시 */
+.etcCreditAppraisal-notice {}
+
+/* 사이트맵 */
+#sitemap {width:100%;}
+#sitemap:after {content:""; display:block; clear:both;}
+#sitemap .section {float:left; width:262px; height:303px; margin-bottom:30px; background:url("../images/etc/sitemap_section_bg.gif") left bottom no-repeat;}
+#sitemap .section h3 {height:40px; padding:29px 0 0 29px; font-size:20px; font-family:webfontNGB; color:#333; background:url("../images/etc/sitemap_section_bg.gif") 0 0 no-repeat;}
+#sitemap .section .list {width:204px; margin:7px auto; line-height:30px;}
+#sitemap .section .list li {padding-left:10px; background:url("../images/common/bul_dot.gif") 0 12px no-repeat;}
+#sitemap .section .list li a {font-size:15px; color:#555;}
+#sitemap .section .list li ul {margin:-3px 0 2px; line-height:24px;}
+#sitemap .section .list li ul li {padding-left:0; background:none;}
+#sitemap .section .list li ul li a {font-size:14px; color:#888;}
+#sitemap .section1 {margin-right:16px;}
+#sitemap .section2 {}
+#sitemap .section3 {float:right;}
+#sitemap .section4 {margin-right:16px;}
+#sitemap .section5 {}
+#sitemap .section6 {float:right;}

@@ -1,0 +1,114 @@
+@charset "euc-kr";
+
+/* ========== [에러/점검/설치] ========== */
+/* 에러 - 페이지오류 */
+#sysErrorPage {position:relative; width:998px; margin:30px auto;}
+#sysErrorPage .contents {padding:90px 30px 0 427px; background:url("../images/sys/sysErrorPage_bg.gif") 80px 90px no-repeat; zoom:1;}
+#sysErrorPage h1 {font-size:36px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysErrorPage p.h1-add-txt {margin-bottom:32px; font-size:24px; line-height:1.35; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysErrorPage .error {margin-bottom:3px; font-size:16px; line-height:22px; color:#333;}
+#sysErrorPage .error-explain {margin-bottom:36px; line-height:20px; color:#888;}
+#sysErrorPage .buttons {text-align:left; margin-right:10px;}
+#sysErrorPage .copyright {position:relative; margin:90px 0 -1px; font-size:12px; line-height:50px; text-align:center; color:#999; border:1px solid #eae6e3; background:#fbfaf9;}
+
+/* 에러 - 페이지없음 */
+#sysError404 {position:relative; width:998px; margin:30px auto;}
+#sysError404 .contents {padding:90px 30px 0 427px; background:url("../images/sys/sysError404_bg.gif") 80px 90px no-repeat; zoom:1;}
+#sysError404 h1 {font-size:36px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysError404 p.h1-add-txt {margin-bottom:32px; font-size:24px; line-height:1.35; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysError404 .error {margin-bottom:3px; font-size:16px; line-height:22px; color:#333;}
+#sysError404 .error-explain {margin-bottom:36px; line-height:20px; color:#888;}
+#sysError404 .buttons {text-align:left; margin-right:10px;}
+#sysError404 .copyright {position:relative; margin:90px 0 -1px; font-size:12px; line-height:50px; text-align:center; color:#999; border:1px solid #eae6e3; background:#fbfaf9;}
+
+/* 에러 - 사용자많음 */
+#sysErrorOverwork {position:relative; width:998px; margin:30px auto;}
+#sysErrorOverwork .contents {padding:90px 30px 0 427px; background:url("../images/sys/sysErrorOverwork_bg.gif") 80px 90px no-repeat; zoom:1;}
+#sysErrorOverwork h1 {font-size:36px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysErrorOverwork p.h1-add-txt {margin-bottom:32px; font-size:24px; line-height:1.35; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysErrorOverwork .error {margin-bottom:3px; font-size:16px; line-height:22px; color:#333;}
+#sysErrorOverwork .error-explain {margin-bottom:36px; line-height:20px; color:#888;}
+#sysErrorOverwork .buttons {text-align:left; margin-right:10px;}
+#sysErrorOverwork .copyright {position:relative; margin:90px 0 -1px; font-size:12px; line-height:50px; text-align:center; color:#999; border:1px solid #eae6e3; background:#fbfaf9;}
+
+/* 점검 - 시스템점검 */
+#sysCheckSys {position:relative; width:998px; margin:30px auto;}
+#sysCheckSys .contents {width:500px; padding:90px 30px 0 427px; background:url("../images/sys/sysCheckSys_bg.gif") 80px 90px no-repeat; zoom:1;}
+#sysCheckSys h1 {font-size:36px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysCheckSys p.h1-add-txt {margin-bottom:32px; font-size:24px; line-height:1.35; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysCheckSys .error {margin-bottom:3px; font-size:16px; line-height:22px; color:#333;}
+#sysCheckSys .error-listWrap {width:483px; margin:13px 0 17px; padding-top:5px; background:url("../images/sys/sysCheckSys_list_bg.gif") 0 0 no-repeat;}
+#sysCheckSys .error-list {padding:12px 20px 14px; background:url("../images/sys/sysCheckSys_list_bg.gif") bottom left no-repeat;}
+#sysCheckSys .error-list li {margin-bottom:2px; padding-left:10px; line-height:20px; color:#888; background:url("../images/common/bul_dot.gif") 0 6px no-repeat;}
+#sysCheckSys .error-explain {margin-bottom:36px; line-height:20px; color:#888; letter-spacing:-1px;}
+#sysCheckSys .buttons {text-align:left; margin-right:10px;}
+#sysCheckSys .copyright {position:relative; margin:90px 0 -1px; font-size:12px; line-height:50px; text-align:center; color:#999; border:1px solid #eae6e3; background:#fbfaf9;}
+
+
+/* 점검 - 정기점검 */
+#sysCheckPeriodic {position:relative; width:998px; margin:30px auto;}
+#sysCheckPeriodic .contents {width:500px; padding:90px 30px 0 427px; background:url("../images/sys/sysCheckSys_bg.gif") 80px 90px no-repeat; zoom:1;}
+#sysCheckPeriodic h1 {font-size:36px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysCheckPeriodic p.h1-add-txt {margin-bottom:32px; font-size:24px; line-height:1.35; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysCheckPeriodic .error {margin-bottom:3px; font-size:16px; line-height:22px; color:#333;}
+#sysCheckPeriodic .error-listWrap {width:483px; margin:13px 0 17px; padding-top:5px; background:url("../images/sys/sysCheckSys_list_bg.gif") 0 0 no-repeat;}
+#sysCheckPeriodic .error-list {padding:12px 20px 14px; background:url("../images/sys/sysCheckSys_list_bg.gif") bottom left no-repeat;}
+#sysCheckPeriodic .error-list li {margin-bottom:2px; padding-left:10px; line-height:20px; color:#888; background:url("../images/common/bul_dot.gif") 0 6px no-repeat;}
+#sysCheckPeriodic .error-explain {margin-bottom:36px; line-height:20px; color:#888; letter-spacing:-1px;}
+#sysCheckPeriodic .buttons {text-align:left; margin-right:10px;}
+#sysCheckPeriodic .copyright {position:relative; margin:90px 0 -1px; font-size:12px; line-height:50px; text-align:center; color:#999; border:1px solid #eae6e3; background:#fbfaf9;}
+
+/* Xecureweb 설치안내페이지 */
+#sysXecureweb {position:relative; width:840px; margin:30px auto;}
+#sysXecureweb .contents {padding-top:50px;}
+#sysXecureweb .list {}
+#sysXecureweb .list li {margin-bottom:10px; padding-left:10px; line-height:18px; font-family:webfontNG; color:#555; background:url("../images/common/bul_dot.gif") 0 6px no-repeat;}
+
+#sysXecureweb .head {min-height:244px; padding:0 40px 0 264px; background:url("../images/sys/sysXecureweb_visual.gif") 40px 0 no-repeat;}
+#sysXecureweb .head h1 {margin-bottom:8px; font-size:34px; line-height:1.2; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+#sysXecureweb .head p.h1-add-txt {margin-bottom:26px; font-size:18px; line-height:22px; letter-spacing:-1px; font-family:webfontNGB; color:#444;}
+#sysXecureweb .head .list1 {}
+#sysXecureweb .head .list1 li {}
+#sysXecureweb .progress {height:56px; text-align:center; border-top:1px solid #eae6e3; border-bottom:1px solid #eae6e3; background:#fbfaf9;}
+#sysXecureweb .progress img {vertical-align:top; margin-top:20px;}
+#sysXecureweb .buttons {margin-bottom:37px; text-align:center;}
+#sysXecureweb .buttons .icon {margin-right:3px;}
+#sysXecureweb .list2 {margin:26px 40px 28px;}
+#sysXecureweb .list2 li {}
+
+#sysXecureweb h2.ie {margin:0 0 0 10px;}
+#sysXecureweb h3.step,
+#sysXecureweb h3.step-first {margin:21px 40px 3px; font-size:26px; color:#444;}
+#sysXecureweb h3.step-first {margin-top:0;}
+#sysXecureweb .stepbox {width:752px; margin:0 auto;}
+#sysXecureweb .stepbox-t,
+#sysXecureweb .stepbox-b {overflow:hidden; height:5px; background:url("../images/sys/sysXecureweb_step_bg.gif") 0 0 no-repeat;}
+#sysXecureweb .stepbox-b {background:url("../images/sys/sysXecureweb_step_bg.gif") 0 -5px no-repeat;}
+#sysXecureweb .stepbox-m {padding:22px 29px 30px; border-left:2px solid #eae6e3; border-right:2px solid #eae6e3; background:#fbfaf9; zoom:1;}
+#sysXecureweb .stepbox-m .txt {margin-bottom:27px; font-family:webfontNGB; color:#333;}
+#sysXecureweb .stepbox-m .img {text-align:center;}
+#sysXecureweb .stepbox1 .list {margin-bottom:19px;}
+#sysXecureweb .stepbox2 {}
+#sysXecureweb .stepbox3 {}
+#sysXecureweb .stepbox4 {}
+#sysXecureweb .stepbox5 {}
+#sysXecureweb .copyright {position:relative; margin:90px 0 -1px; font-size:14px; line-height:50px; text-align:center; color:#555; border:1px solid #eae6e3; background:#fbfaf9;}
+#sysXecureweb .copyright .bul {display:inline-block; width:21px; height:22px; vertical-align:middle; background:url("../images/sys/sysXecureweb_copyright_bul.gif") 0 0 no-repeat;} *+html #sysXecureweb .copyright .bul {margin-right:4px;}
+#sysXecureweb .copyright .txt {display:inline-block; vertical-align:middle;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

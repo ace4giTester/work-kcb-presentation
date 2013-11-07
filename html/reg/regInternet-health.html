@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path">
+			<span class="home">홈</span>
+			<span class="arr">&gt;</span> 내 정보등록
+			<span class="arr">&gt;</span> 인터넷등록
+			<span class="arr">&gt;</span> <span class="here">건강보험</span>
+		</p>
+		<h2 class="page-title" id="skip-contents">인터넷등록</h2>
+		<p class="topMsgType">
+			등록된 자신의 정보를 확인함과 동시에, 자신의 증명서를 간편히 등록할 수 있습니다.<br/>
+			신용과 사람에서는 등록된 정보를 활용하여  개인에 맞춘 신용조회 서비스를  제공합니다.
+		</p>
+		
+		<!-- 등록하신정보 -->
+		<div class="regInternet-regInfo">
+			<p class="tit"><em class="ft-point1">정현미</em> 님께서 등록하신 정보 현황입니다!</p>
+			<ul class="list">
+				<li class="n1">
+					<span class="txt">등록완료</span>
+					<span class="cnt"><em>2</em>건</span>
+				</li>
+				<li class="n2">
+					<span class="txt">등록중</span>
+					<span class="cnt"><em>1</em>건</span>
+				</li>
+				<li class="n3">
+					<span class="txt">유효기간 만료</span>
+					<span class="cnt"><em>0</em>건</span>
+				</li>
+			</ul>
+		</div>
+		<!-- //등록하신정보 -->
+		
+		<!-- 2013.11.01 수정 -->
+		<ul class="tabType2 col-5" id="js-tab">
+			<li style="width:19%" class="first-child"><a href="#"><span class="bg1"><span class="bg2">소득금액증명</span></span></a></li>
+			<li style="width:19%"><a class="tab" href="#"><span class="bg1"><span class="bg2">납세사실증명</span></span></a></li>
+			<li style="width:24%"><a href="#"><span class="bg1"><span class="bg2">(지방세)모범납세자 증명</span></span></a></li>
+			<li style="width:19%" class="current"><a href="#"><span class="bg1"><span class="bg2">건강보험</span></span></a></li>
+			<li style="width:19%" class="last-child"><a href="#"><span class="bg1"><span class="bg2">국민연금</span></span></a></li>
+		</ul>
+		<!-- //2013.11.01 수정 -->
+
+		<!-- 등록영역 -->
+		<div class="regInternet-regRegion">
+			<ul class="ulType">
+				<li>건강보험을 증명하여 자신의 신용평점을 올리고 신용여력도 확인하세요.</li>
+			</ul>
+			<p class="buttons">
+				<a class="buttonType primary lg" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 건강보험 증명 등록하기</span>
+				</a>
+			</p>
+		</div>
+		<!-- //등록영역 -->
+		
+		<div class="dividerType"></div>
+		
+		<!-- 유효기간만료관련 등록공지 -->
+		<div class="regInternet-note">
+			<ul class="ulType">
+				<li>건강보험증명 등록 내용</li>
+			</ul>
+			<p class="txt">건강보험증명의 유효기간이 만료되었습니다. 최신의 건강보험증명을 등록 해주세요.</p>
+		</div>
+		<!-- //유효기간만료관련 등록공지 -->
+
+		<!-- 등록상태탭 -->
+		<ul class="tabType col-2 regInternet-tab-status">
+			<li class="first-child current"><a href="#"><span class="bg">등록완료(1)</span></a></li>
+			<li class="last-child"><a href="#"><span class="bg">유효기간만료(1)</span></a></li>
+		</ul>
+		<!-- //등록상태탭 -->
+
+		<!-- 등록완료/유효기간만료 경우 테이블 -->
+		<!-- tableType-column -->
+		<table class="tableType tableType-column" summary="등록일자, 귀속년도, 정보유효기간, 세부내용보기 정보">
+			<caption>건강보험증명</caption>
+			<colgroup>
+				<col width="105" /><col width="184" /><col width="184" /><col width="184" /><col />
+			</colgroup>
+			<thead>
+				<tr class="first-line">
+					<th scope="col">구 분</th>
+					<th scope="col">등록일자</th>
+					<th scope="col">귀속년도</th>
+					<th scope="col" class="column">정보 유효기간</th>
+					<th scope="col" class="last-child">세부내용보기</th>
+				</tr>
+			</thead>
+			<tbody class="al-c">
+				<tr>
+					<td>1</td>
+					<td>2013.05.12</td>
+					<td>2012~2010</td>
+					<td class="column">2013.09.12 까지</td>
+					<td class="last-child">
+						<a class="buttonType default" href="#">
+							<span class="bg"><span class="icon icon-zoom"></span> 내용보기</span>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- //tableType-column -->
+		<!-- //등록완료/유효기간만료 경우 테이블 -->
+
+		<!-- 2013.09.29 추가 -->
+		<p class="tableType-explain">※ 소득금액증명 활용기간은 최종 소득년도로부터 18개월 입니다.</p>
+
+	</div>
+	<!-- //contents -->
+</body>
+</html>
+

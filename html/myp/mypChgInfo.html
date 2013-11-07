@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> 마이페이지 <span class="arr">&gt;</span> <span class="here">개인정보 변경</span></p>
+		<h2 class="page-title" id="skip-contents">개인정보 변경</h2>
+	
+		<p class="topMsgType">
+			회원님의 개인정보를 변경할 수 있습니다.<br />
+			중요한 신용정보 관련 소식을 전해드리므로, 항상 최근의 연락처로 업데이트해 주세요.
+		</p>
+
+		<!-- 개인정보수정 -->
+		<div class="jonInsert">
+			<form action="">
+				
+				<!-- tableType -->
+				<div class="tableType-topLine"><div></div></div>
+				<table class="tableType" summary="변경할 개인정보 입력 - 비밀번호, 이메일, 휴대폰, 신용정보등록 현황수신, 정보성메일 정보등">
+					<caption>개인정보 변경</caption>
+					<colgroup>
+						<col width="142" />
+						<col />
+					</colgroup>
+					<tbody class="padding-insert">
+						<tr class="ctrl-name">
+							<th scope="row"><span class="required">*</span> 이름</th>
+							<td class="last-child">최재현</td>
+						</tr>
+						
+						<tr class="ctrl-jumin">
+							<th scope="row"><span class="required">*</span> 주민등록번호</th>
+							<td class="last-child">840218-1234567</td>
+						</tr>
+						
+						<tr class="ctrl-id">
+							<th scope="row"><span class="required">*</span> 아이디</th>
+							<td class="last-child">asdf1234</td>
+						</tr>
+						
+												<tr class="ctrl-pwChg">
+							<th scope="row"><label for="l-pw"><span class="required" title="필수입력">*</span> <span class="tit">비밀번호 변경</span></label></th>
+							<td class="last-child">
+								<input type="password" class="input-text" id="l-pw" />
+								<ul class="explList">
+									<li>생일, 주민등록번호 앞자리 등 타인이 알아내기 쉬운 비밀번호는 사용을 피해주세요.</li>
+									<li>비밀번호는 8자이상~20자 이하, 영문+숫자+특수문자를 혼용해서 만들어 주세요.</li>
+								</ul>
+							</td>
+						</tr>
+						
+						<tr class="ctrl-pwConf">
+							<th scope="row"><label for="l-pw2"><span class="required" title="필수입력">*</span> <span class="tit">비밀번호 확인</span></label></th>
+							<td class="last-child">
+								<input type="password" class="input-text" id="l-pw2" />  
+							</td>
+						</tr>
+						
+						<tr class="ctrl-email">
+							<th scope="row"><label for="l-email"><span class="required" title="필수입력">*</span> 이메일</label></th>
+							<td class="last-child">
+								<input type="text" class="input-text" id="l-email" title="이메일 아이디" />
+								<span class="domain">@</span>
+								<select class="select" title="이메일 도메인 선택입력">
+									<option value="0">직접입력</option>
+									<option value="naver.com">naver.com</option>
+									<option value="hanmail.net">hanmail.net</option>
+									<option value="nate.com">nate.com</option>
+									<option value="yahoo.com">yahoo.com</option>
+									<option value="chol.com">chol.com</option>
+									<option value="dreamwiz.com">dreamwiz.com</option>
+									<option value="empal.com">empal.com</option>
+									<option value="korea.com">korea.com</option>
+									<option value="lycos.com">lycos.com</option>
+								</select>
+								<input type="text" class="input-text" title="이메일 도메인 입력" />
+							</td>
+						</tr>
+						
+						<tr class="ctrl-phone">
+							<th scope="row"><span class="required" title="필수입력">*</span> 휴대폰</th>
+							<td class="last-child">
+								<input type="radio" class="input-radio" id="l-phone1" /> <label for="l-phone1">SKT</label>
+								<input type="radio" class="input-radio" id="l-phone2" /> <label for="l-phone2">KT</label>
+								<input type="radio" class="input-radio" id="l-phone3" /> <label for="l-phone3">LG U+</label>
+								<input type="radio" class="input-radio" id="l-phone4" /> <label for="l-phone4">별정통신사</label>
+								
+								<select class="select" title="휴대폰번호 앞자리">
+									<option>010</option>
+								</select>
+								<input type="text" class="input-text" title="휴대폰번호 가운데자리" />
+								<span class="dash">-</span>
+								<input type="text" class="input-text" title="휴대폰번호 끝자리" />
+							</td>
+						</tr>
+						
+						<tr class="ctrl-receiveInfo">
+							<th scope="row"><span class="required" title="필수입력">*</span> <span class="tit">신용정보등록<br />현황수신</span></th>
+							<td class="ctrl-divideWrap last-child">
+								<div class="ctrl-divide">
+									<input type="checkbox" class="input-check" id="l-receiveInfo-email" />
+									<label for="l-receiveInfo-email">이메일</label>
+									
+									<input type="checkbox" class="input-check" id="l-receiveInfo-sms" />
+									<label for="l-receiveInfo-sms">문자메세지(SMS)</label>
+								</div>
+								
+								<div class="ctrl-divide-last">
+									<p class="explList">신용 정보 등록 현황 후 진행 상황을 알려드립니다.</p>
+								</div>
+							</td>
+						</tr>
+						
+						<tr class="ctrl-receiveEmail">
+							<th scope="row"><span class="required" title="필수입력">*</span> <span class="tit">정보성 메일<br />수신</span></th>
+							<td class="ctrl-divideWrap last-child">
+								<div class="ctrl-divide">
+									<input type="checkbox" class="input-check" id="l-receiveEmail-agree" />
+									<label for="l-receiveEmail-agree">허용</label>
+								</div>
+								
+								<div class="ctrl-divide-last">
+									<p class="explList">수신 허용을 선택하면 신용과 사람에서 제공하는 신용 관련 뉴스 등 유익한 정보를 보내드립니다.</p>
+								</div>
+							</td>
+						</tr>			
+					</tbody>
+				</table>
+				<div class="tableType-bottomLine"><div></div></div>
+				<!-- //tableType -->
+			
+				<div class="buttonWrapType">
+					<a class="buttonType primary lg" href="#">
+						<span class="bg"><span class="icon icon-check"></span> 저장</span>
+					</a>
+					
+					<a class="buttonType default lg" href="#">
+						<span class="bg"><span class="icon icon-close"></span> 취소</span>
+					</a>  
+				</div>
+			</form>
+		</div>
+		<!-- //개인정보수정 -->
+		
+		<!-- alertType -->
+		<div class="alertType">
+			<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+			<div class="box-m">
+				<span class="ft-point1">'개인정보를 변경했습니다'</span>
+			</div>
+			<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+		</div>
+		<!-- //alertType -->
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> <span class="here">마이페이지</span></p>
+		<h2 class="page-title" id="skip-contents">마이페이지</h2>
+	
+		<p class="topMsgType">
+			회원님의 정보이용 내역과 상태를 한 눈에 확인하실 수 있습니다.
+		</p>
+
+		<!-- 마이페이지메인 -->
+		<div class="mypMain">
+
+			<!-- 박스 -->
+			<div class="mypMain-boxWrap">
+				<div class="mypMain-box mypMain-box-t"><span class="l"></span><span class="r"></span></div>
+				<div class="mypMain-box-m">
+					
+					<!-- 내신용진단 -->
+					<div class="mypMain-myDig">
+						<h3>내 신용진단</h3>
+						<p class="more"><a href="#">K-Score와 K-Point가 뭔가요?</a></p>
+						<div class="infos">
+							<p class="txt"><span class="name">정현미</span>님의 현재 신용진단입니다</p>
+							<div class="dlWrap">
+								<dl class="dl dl1">
+									<dt>K-Score</dt>
+									<dd class="graph" id="js-graph">&nbsp;</dd>
+									<dd class="info">
+										<span class="point"><em>1000</em>점</span>
+										<span class="slash"></span>
+										<span class="degree"><em>2</em>등급</span>
+									</dd>
+								</dl>
+								<dl class="dl dl2">
+									<dt>K-Point</dt>
+									<dd><em>86</em>점</dd>
+								</dl>
+							</div>				
+						</div>
+						
+						<div class="buttonsWrap">
+							<div class="expl">좀더 자세한 진단내용과 신용등급을 향상시키기 위한 개선방안을 확인해보세요.</div>
+							<div class="buttons">
+								<a class="buttonType primary sm" href="#">
+									<span class="bg"><span class="icon icon-check"></span> 지금 확인하기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<script type="text/javascript" src="../../rscs/jquery/raphael-min.js"></script>
+					<script type="text/javascript" src="../../rscs/jquery/jquery.graphAverage.js"></script>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$("#js-graph").graphAverage({
+								axisX : [0, 200, 400, 600, 800, 1000],
+								my : {
+									value : 700,
+									text : "나",
+									img : {
+										good : "../../rscs/images/common/graph_my_good.png",
+										bad  : "../../rscs/images/common/graph_my_bad.png"	
+									}
+							}
+							});
+						});
+					</script>
+					<!-- //내신용진단 -->
+					
+					<div class="hr"></div>
+					
+					<!-- 내정보등록 -->
+					<div class="mypMain-regMyInfo">
+						<h3>내 정보등록</h3>
+						<p class="more"><a href="#">내정보등록은 어떻게 하나요?</a></p>
+						<div class="infos">
+							<p class="txt"><span class="name">정현미</span> 님의 정보등록 현황입니다.</p>
+							<div class="dlWrap">
+								<dl class="dl dl1">
+									<dt>등록완료</dt>
+									<dd><em>3</em>건</dd>
+								</dl>
+								<dl class="dl dl2">
+									<dt>등록중</dt>
+									<dd><em>1</em>건</dd>
+								</dl>
+								
+								<!-- 2013.10.31 수정/추가
+									수정시 css/s_myp.css, css/common.css 업데이트 요청 드립니다.
+								 -->
+								<dl class="dl dl3">
+									<dt>등록오류</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+								
+								<dl class="dl dl4">
+									<dt>유효기간<br/>만료</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+								<!-- //2013.10.31 수정/추가 -->
+							</div>
+							<p class="register">
+								등록한 정보 : 소득금액증명, 납세사실증명
+								<a class="buttonType default sm" href="#">
+									<span class="bg"><span class="icon icon-check2"></span> 자세히보기</span>
+								</a>
+							</p>
+						</div>
+						
+						<div class="buttonsWrap">
+							<p class="expl">회원님의 정보를 직접 등록하면 K-Score와 K-Point에 긍정적인 영향을 줄 수 있습니다.</p>
+							<div class="buttons">
+								<a class="buttonType primary sm" href="#">
+									<span class="bg"><span class="icon icon-check"></span> 지금 등록하기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- //내정보등록 -->
+					
+					<div class="hr"></div>
+					
+					<!-- 스스로신용공부 -->
+					<div class="mypMain-study">
+						<h3>스스로신용공부</h3>
+						<div class="infos">
+							<dl class="dl dl1">
+								<dt>총 강의수</dt>
+								<dd><em>4</em>건</dd>
+							</dl>
+							<dl class="dl dl2">	
+								<dt>이수강의</dt>
+								<dd><em>1</em>건</dd>
+							</dl>
+							<dl class="dl dl3">	
+								<dt>최근이수일자</dt>
+								<dd>2013.04.05</dd>
+							</dl>
+						</div>
+						
+						<div class="buttonsWrap">
+							<p class="expl">스스로 신용공부의 강의를 이수하면 신용진단의 바탕이 되는 K-Point를 향상 시킬 수 있습니다.</p>
+							<div class="buttons">
+								<a class="buttonType primary sm" href="#">
+									<span class="bg"><span class="icon icon-check"></span> 지금 공부하기</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- //스스로신용공부 -->
+
+					<div class="hr"></div>
+
+					<!-- 개인정보변경/회원탈퇴 버튼 -->
+					<div class="mypMain-func-button">
+						<dl class="region region1">
+							<dt>개인정보 변경</dt>
+							<dd>
+								<span class="txt">개인정보를 변경하려면 클릭하세요.</span>
+								<a class="buttonType primary sm" href="#">
+									<span class="bg"><span class="icon icon-check"></span> 개인정보 변경</span>
+								</a>
+							</dd>
+						</dl>
+						
+						<dl class="region region2">
+							<dt>회원탈퇴</dt>
+							<dd>
+								<span class="txt">신용과 사람 홈페이지 회원탈퇴를 하려면 클릭하세요.</span>
+								<a class="buttonType primary sm" href="#">
+									<span class="bg"><span class="icon icon-check"></span> 회원탈퇴하기</span>
+								</a>
+							</dd>
+						</dl>
+					</div>
+					<!-- 개인정보변경/회원탈퇴 버튼 -->
+					
+				</div>
+				<div class="mypMain-box mypMain-box-b"><span class="l"></span><span class="r"></span></div>
+			</div>
+			<!-- //박스 -->
+
+			<!-- 최근글 -->
+			<div class="recentArticleWrap">
+				<!-- 열린Q&A -->
+				<div class="mypMain-openQNA">
+					<h3>열린 Q&amp;A</h3>
+					<ul class="list">
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+					</ul>
+					<p class="more"><a href="#">더보기</a></p>
+				</div>
+				<!-- //열린Q&A -->
+				
+				<!-- 1:1Q&A -->
+				<div class="mypMain-1n1QNA">
+					<h3>1:1 Q&amp;A</h3>
+					<ul class="list">
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+						<li><a href="#">휴대폰 본인확인서비스 일시중지 안내 본인확인서비스 일시중지 안내</a></li>
+					</ul>
+					<p class="more"><a href="#">더보기</a></p>
+				</div>
+				<!-- //1:1Q&A -->
+				
+				<!-- 제안과토론방 -->
+				<div class="mypMain-discussion">
+					<h3>제안과 토론방</h3>
+					<ul class="list">
+						<li><a href="#"><em>[채택]</em> 제가 등록한 정보를 삭제할 수 있습니다. 제가 등록한 정보를 삭제할 수 있습니다.</a></li>
+						<li><a href="#"><em>[채택]</em> 제가 등록한 정보를 삭제할 수 있습니다. 제가 등록한 정보를 삭제할 수 있습니다.</a></li>
+						<li><a href="#"><em>[채택]</em> 제가 등록한 정보를 삭제할 수 있습니다. 제가 등록한 정보를 삭제할 수 있습니다.</a></li>
+						<li><a href="#"><em>[채택]</em> 제가 등록한 정보를 삭제할 수 있습니다. 제가 등록한 정보를 삭제할 수 있습니다.</a></li>
+						<li><a href="#"><em>[채택]</em> 제가 등록한 정보를 삭제할 수 있습니다. 제가 등록한 정보를 삭제할 수 있습니다.</a></li>
+					</ul>
+					<p class="more"><a href="#">더보기</a></p>
+				</div>
+				<!-- //제안과토론방 -->
+			</div>
+			<!-- //최근글 -->
+			
+		</div>
+		<!-- //마이페이지메인 -->
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

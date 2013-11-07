@@ -1,0 +1,117 @@
+@charset "euc-kr";
+
+/* ========== [로그인] ========== */
+/* 아이디로그인 */
+#logID {position:relative; float:left; width:329px; height:263px; padding:23px 33px 0; background:url("../images/log/log_boxbg.gif") 0 0 no-repeat;}
+#logID h3 {margin-bottom:17px; padding-left:21px; font-family:webfontNGB; font-size:16px; color:#444; background:url("../images/common/bul1.png") 0 3px no-repeat;}
+#logID .ctrlWrap {position:relative; margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid #e2e2e2;}
+#logID .ctrl {margin-bottom:5px;}
+#logID .ctrl label {display:inline-block; width:62px;}
+#logID .ctrl .input-text {width:184px;} *+html #logID .ctrl .input-text {margin:-1px 0;}
+#logID .ctrl-id {}
+#logID .ctrl-pw {}
+#logID .ctrl-btnLogin {position:absolute; top:0; right:0;}
+#logID .ctrl-check {margin-left:66px;}
+#logID .ctrl-check label {width:auto;}
+#logID .ctrl-check .input-check {}
+#logID .txt {padding-left:8px; font-size:13px; line-height:18px; color:#aaa; background:url("../images/common/bul_star_gray.png") 0 7px no-repeat;}
+#logID .buttons {overflow:hidden; margin-top:13px; white-space:nowrap; text-align:center;}
+#logID .buttons .buttonType {font-size:12px; letter-spacing:-1px;}
+
+/* 공인인증서로그인 */
+#logCertificate {position:relative; float:left; width:329px; height:263px; padding:23px 33px 0; background:url("../images/log/log_boxbg.gif") 0 0 no-repeat;}
+#logCertificate h3 {margin-bottom:17px; padding-left:21px; font-family:webfontNGB; font-size:16px; color:#444; background:url("../images/common/bul1.png") 0 3px no-repeat;}
+#logCertificate .ctrl-login {white-space:nowrap; margin-bottom:7px;}
+#logCertificate .ctrl-login label {display:block; margin-bottom:5px;}
+#logCertificate .ctrl-login .input-text {width:110px;} *+html #logCertificate .ctrl-login .input-text {margin:-1px 0;}
+#logCertificate .ctrl-login .dash {color:#c7c7c7;}
+#logCertificate .txt {font-size:13px; line-height:18px; color:#aaa;}
+#logCertificate .bnnr {position:absolute; left:33px; bottom:27px;}
+
+/* 로그인-아직,회원이 아니세요? */
+.logBeforeMen {position:relative; float:right; width:329px; height:263px; padding:23px 33px 0; background:url("../images/log/log_boxbg.gif") 0 0 no-repeat;}
+.logBeforeMen h3 {margin-bottom:17px; padding-left:21px; font-family:webfontNGB; font-size:16px; color:#444; background:url("../images/common/bul1.png") 0 3px no-repeat;}
+.logBeforeMen .txt {margin-bottom:12px; color:#555; line-height:20px;}
+.logBeforeMen .buttons {}
+.logBeforeMen .bnnr {position:absolute; left:33px; bottom:27px;}
+
+/* ---------- 아이디찾기 ---------- */
+.logSearchId {}
+
+/* 아이디찾기-주민등록번호 */
+#logSearchIdJumin {}
+#logSearchIdJumin .box-m {padding:30px 30px 30px 181px;}
+#logSearchIdJumin form {}
+#logSearchIdJumin .ctrl {}
+#logSearchIdJumin .ctrl label {display:inline-block; width:85px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+#logSearchIdJumin .ctrl .input-text {width:135px;} *+html #logSearchIdJumin .ctrl .input-text {margin:-1px 0;}
+#logSearchIdJumin .ctrl .dash {color:#c7c7c7;}
+#logSearchIdJumin .ctrl-id {margin-bottom:4px;}
+#logSearchIdJumin .ctrl-pw {}
+
+/* 아이디찾기-아이핀 */
+#logSearchIdIpin {}
+#logSearchIdIpin .box-m {padding:47px 20px 47px;}
+#logSearchIdIpin .para {text-align:center;}
+#logSearchIdIpin .para .bul {display:inline-block; margin-right:5px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+
+/* 아이디찾기결과-아이디출력 */
+.logSearchId-Result-id {}
+.logSearchId-Result-id .box-m {min-height:1px; padding:29px;}
+.logSearchId-Result-id .para {width:400px; min-height:30px; margin:0 auto; padding-left:8px; line-height:30px; background:url("../images/common/bul_dot.gif") 0 12px no-repeat;}
+.logSearchId-Result-id .para .txt {float:left;}
+.logSearchId-Result-id .para a.buttonType {float:right;}
+.logSearchId-Result-id .para a.buttonType .bg {width:81px;}
+.logSearchId-Result-id .para1 {margin-bottom:5px;}
+.logSearchId-Result-id .para1 .id {color:#ef8233;}
+.logSearchId-Result-id .para2 {}
+
+/* 아이디찾기결과-회원가입 내역 없음 */
+.logSearchId-Result-notJoin {}
+.logSearchId-Result-notJoin .box-m {min-height:1px; padding:29px;}
+.logSearchId-Result-notJoin .para {width:410px; margin:0 auto; padding-left:8px; line-height:30px; background:url("../images/common/bul_dot.gif") 0 12px no-repeat;}
+.logSearchId-Result-notJoin .para .warning {colr:red;}
+.logSearchId-Result-notJoin .para .buttonType {margin-left:15px;}
+
+
+/* ---------- 비밀번호찾기 ---------- */
+.logSearchPw {}
+
+/* 비밀번호찾기-주민등록번호 */
+#logSearchPwJumin {}
+#logSearchPwJumin .box-m {padding:30px 30px 30px 182px;}
+#logSearchPwJumin form {}
+#logSearchPwJumin .ctrl {}
+#logSearchPwJumin .ctrl label {display:inline-block; width:83px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+#logSearchPwJumin .ctrl .input-text {width:135px;} *+html #logSearchIdJumin .ctrl .input-text {margin:-1px 0;}
+#logSearchPwJumin .ctrl .dash {color:#c7c7c7;}
+#logSearchPwJumin .ctrl-id {margin-bottom:4px;}
+#logSearchPwJumin .ctrl-pw {}
+
+
+/* 비밀번호찾기-아이핀 */
+#logSearchPwIpin {}
+#logSearchPwIpin .box-m {padding:47px 20px 47px;}
+#logSearchPwIpin .para {text-align:center;}
+#logSearchPwIpin .para .bul {display:inline-block; margin-right:5px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+
+
+/* 비밀번호재설정 */
+.logSetPw {}
+.logSetPw .box-m {padding:30px 30px 30px 225px;}
+.logSetPw .ctrl {}
+.logSetPw .ctrl label {display:inline-block; width:91px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+.logSetPw .ctrl .input-text {width:175px; margin-right:1px;} *+html .logSetPw .ctrl .input-text {margin:-1px 0;}
+.logSetPw .ctrl .dash {color:#c7c7c7;}
+.logSetPw .ctrl-id {margin-bottom:4px;}
+.logSetPw .ctrl-pw {}
+
+/* 비밀번호재설정완료 */
+.logSetPw-result {}
+.logSetPw-result .box-m {padding:47px 20px 47px;}
+.logSetPw-result .para {text-align:center;}
+.logSetPw-result .para .bul {display:inline-block; margin-right:5px; padding-left:8px; background:url("../images/common/bul_dot.gif") 0 7px no-repeat;}
+
+
+
+

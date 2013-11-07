@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> 회원가입 <span class="arr">&gt;</span> <span class="here">실명확인 및 약관동의</span></p>
+		<h2 class="page-title" id="skip-contents">로그인</h2>
+	
+		<p class="topMsgType">대한민국을 대표하는 신용조회 서비스 신용과 사람! 신용과 사람 웹사이트에 오신 것을 환영합니다!</p>
+		<p class="topMsgType-expl">서비스를 이용하기 위해서는 로그인이 필요합니다. 아래 로그인 방법 중 한 가지를 선택하여 로그인을 해주세요.</p>
+
+		<ul class="tabType col-2" id="js-tab">
+			<li class="first-child"><a class="tab" href="#logID"><span class="bg">아이디/비밀번호 로그인</span></a></li>
+			<li class="last-child"><a class="tab" href="#logCertificate"><span class="bg">공인인증서 로그인</span></a></li>
+		</ul>
+		
+		<!-- 아이디/비번로그인 -->
+		<div id="logID">
+			<form action="">
+				<h3>아이디/비밀번호 로그인</h3>
+				<div class="ctrlWrap">
+					<p class="ctrl ctrl-id">
+						<label for="l-id">아이디</label>
+						<input type="text" class="input-text" id="l-id" />
+					</p>
+					<p class="ctrl ctrl-pw">
+						<label for="l-pw">비밀번호</label>
+						<input type="password" class="input-text" id="l-pw" />
+					</p>
+					<p class="ctrl ctrl-check">
+						<input type="checkbox" class="input-check" id="l-idSave" />
+						<label for="l-idSave">아이디저장</label>
+					</p>
+					<p class="ctrl-btnLogin"><input type="image" class="input-image" alt="로그인" src="../../rscs/images/log/logID_btn_login.gif" /></p>
+				</div>
+				
+				<p class="txt">아이디 및 비밀번호는 대소문자를 구분하오니 입력 시 유의하시기 바랍니다.</p>
+				<p class="buttons">
+					<a class="buttonType default" href="#">
+						<span class="bg">아이디찾기</span>
+					</a>
+					
+					<a class="buttonType default" href="#">
+						<span class="bg">비밀번호찾기</span>
+					</a>
+					
+					<a class="buttonType default" href="#">
+						<span class="bg">로그인 관련 FAQ</span>
+					</a>
+				</p>
+			</form>
+		</div>
+		<!-- //아이디/비번로그인 -->
+		
+		<!-- 공인인증서 로그인 -->
+		<div id="logCertificate">
+			<form action="">
+				<h3>공인인증서 로그인</h3>
+				<p class="ctrl-login">
+					<label for="l-jumin">주민등록번호 /  외국인등록번호</label>
+					<input type="text" class="input-text" id="l-jumin" title="주민등록번호 앞자리" />
+					<span class="dash">-</span>
+					<input type="password" class="input-text" title="주민등록번호 뒷자리" />
+					
+					
+					<a class="buttonType primary" href="#">
+						<span class="bg">로그인</span>
+					</a>
+					<!-- <input type="image" class="input-image" src="../../rscs/images/log/logCertificate_btn_login.gif" alt="로그인" /> -->
+				</p>
+				<p class="txt">*범용공인인증서만 사용가능합니다.</p>
+				
+				<!--
+				<div class="bnnr">
+					<a href="#"><img src="../../rscs/images/temp/temp1.jpg" alt="배너" /></a>
+				</div>
+				-->
+			</form>
+		</div>
+		<!-- //공인인증서 로그인 -->
+		
+		<script type="text/javascript">
+			// 탭활성화
+			$("#js-tab").tabList({ active : 0 });
+		</script>
+		
+		<!-- 무료회원가입 -->
+		<div class="logBeforeMen">
+			<h3>아직, 회원이 아니세요?</h3>
+			<p class="txt">회원가입 후 신용과 사람 회원에게만 제공되는 다양한 무료서비스를 체험해 보세요.</p>
+			<p class="buttons">
+				<a class="buttonType primary lg block" href="#">
+					<span class="bg">무료 회원가입</span>
+				</a>
+			</p>
+			
+			<!--
+			<div class="bnnr">
+				<a href="#"><img src="../../rscs/images/temp/temp1.jpg" alt="배너" /></a>
+			</div>
+			-->
+		</div>
+		<!-- //무료회원가입 -->
+		
+		<div class="clboth"></div>
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

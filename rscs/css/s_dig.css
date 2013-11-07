@@ -1,0 +1,188 @@
+@charset "euc-kr";
+
+/* ========== [신용진단] ========== */
+/*
+ * 팝업창에서 사용할수도 있다는 요청으로 popup.css 에 import시킴
+ */
+.digSty {width:818px; margin:0 auto; padding-bottom:40px; background:url("../images/dig/digSty_bg.gif") 100% 0 no-repeat;}
+
+/* 상단 인사말 */
+.digTopMsgSty {margin:-13px 0 39px; font-size:18px; font-family:webfontNGB; color:#333;}
+.digTopMsgSty .nickName {color:#f56e0b;}
+
+/* 신용진단 공유 */
+.digSty-sns {margin-top:20px; line-height:29px;}
+.digSty-sns .txt {margin-right:8px; color:#888;}
+.digSty-sns .iconType {margin-right:1px;}
+
+/* 서브메인-종합진당 */
+.digMain {}
+.digMain .digMain-result {width:818px; padding-bottom:5px; background:url("../images/dig/digMainResult_bg.gif") bottom left no-repeat;}
+.digMain .digMain-result:after {content:""; clear:both; display:block;}
+.digMain .digMain-result h4 {height:45px; padding-left:15px; font-size:16px; line-height:44px; font-family:webfontNGB; color:#333;}
+.digMain .digMain-result .more {position:absolute; top:15px; right:14px; font-size:13px;}
+.digMain .digMain-result .more a {float:left; padding-left:24px; color:#888; line-height:20px; letter-spacing:-1px; background:url("../images/dig/digMainResult_icon_more.gif") 0 2px no-repeat;}
+.digMain .digMain-result .more a em {letter-spacing:0;}
+.digMain .digMain-result .expl {padding:13px 12px 5px; line-height:20px; color:#777; font-family:dotum;}
+.digMain .digMain-result .expl .txt {position:relative; display:block; padding-left:10px; letter-spacing:-1px;}
+.digMain .digMain-result .expl .txt .bul {position:absolute; top:0; left:0;}
+.digMain .digMain-result .kscore,
+.digMain .digMain-result .kpoint {position:relative; padding:2px;}
+.digMain .digMain-result .kscore {float:left; width:538px; background:url("../images/dig/digMainResult_bg.gif") top left no-repeat;}
+.digMain .digMain-result .kpoint {float:right; width:262px; background:url("../images/dig/digMainResult_bg.gif") top right no-repeat;}
+
+/* 서브메인- K-Score */
+.digMain .kscore .table {height:92px; table-layout:fixed;}
+.digMain .kscore .table th,
+.digMain .kscore .table td {text-align:center;}
+.digMain .kscore .table th {height:36px; color:#777; border-right:1px solid #ded7d1; border-bottom:1px solid #d0d0d0; background:#fef6f1;}
+.digMain .kscore .table td {height:56px; color:#333; vertical-align:middle; border-right:1px solid #dddddd;} .ie8 .digMain .kscore .table td {height:51px; padding-top:5px;} *+html .digMain .kscore .table td {height:51px; padding-top:5px;}
+.digMain .kscore .table td em {font-size:42px; line-height:40px; font-family:webfontNGB;}
+.digMain .kscore .table .last-child {border-right:none;}
+.digMain .kscore .graph {height:119px; border-top:1px solid #d0d0d0; border-bottom:1px solid #d0d0d0;}
+
+/* 서브메인- K-Point */
+.digMain .kpoint .cnt {height:92px; text-align:center; color:#333;}
+.digMain .kpoint .cnt em {font-size:42px; line-height:92px; font-family:webfontNGB;}
+.digMain .kpoint .graph {height:119px; border-top:1px solid #d0d0d0; border-bottom:1px solid #d0d0d0;}
+
+/* 서브메인-신용진단 */
+.digMain .digMain-credit {}
+.digMain .digMain-credit .dlWrap,
+.digMain .digMain-credit .dlWrap-last {margin-bottom:30px; padding-bottom:5px; background:url("../images/dig/digMainCredit_bg.gif") bottom left no-repeat;}
+.digMain .digMain-credit .dlWrap-last {margin-bottom:0;}
+.digMain .digMain-credit .dl {position:relative; min-height:1px; padding:2px 2px 0; background:url("../images/dig/digMainCredit_bg.gif") 0 0 no-repeat;}
+.digMain .digMain-credit .dl dt {overflow:hidden; height:35px; padding:10px 0 0 14px; font-size:16px; line-height:28px;; font-family:webfontNGB; color:#333;}
+.digMain .digMain-credit .dl dd.txt {position:relative; min-height:20px; margin-left:20px; padding:13px 0 8px 125px; line-height:20px; font-family:dotum; color:#888; background:url("../images/common/bul_dot.gif") 0 20px no-repeat;}
+.digMain .digMain-credit .dl dd.txt em {position:absolute; top:13px; left:8px; width:102px; font-family:webfontNGB; color:#777; background:url("../images/common/bar_1x12_dbdbdb.gif") 100% 5px no-repeat;}
+.digMain .digMain-credit .dl dd.more {position:absolute; top:15px; right:17px;}
+.digMain .digMain-credit .dl dd.more .icon {display:inline-block; width:18px; height:18px; vertical-align:top; background:url("../images/dig/digMainCredit_icon_more.gif") 0 0 no-repeat;}
+
+/* 신용행동 */
+.digCreditAction {}
+.digCreditAction .tabType {margin-top:16px;}
+
+/* 신용여력-그래프 */
+.digCreditAction-chart {width:100%; margin-bottom:36px;}
+.digCreditAction-chart:after {content:""; display:block; clear:both;}
+.digCreditAction-chart .region {float:left;}
+.digCreditAction-chart .region .tit {margin-bottom:3px; padding-left:28px; font-size:14px; color:#333;}
+.digCreditAction-chart .region .graph {width:259px; height:170px;}
+.digCreditAction-chart .region .average {margin:10px 0 0 28px; color:#888;}
+.digCreditAction-chart .region .average em {color:#ef8233;}
+.digCreditAction-chart .region1 {margin-right:20px;}
+.digCreditAction-chart .region2 {}
+.digCreditAction-chart .region3 {float:right;}
+
+/* 신용여력 */
+.digRepay {}
+.digRepay .tabType {margin-top:16px;}
+.digRepay .collapseType .tableType2 td {padding-right:0;}
+
+/* 신용여력-신용여력계산 */
+.digRepay-calc {position:relative; width:798px; height:98px; margin:2px -2px; background:url("../images/dig/digRepay_calc_bg.gif") 0 0 no-repeat;}
+.digRepay-calc li {position:absolute; width:192px; text-align:center; color:#333;}
+.digRepay-calc li em.money {text-decoration:underline; color:#aca69e;}
+.digRepay-calc li em.money span {color:#333;}
+.digRepay-calc li.n1 {left:0; padding-top:30px;}
+.digRepay-calc li.n2 {left:202px; padding-top:30px;}
+.digRepay-calc li.n3 {left:404px; padding-top:30px;}
+.digRepay-calc li.n4 {left:606px; font-weight:bold; line-height:98px;}
+
+/* 신용여력-qna */
+.digRepay-qna {position:relative; width:100%; margin-top:20px; font-family:dotum; font-size:12px;}
+.digRepay-qna .box {overflow:hidden; width:100%; height:5px; background-image:url("../images/dig/digRepayQna_bg.gif"); background-repeat:repeat-x;}
+.digRepay-qna .box .l,
+.digRepay-qna .box .r {overflow:hidden; width:5px; height:5px; background-image:url("../images/dig/digRepayQna_bgr.gif");}
+.digRepay-qna .box .l {float:left;}
+.digRepay-qna .box .r {float:right;}
+.digRepay-qna .box-t {background-position:top left;}
+.digRepay-qna .box-b {background-position:bottom left;}
+.digRepay-qna .box-t .l {background-position:top left;}
+.digRepay-qna .box-t .r {background-position:top right;}
+.digRepay-qna .box-b .l {background-position:left -5px;}
+.digRepay-qna .box-b .r {background-position:right -5px;}
+.digRepay-qna .box-m {min-height:1px; color:#888; background:#faf8f7 url("../images/dig/digRepayQna_bgm_r.gif") 100% 0 repeat-y;}
+.digRepay-qna .dl {padding:14px 0 0 26px; line-height:18px;}
+.digRepay-qna .dl dt,
+.digRepay-qna .dl dd {position:relative; padding:0 20px 0 24px;}
+.digRepay-qna .dl dt {margin-bottom:15px; color:#555;}
+.digRepay-qna .dl dd {min-height:31px; color:#888;}
+.digRepay-qna .dl .icon {position:absolute; top:2px; left:0; display:inline-block; width:18px; height:13px; background-image:url("../images/dig/digRepayQna_icon.gif"); background-repeat:repeat-x;}
+.digRepay-qna .dl .icon-q {background-position:0 0;}
+.digRepay-qna .dl .icon-a {background-position:0 -50px;}
+.digRepay-qna .expl {margin:20px 117px 0 23px; padding:12px 0 8px 27px; line-height:20px; background:url("../images/dig/digRepayQna_dotline.gif") 0 0 repeat-x;}
+.digRepay-qna .expl:after {content:""; display:block; clear:both;}
+.digRepay-qna .expl .list {float:left; min-width:600px;}
+.digRepay-qna .expl .list li {padding-left:10px; font-size:11px; color:#888; background:url("../images/common/bul_star_gray.png") 0px 7px no-repeat;}
+.digRepay-qna .expl .list li br {display:none;}
+.digRepay-qna .expl .buttons {position:absolute; top:31px; right:25px;}
+.digRepay-qna .expl .buttons .buttonType {width:71px; height:87px; margin:0; padding:0; background:url("../images/dig/digRepayQna_btn_registMyInfo.gif") 0 0 no-repeat;}
+.digRepay-qna .expl .buttons .buttonType .bg {overflow:hidden;position:absolute;top:-999999em;left:auto;width:1px;height:1px;}
+
+/* 신용여력-qna */
+.digGraphSty-title {margin-bottom:23px; padding-bottom:7px; font-size:16px; color:#777; background: url("../images/common/divider.gif") left bottom repeat-x;}
+.digGraphSty-title .nickName {color:#f56e0b; font-family:webfontNGB;}
+.digGraphSty-title .cnt {color:#f56e0b; font-family:webfontNGB;}
+
+/* 신용여력-그래프 */
+.digRepay-graph {width:100%; margin-bottom:10px;}
+.digRepay-graph:after {content:""; display:block; clear:both;}
+.digRepay-graph .region {float:left;}
+.digRepay-graph .region .tit {margin-bottom:3px; font-size:14px; color:#333;}
+.digRepay-graph .region .graph {width:259px; height:149px; background: url("../images/pat/digRepayGraph_bg.gif") 0 0 no-repeat;}
+.digRepay-graph .region1 {margin-right:20px;}
+.digRepay-graph .region2 {}
+.digRepay-graph .region3 {float:right;}
+
+/* 신용성향 */
+.digCreditTendency {}
+.digCreditTendency .tabType {margin-top:16px;}
+.digCreditTendency .collapseType .ulType {margin-bottom:0;}
+
+/* 신용성향-내신용교육 */
+.digCreditTendency-edu {width:100%; margin-bottom:27px;}
+.digCreditTendency-edu:after {content:""; display:block; clear:both;}
+.digCreditTendency-edu .region {float:left;}
+.digCreditTendency-edu .region1 {width:262px; height:235px; padding:2px; margin-right:10px;}
+.digCreditTendency-edu .region2 {float:right; width:262px; height:235px; padding:2px;}
+.digCreditTendency-edu .region3 {width:266px;}
+
+.digCreditTendency-edu .region1 {background:url("../images/pat/digCreditTendencyEdu_bg1.gif") 0 0 no-repeat;}
+.digCreditTendency-edu .region1 .dl {width:100%; padding-top:2px;}
+.digCreditTendency-edu .region1 .dl:after {content:""; display:block; clear:both;}
+.digCreditTendency-edu .region1 .dl dt,
+.digCreditTendency-edu .region1 .dl dd {float:left; height:40px; line-height:40px;}
+.digCreditTendency-edu .region1 .dl dt {clear:both; width:97px; padding-left:15px; color:#333; font-family:webfontNGB;}
+.digCreditTendency-edu .region1 .dl dd {width:135px; padding-left:11px; color:#888;}
+.digCreditTendency-edu .region1 .graph {width:262px; height:155px;}
+
+.digCreditTendency-edu .region2 {overflow:hidden; background:url("../images/pat/digCreditTendencyEdu_bg2.gif") 0 0 no-repeat;}
+.digCreditTendency-edu .region2 .table {}
+.digCreditTendency-edu .region2 .table th {height:40px; color:#333; font-family:webfontNGB;}
+.digCreditTendency-edu .region2 .table td {padding-left:0.714em; letter-spacing:-1px; color:#888;}
+
+.digCreditTendency-edu .region3 {position:relative; padding-top:80px; background:url("../images/pat/digCreditTendencyEdu_bg3.gif") 0 0 no-repeat;}
+.digCreditTendency-edu .region3 .bg {min-height:149px; padding-bottom:10px; line-height:20px; background:url("../images/pat/digCreditTendencyEdu_bg3.gif") left bottom no-repeat;}
+.digCreditTendency-edu .region3 .iconWrap {position:absolute; top:16px; left:0; width:100%; text-align:center;}
+.digCreditTendency-edu .region3 .iconWrap .degree {display:inline-block; width:70px; height:51px; vertical-align:top; background-image:url("../images/dig/digCreditTendencyEdu_degree.gif"); background-position:0 0; background-repeat:no-repeat;}
+.digCreditTendency-edu .region3 .iconWrap .degree1 {background-position:0 0;}
+.digCreditTendency-edu .region3 .iconWrap .degree2 {background-position:0 -60px;}
+.digCreditTendency-edu .region3 .iconWrap .degree3 {background-position:0 -120px;}
+.digCreditTendency-edu .region3 .iconWrap .degree4 {background-position:0 -180px;}
+.digCreditTendency-edu .region3 .iconWrap .degree5 {background-position:0 -240px;}
+.digCreditTendency-edu .region3 .txt {margin:0 18px; color:#888;}
+
+/* 외부에서 들어오는 텍스트는 dotum 체로 변경해 달라는 요청
+ * table은 .digResultTable 를 붙여서 돋움으로 변경 
+ */
+.digResultTable tbody tr td {font-family:dotum;}
+
+
+
+
+
+
+
+
+

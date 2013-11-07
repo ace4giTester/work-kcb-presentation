@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko">
+<head>
+	<!-- ie 호환성 --> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<!-- ie 호환성 --> 
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR" />
+	<title>신용과사람 관리자</title>
+	<link rel="stylesheet" type="text/css" href="https://tcare.kcb4u.com:3443/rscs/admin/css/main.css" />
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/jquery/jquery.easing.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/js/ui.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/js/common/comdef.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/js/common/comutil.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/js/common/comajax.js"></script>
+	<script type="text/javascript" src="https://tcare.kcb4u.com:3443/rscs/js/common/codec.js"></script>
+</head>
+<body>
+	
+<style type="text/css" media="screen">
+#admin-header {height:64px; border-bottom:3px solid #ef8233;}
+#admin-header h1 {padding:20px 0 0 17px;}
+#admin-header h1 img {vertical-align:top;}
+
+#admin-login {width:512px; margin:0 auto; padding:20px 0 60px;}
+#admin-login h2 {font-size:34px; letter-spacing:-2px; font-weight:600; color:#333;}
+#admin-login .box-m {padding:50px 0 46px 50px;}
+#admin-login h3 {margin-bottom:20px; padding-left:33px; font-size:18px; color:#555; background:url("./images/login_bul1.gif") 0 0 no-repeat;}
+#admin-login .ctrl-login {}
+#admin-login .ctrl-login label {display:inline-block; width:86px; vertical-align:middle;}
+#admin-login .ctrl-login .input-text {width:92px;}
+#admin-login .ctrl-login .dash {display:inline-block; color:#555; vertical-align:middle;}
+#admin-login .ctrl-login .button {margin-left:6px;}
+#admin-login .txt {margin:19px 0 0 89px; padding-left:8px; font-size:11px; letter-spacing:-1px; line-height:18px; color:#aaa;}
+#admin-login .txt .bul {margin-left:-5px;}
+#admin-login .txt a {color:#555 !important; text-decoration:underline;}
+</style>
+
+<script type="text/javascript">
+function verticalMiddle(ele){
+	var target = document.getElementById(ele);
+	target.style.position = "relative";
+	target.style.display = "block";
+		
+	Action(ele);
+	setInterval(function(){ Action(ele) }, 30);
+
+	function Action(){
+		var screen_height = document.documentElement.clientHeight || document.body.clientHeight || 0;
+		var scroll_top = document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+		var obj_height = target.offsetHeight;
+		var center_height = (screen_height/2) - (obj_height/2) - 30 + scroll_top;
+		if(center_height <= 0) center_height = 0;
+		target.style.top = center_height + "px";
+	}
+}
+
+$(document).ready(function(){
+	verticalMiddle('admin-login');
+});
+</script>
+
+<!-- header -->
+<div id="admin-header">
+	<h1><a href="#"><img src="./images/img_logo.png" alt="신용과 사람" /></a></h1>
+</div>
+<!-- //header -->
+
+<!-- login -->
+<div id="admin-login">
+	<h2>관리자 로그인</h2>
+	
+	<!-- boxType -->
+	<div class="boxType">
+		<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+		<div class="box-m">
+			<h3>공인인증서 로그인</h3>
+			<p class="ctrl-login">
+				<label for="l-pnum1">주민등록번호</label>
+				<input type="text" class="input-text" id="l-pnum1" title="주민등록번호 앞자리" />
+				<span class="dash">-</span>
+				<input type="text" class="input-text" id="l-pnum2" title="주민등록번호 뒷자리" />
+				
+				<a class="button" href="#"><img src="./images/login_btn1.gif" alt="로그인" /></a>
+			</p>
+			<p class="txt">
+				<span class="bul">-</span>접속 권한이 없으신 분들은,
+				<a target="_blank" href="#">크레디안</a>에서 공인 인증서로 가입 또는<br/>전환하신 후, 사용해 주시기 바랍니다.
+			</p>
+		</div>
+		<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+	</div>
+	<!-- //boxType -->
+</div>
+<!-- //login -->
+
+</body>
+</html>

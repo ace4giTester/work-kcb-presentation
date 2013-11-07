@@ -1,0 +1,107 @@
+@charset "euc-kr";
+
+.regTable-topLine {}
+.regTable-bottomLine {}
+.regTable {}
+
+
+/* ========== [신용정보등록] ========== */
+/* ---------- 내 정보등록이란? ---------- */
+.regCredit {background:url("../images/reg/regCredit_bg.gif") 100% 0 no-repeat;}
+.regCredit-topMsg {margin:35px 0 -10px;}
+.regCredit-topMsg dt {margin-bottom:2px; font-size:16px; color:#333;}
+.regCredit-topMsg dd {line-height:20px; color:#888;}
+.regCredit-visual {margin-top:44px;}
+.regCredit-visual img {vertical-align:top;}
+.regCredit .scorePointWrap {margin-top:37px; color:#888;}
+.regCredit .scorePointWrap .expl-t {overflow:hidden; height:8px; background:url("../images/reg/scorePointWrap_bg1.gif") 0 0 no-repeat;}
+.regCredit .scorePointWrap .expl {overflow:hidden; min-height:1px; padding-bottom:5px; border-left:4px solid #beb6af; border-right:4px solid #beb6af;}
+.regCredit .scorePointWrap .expl dt {height:32px; padding:4px 0 0 20px; font-size:16px; font-family:webfontNGB; color:#555; background:#f7f5f4;}
+.regCredit .scorePointWrap .expl dd {margin:20px 0; padding:0 20px; line-height:20px;}
+.regCredit .scorePointWrap .expl-b {overflow:hidden; height:33px; background:url("../images/reg/scorePointWrap_bg2.gif") 0 0 no-repeat;}
+.regCredit .scorePointWrap .region {min-height:1px; padding:0 4px; background:url("../images/reg/scorePointWrap_bg3.gif") 0 0 repeat-y;}
+.regCredit .scorePointWrap .region:after {content:""; display:block; clear:both;}
+.regCredit .scorePointWrap .region .kscore {float:left; width:392px; padding-bottom:5px;}
+.regCredit .scorePointWrap .region .kpoint {float:right; width:392px; padding-bottom:5px;}
+.regCredit .scorePointWrap .region dt {height:33px; padding:5px 0 0 20px; font-size:16px; font-family:webfontNGB; color:#555; background:#f7f5f4;}
+.regCredit .scorePointWrap .region dd {margin:20px 0; padding:0 20px; line-height:20px;}
+.regCredit .scorePointWrap .region-b {overflow:hidden; height:4px; background:url("../images/reg/scorePointWrap_bg4.gif") 0 0 no-repeat;}
+
+/* ---------- 등록방법안내 ---------- */
+.regGuide {}
+
+/* 인터넷등록-소득금액증명 */
+.regGuideInternet-income {}
+
+/* 인터넷등록-납세사실증명 */
+.regGuideInternet-taxCerti {}
+
+/* 인터넷등록-국민연금 */
+.regGuideInternet-pension {}
+
+/* 인터넷등록-건강보험 */
+.regGuideInternet-health {}
+
+/* 인터넷등록-모범납세자 */
+.regGuideInternet-exemplar {}
+
+/* 우편등록 */
+.regGuidePost {}
+
+/* 방문등록 */
+.regGuideVisit {}
+
+/* fax등록 */
+.regGuideFax {}
+
+
+/* ---------- 인터넷등록 ---------- */
+.regInternet {}
+
+/* 등록하신정보 */
+.regInternet-regInfo {width:818px; height:96px; margin-bottom:40px; background:url("../images/reg/regInternet_regInfo_bg.gif") 0 0 no-repeat;}
+.regInternet-regInfo .tit {height:45px; margin-bottom:1px; font-size:16px; line-height:45px; padding:2px 0 0 22px; color:#777;}
+.regInternet-regInfo .tit em {font-family:webfontNGB;}
+.regInternet-regInfo .list {float:left; padding-left:2px;}
+.regInternet-regInfo .list li {float:left; height:46px; line-height:46px; color:#333;}
+.regInternet-regInfo .list li .txt {float:left; padding-left:20px; font-family:webfontNGB;}
+.regInternet-regInfo .list li .cnt {float:right; padding-right:15px;}
+.regInternet-regInfo .list li .cnt em {font-size:35px; font-family:webfontNGB; color:#f56e0b; vertical-align:-3px;}
+
+.regInternet-regInfo .list li.n1 {width:270px; margin-right:1px;}
+.regInternet-regInfo .list li.n2 {width:272px; margin-right:1px;}
+.regInternet-regInfo .list li.n3 {width:270px;}
+
+/* 등록영역 */
+.regInternet-regRegion {width:100%; margin-bottom:28px; padding-top:1px;}
+.regInternet-regRegion:after {content:""; display:block; clear:both;}
+.regInternet-regRegion .ulType {float:left; margin:8px 0 0;}
+.regInternet-regRegion .buttons {float:right;}
+
+/* 유효기간만료관련 등록공지 */
+.regInternet-note {width:100%; margin:28px 0 7px;}
+.regInternet-note:after {content:""; display:block; clear:both;}
+.regInternet-note .ulType {float:left; margin:0 10px 0 0;}
+.regInternet-note .txt {float:left; padding-left:15px; line-height:20px; font-size:13px; color:#ef8233; background:url("../images/common/icon_attention.png") 0 4px no-repeat;}
+
+/* 등록완료/등록오류/유효기간만료 탭 */
+.regInternet-tab-status {margin-top:20px;}
+
+
+/* 인터넷등록-소득금액증명 */
+.regInternet-income {}
+
+/* 인터넷등록-납세사실증명 */
+.regInternet-taxCerti {}
+
+/* 인터넷등록-국민연금 */
+.regInternet-pension {}
+
+/* 인터넷등록-건강보험 */
+.regInternet-health {}
+
+/* 인터넷등록-모범납세자 */
+.regInternet-exemplar {}
+
+
+

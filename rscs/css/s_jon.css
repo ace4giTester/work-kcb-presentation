@@ -1,0 +1,170 @@
+@charset "euc-kr";
+
+/* ========== [회원가입 공통사용 css] ========== */
+
+/* 회원가입공통사용 - 상단 제목 + 텍스트 */
+h3.jonH3 {margin:27px 0 6px; font-family:webfontNGB; font-size:16px; color:#333;}
+p.jonPara {margin:-4px 0 10px; font-size:13px; color:#888; line-height:20px;}
+
+/* 회원가입공통사용 - 회원가입step */
+.jonStepTab {position:relative; overflow:hidden; width:100%; height:107px; margin-bottom:40px; border-top:1px solid #a8a8a8; border-bottom:1px solid #a8a8a8;}
+.jonStepTab ol {position:relative; left:-14px; width:837px; height:107px;}
+.jonStepTab ol li {float:left; height:74px; padding:33px 0 0 14px; background:url("../images/jon/jonStepTab_bg.gif") 0 0 no-repeat;}
+.jonStepTab ol li.step1 {width:271px;}
+.jonStepTab ol li.step2 {width:249px;}
+.jonStepTab ol li.step3 {width:260px;}
+.jonStepTab ol li .icon {float:left; overflow:hidden; height:50px; width:50px; background-image:url("../images/jon/jonStepTab_icon.gif");}
+.jonStepTab ol li .num {overflow:hidden; display:block; width:40px; height:15px; margin:4px 0 1px; background-image:url("../images/jon/jonStepTab_icon.gif");}
+.jonStepTab ol li .txt {overflow:hidden; display:block; font-family:webfontNGB; font-size:16px; color:#d6d6d6;}
+.jonStepTab ol li.step1 .icon {width:46px; height:40px; margin:0 7px 0 38px; background-position:0 0;}
+.jonStepTab ol li.step2 .icon {width:40px; height:40px; margin:0 6px 0 47px; background-position:-100px 0;}
+.jonStepTab ol li.step3 .icon {width:44px; height:40px; margin:0 6px 0 37px; background-position:-200px 0;}
+.jonStepTab ol li.step1 .num {background-position:0 -140px;}
+.jonStepTab ol li.step2 .num {background-position:-50px -140px;}
+.jonStepTab ol li.step3 .num {background-position:-100px -140px;}
+.jonStepTab ol li.step1.current .icon {background-position:0 -50px;}
+.jonStepTab ol li.step2.current .icon {background-position:-100px -50px;}
+.jonStepTab ol li.step3.current .icon {background-position:-200px -50px;}
+.jonStepTab ol li.step1.current .num {background-position:0 -100px;}
+.jonStepTab ol li.step2.current .num {background-position:-50px -100px;}
+.jonStepTab ol li.step3.current .num {background-position:-100px -100px;}
+.jonStepTab ol li.current .txt {color:#333;}
+
+/* 회원가입공통사용 - 약관 */
+.jonAgree {width:100%;}
+.jonAgree:after {content:""; display:block; clear:both;}
+.jonAgree .region {float:left; width:259px; margin-right:20px;}
+.jonAgree .region1 {}
+.jonAgree .region2 {margin-right:0;}
+.jonAgree .region3 {float:right; margin-right:0;}
+.jonAgree .jonAgree-box {height:300px; border:3px solid #eae6e3;}
+.jonAgree .jonAgree-box iframe {width:100%; height:100%; margin:0; padding:0; border:none;}
+.jonAgree .jonAgree-check {position:relative; margin-top:5px; padding-left:19px;}
+.jonAgree .jonAgree-check .input-check {position:absolute; top:3px; left:0;}
+.jonAgree .jonAgree-check label {color:#888; font-size:12px; letter-spacing:-1px;}
+.jonAgree .jonAgree-check label em {color:#555; letter-spacing:0;}
+
+/* step1. 실명확인-주민등록번호 */
+.jonCerti-Jumin {}
+.jonCerti-Jumin .box-m {min-height:160px; text-align:center;}
+.jonCerti-Jumin .ctrlWrap {height:61px; padding-top:30px;}
+.jonCerti-Jumin .ctrl {display:inline-block;}
+.jonCerti-Jumin .ctrl label {display:inline-block; margin-right:2px; padding-left:11px; vertical-align:middle; font-family:webfontNGB; color:#333; background:url("../images/common/bul_star.png") 0 6px no-repeat;}
+.jonCerti-Jumin .ctrl .dash {display:inline-block; width:10px; margin:0 -4px; text-align:center; color:#c2c2c2;}
+.jonCerti-Jumin .ctrl .input-text {width:130px;} *+html .jonCerti-Jumin .ctrl .input-text {margin:-1px 0;}
+.jonCerti-Jumin .ctrl-name {margin-right:20px;}
+.jonCerti-Jumin .ctrl-jimin {}
+.jonCerti-Jumin .expl,
+.jonCerti-Jumin .expl-foreign {margin:0 31px; padding:16px; font-size:13px; line-height:18px; text-align:left; color:#888; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonCerti-Jumin .expl-foreign {padding:27px 0 24px 48px;}
+
+/* step1. 실명확인-아이핀 */
+.jonCerti-ipin {} 
+.jonCerti-ipin .box-m {min-height:160px;}
+.jonCerti-ipin .txt {height:60px; padding-top:31px; text-align:center; font-family:webfontNGB; color:#333;}
+.jonCerti-ipin .txt a {margin-left:5px;}
+.jonCerti-ipin .expl {margin:0 31px; padding:16px; font-size:13px; line-height:18px; text-align:left; color:#888; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonCerti-ipin .expl em {color:#fa700b;}
+
+/* step2. 회원정보입력 */
+.jonInsert-topMsg {margin:31px 0 6px; font-size:13px; color:#888;} /* 일반회원-회정보입력-상단메세지 */
+.jonInsert-topMsg em {color:#EF8233;}
+.jonInsert {}
+.jonInsert .tableType th {font-family:webfontNGB;}
+.jonInsert .tableType .input-text {width:155px;}
+
+/* step2. 회원정보입력 - 테이블의 블릿형태의 설명글 */
+.jonInsert ul.explList li,
+.jonInsert p.explList,
+.jonInsert span.explList {padding-left:11px; font-size:13px; line-height:18px; color:#aaa; background:url("../images/common/bul_star_gray.png") 0 6px no-repeat;}
+.jonInsert span.explList {display:inline-block; margin-left:6px;}
+
+/* step2. 회원정보입력 - td안의 영역구분 */
+.jonInsert .ctrl-divideWrap {padding:0 !important;}
+.jonInsert .ctrl-divide,
+.jonInsert .ctrl-divide-last {padding:14px 1.429em 13px; border-bottom:1px solid #ededed;}
+.jonInsert .ctrl-divide-last {border-bottom:none;}
+
+/* step2. 회원정보입력 - 개별라인 컨트롤 */
+.jonInsert .ctrl-name {}     /* 이름 */
+.jonInsert .ctrl-jumin {}         /* 주민등록번호 */
+.jonInsert .ctrl-id {}            /* 아이디 */
+.jonInsert .ctrl-id .input-text {margin-right:5px;}
+.jonInsert .ctrl-pwChg {}    /* 비밀번호변경 */
+.jonInsert .ctrl-pwChg .explList {margin-top:11px; margin-bottom:-4px;}
+.jonInsert .ctrl-pwConf {}   /* 비밀번호확인 */
+.jonInsert .ctrl-email {}    /* 이메일 */
+.jonInsert .ctrl-email .select {width:157px;}
+.jonInsert .ctrl-phone {}    /* 휴대폰 */ 
+.jonInsert .ctrl-phone .select,
+.jonInsert .ctrl-phone .input-text {width:73px;}
+.jonInsert .ctrl-phone label {margin-right:10px;}
+.jonInsert .ctrl-receiveInfo {}  /* 신용정보등록현황 수신 */
+.jonInsert .ctrl-receiveInfo label {margin-right:10px;}
+.jonInsert .ctrl-receiveEmail {} /* 정보성메일수신 */
+
+/* step3. 본인인증선택화면 */
+.jonSelfCerti {}
+.jonSelfCerti .box-m {line-height:30px;}
+.jonSelfCerti .msg {height:110px; text-align:center; font-size:20px;}
+.jonSelfCerti .msg .txt {display:block; padding-top:24px; color:#ef8233; font-family:webfontNGB;}
+.jonSelfCerti .msg .expl {display:block; color:#666;}
+.jonSelfCerti .list {height:49px; margin:0 30px; padding-top:20px; text-align:center; background:white; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonSelfCerti .list li {display:inline; padding:0 17px 0 21px; color:#333; background:url("../images/jon/jonLocalMsg_alread_bar.gif") 0 2px no-repeat;}
+.jonSelfCerti .list li.first-child {background:none;}
+.jonSelfCerti ul.expl {margin:17px 0 0 6px;}
+.jonSelfCerti ul.expl li {margin-bottom:21px; padding-left:10px; line-height:22px; color:#888; background:url("../images/common/bul_dot.gif") 0 9px no-repeat;}
+
+/* step4. 일반회원-회원가입완료 */
+.jonComplete {line-height:30px;}
+.jonComplete .msg {height:110px; text-align:center; font-size:20px;}
+.jonComplete .msg .txt {display:block; padding-top:24px; color:#ef8233; font-family:webfontNGB;}
+.jonComplete .msg .expl {display:block; color:#666;}
+.jonComplete .list {height:49px; margin:0 30px; padding-top:20px; text-align:center; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonComplete .list li {display:inline; padding:0 17px 0 21px; color:#333; background:url("../images/jon/jonLocalMsg_alread_bar.gif") 0 2px no-repeat;}
+.jonComplete .list li.first-child {background:none;}
+
+
+/* 이미 가입된 회원안내 */
+.jonMessage-already {line-height:30px;}
+.jonMessage-already .msg {height:110px; text-align:center; font-size:20px;}
+.jonMessage-already .msg .txt {display:block; padding-top:24px; color:#ef8233; font-family:webfontNGB;}
+.jonMessage-already .msg .expl {display:block; color:#666;}
+.jonMessage-already .list {height:49px; margin:0 30px; padding-top:20px; text-align:center; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonMessage-already .list li {display:inline; padding:0 17px 0 21px; color:#333; background:url("../images/jon/jonLocalMsg_alread_bar.gif") 0 2px no-repeat;}
+.jonMessage-already .list li.first-child {background:none;}
+
+/* 본인인증 오류 안내화면 */
+.jonError-Certi {}
+.jonError-Certi .box-m {}
+.jonError-Certi .msg {height:107px; text-align:center; font-family:webfontNGB; font-size:20px; line-height:107px; color:#ef8233;}
+.jonError-Certi .certi {height:126px; margin:0 30px; padding:0 0 0 18px; background:url("../images/common/divider.gif") 0 0 repeat-x;}
+.jonError-Certi .certi dt {padding:26px 0 13px; font-family:webfontNGB; color:#333;}
+.jonError-Certi .certi dd {line-height:20px; color:#555;}
+.jonError-Certi .expl {margin:17px 0 0 6px;}
+.jonError-Certi .expl li {padding-left:10px; line-height:22px; color:#888; background:url("../images/common/bul_dot.gif") 0 9px no-repeat;}
+
+
+/* ========== [회원가입 개별페이지] ========== */
+/* ---------- 가입안내 ---------- */
+.jonGuide {width:100%; margin-top:37px;}
+.jonGuide:after {content:""; display:block; clear:both;}
+.jonGuide .section {position:relative; width:337px; height:228px; padding:29px 24px; background:url("../images/jon/jonGuide_section_bg.gif") 0 0 no-repeat;}
+.jonGuide .section h3 {font-family:webfontNGB; line-height:20px; color:#444;}
+.jonGuide .section h3 .txt {display:block; font-weight:normal; font-family:webfontNG; font-size:14px; color:#888;}
+.jonGuide .section .img {position:absolute; top:84px; left:23px; width:339px; height:122px;}
+.jonGuide .section .buttons {position:absolute; left:22px; bottom:22px; width:337px;}
+.jonGuide .section-local {float:left;}
+.jonGuide .section-local .img {background:url("../images/jon/jonGuide_img1.gif") 0 0 no-repeat;}
+.jonGuide .section-foreign {float:right;}
+.jonGuide .section-foreign .img {background:url("../images/jon/jonGuide_img2.gif") 0 0 no-repeat;}
+
+/* ---------- 일반회원 ---------- */
+.jonLocal {}
+
+/* ---------- 외국인회원 ---------- */
+.jonForeign {}
+
+
+
+

@@ -1,0 +1,40 @@
+@charset "euc-kr";
+
+/* ========== [ÅÂ±× ÃÊ±âÈ­] ========== */
+* {margin:0; padding:0;}
+html, body {}
+body {
+	font-size:14px; line-height:1.428;
+	font-family:'³ª´®°íµñ','Nanum Gothic', webfontNG,'¸¼Àº °íµñ','Malgun Gothic',AppleGothic,dotum,'µ¸¿ò',Helvetica,sans-serif;
+	color:#555;
+	word-break:keep-all; word-wrap:break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+
+th {font-weight:normal;}
+
+img {border:0; vertical-align:middle; max-width:100%;}
+
+form, fieldset {display:block; border:0;}
+ol, ul {list-style: none;}
+
+input, textarea {font-family:webfontNG; font-size:14px;}
+
+hr {display:none;}
+table { border-collapse:collapse; border-spacing:0; width:100%; max-width:100%;}
+address, em {font-style:normal;}
+
+sub {font-size:11px;}
+sup {font-size:11px;}
+
+blockquote, q {quotes: none;}
+ins {}
+del {text-decoration: line-through;}
+strong, b {font-family:webfontNGB; font-weight:normal;}
+
+a {cursor:pointer;}
+a:link {color:#555; text-decoration:none;}
+a:visited {color:#999; text-decoration:none;}
+a:hover, a:focus {color:#555; text-decoration:none;}
+a:active {color:#555; text-decoration:none;}

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람 | 공유하기-이메일</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/popup.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<div id="popup-header">
+	<h1>공유하기</h1>
+	<p class="close"><button type="button" onclick="self.close();"><span>닫기</span></button></p>
+</div>
+<!-- //header -->
+
+<!-- contents -->
+<div id="popup-contents">
+	
+	<!-- 공유하기-이메일 -->
+	<div class="popShare popShare-email">
+		<form action="">
+			<h2>
+				<span class="iconType iconType-email"><span class="hidden"></span></span>
+				이메일로 공유하기
+			</h2>
+			
+			<p class="ctrl ctrl-senderName">
+				<label for="l-senderName">보내는 사람 이름</label>
+				<input type="text" class="input-text" id="l-senderName" />
+			</p>
+			
+			<p class="ctrl ctrl-senderEmail">
+				<label for="l-senderEmail">보내는 사람 이메일</label>
+				<input type="text" class="input-text" id="l-senderName" />
+				<span class="domain">@</span>
+				<input type="text" class="input-text input-domain" title="보내는 사람 이메일 도메인주소" />
+			</p>
+			
+			<p class="ctrl ctrl-receiverEmail">
+				<label for="l-receiverEmail">받는사람 이메일</label>
+				<input type="text" class="input-text" id="l-receiverEmail" />
+				<span class="domain">@</span>
+				<input type="text" class="input-text input-domain" title="받는사람 이메일 도메인주소" />
+			</p>
+			
+			<div class="ctrl ctrl-subject">
+				<label for="l-subject">제목</label>
+				<p class="input-w100p"><input type="text" class="input-text" id="l-subject" /></p>
+			</div>
+			
+			<div class="ctrl ctrl-content">
+				<label for="l-content">내용</label>
+				<p class="input-w100p">
+					<textarea type="text" class="textarea" cols="30" rows="10" id="l-content" /></textarea>
+				</p>
+			</div>
+			
+			<p class="buttonWrapType"> 
+				<a class="buttonType primary lg" href="#">
+					<span class="bg" style="width:75px;"><span class="icon icon-submit"></span> 보내기</span>
+				</a>
+			</p>
+		</form>
+	</div>
+	<!-- //공유하기-이메일 -->
+	
+</div>
+<!-- //contents -->
+
+</body>
+</html>

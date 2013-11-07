@@ -1,0 +1,15 @@
+@charset "euc-kr";
+
+@font-face {
+	font-family: 'webfontNG';
+	src: url('../webfont/NanumGothic.eot');
+	src: local("¡Ø"),
+		url('../webfont/NanumGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'webfontNGB';
+	src: url('../webfont/NanumGothicBold.eot');
+	src: local("¡Ø"),
+		url('../webfont/NanumGothicBold.woff') format('woff');
+}

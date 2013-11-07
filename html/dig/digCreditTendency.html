@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	
+	
+	<!-- contents -->
+	<div id="page-contents">
+		
+		<!-- digSty -->
+		<div class="digSty digCreditTendency">
+			<p class="page-path">
+				<span class="home">홈</span>
+				<span class="arr">&gt;</span> 신용성향
+				<span class="arr">&gt;</span> <span class="here">신용성향 진단</span>
+			</p>
+			<h2 class="page-title" id="skip-contents">신용성향 진단</h2>
+			
+			<p class="digTopMsgSty">
+				<span class="iconType iconType-arrB"></span>
+				<strong class="nickName">정현미</strong> 님의 신용성향진단 결과입니다. 
+			</p>
+
+			<!-- 진단결과 -->
+			<h3 class="h3Type-first">진단결과</h3>
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType digResultTable" summary="신용관리, 약속이행의 현재 상태 진단, 개선방안 정보">
+				<caption>진단결과</caption>
+				<colgroup>
+					<col width="85" /><col width="85" /><col width="325" /><col />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="colgroup" colspan="2">구분</th>
+						<th scope="col">현재 상태 진단</th>
+						<th scope="col" class="last-child">개선방안</th>
+					</tr>
+				</thead>
+				<tbody class="condensed-td depth al-th-c">
+					<tr>
+						<th scope="row" rowspan="2">신용관리</th>
+						<th>내신용관리</th>
+						<td>
+							<span class="ft-point2">부채금액과 카드사용액이 모두 너무 많으나, 소득수준이 좋으므로 신용여력이 양호합니다.</span>
+						</td>
+						<td class="last-child">
+							<span class="ft-point2">계획적으로 부채를 갚고 카드사용액을 줄일 경우 앞으로도 우수한 신용여력 유지가 가능합니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신용교육</th>
+						<td>
+							<span class="ft-point2">카드사용액이 적정하나 부채금액은 과다하여 신용여력이 부족합니다.</span>
+						</td>
+						<td class="last-child">
+							<span class="ft-point2">카드사용 수준은 유지하되, 부채를 줄이려는 노력이 필요합니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" colspan="2">약속이행</th>
+						<td>
+							<span class="ft-point2">고객님의 신용여력은 부채와 지출의 조정을 통한 향상이 필요합니다.</span>
+						</td>
+						<td class="last-child">
+							<span class="ft-point2">카드사용 수준은 유지하되, 부채를 줄이려는 노력이 필요함.</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- tableType -->
+			<!-- //진단결과 -->
+			
+			
+			<h3 class="h3Type">현황</h3>
+			<h4 class="h4Type-first">내신용관리</h4>
+			
+			<!-- digCreditTendency-edu -->
+			<div class="digCreditTendency-edu">
+				<!-- region1 -->
+				<div class="region region1">
+					<dl class="dl">
+						<dt>내신용관리</dt>
+						<dd>정현미 님</dd>
+						<dt>내신용관리도</dt>
+						<dd id="js-myCredit-point">100</dd>
+					</dl>
+					<div class="graph" id="js-graph1"></div>
+				</div>
+				<script type="text/javascript" src="../../rscs/jquery/raphael-min.js"></script>
+				<script type="text/javascript" src="../../rscs/jquery/jquery.graphAverage.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$("#js-graph1").graphAverage({
+							axisX : [0, 20, 40, 60, 80, 100],
+							my : {
+								value : 100,
+								text : "나",
+								img : {
+									good : "../../rscs/images/common/graph_my_good.png",
+									bad  : "../../rscs/images/common/graph_my_bad.png"	
+								}
+							}
+						});
+					});
+				</script>
+				<!-- //region1 -->
+				
+				<!-- region2 -->
+				<div class="region region2">
+					<table class="table" summary="내신용관리도 0~100점까지 5단계 설명">
+						<caption>내신용관리도</caption>
+						<colgroup>
+							<col width="109" /><col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">내신용관리도</th>
+								<th scope="col">의 미</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">100</th>
+								<td>내신용관리 최우수</td>
+							</tr>
+							<tr>
+								<th scope="row">80~99</th>
+								<td>내신용관리 우수</td>
+							</tr>
+							<tr>
+								<th scope="row">50~79</th>
+								<td>내신용관리 적절</td>
+							</tr>
+							<tr>
+								<th scope="row">20~49</th>
+								<td>내신용관리 노력 필요</td>
+							</tr>
+							<tr>
+								<th scope="row">0~19</th>
+								<td>내신용관리 시작 필요</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //region2 -->
+
+				<!-- region3 -->
+				<div class="region region3">
+					<div class="bg">
+						<div class="iconWrap"><span class="degree" id="js-degree-target"></span></div>
+						<p class="txt">
+							최근 1년간 본인신용관리 경험이 있고,
+							1년이상 장기간 꾸준히 신용관리
+							서비스를 이용하여 연체 없이(1년내)
+							성공적인 신용관리를 하고있어, 신용
+							관리도 85점으로 측정되어 신용관리가 
+							적절합니다.지금처럼 꾸준히 신용관리를 
+							해 나간다면, 신용 향상에 도움이 됩니다. 
+						</p>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						var point = Number($('#js-myCredit-point').text()),
+							$target = $("#js-degree-target");
+							
+						 if(point === 100)    $target.addClass("degree1");
+						 else if(80 <= point) $target.addClass("degree2");
+						 else if(50 <= point) $target.addClass("degree3");
+						 else if(20 <= point) $target.addClass("degree4");
+						 else                 $target.addClass("degree5");
+					});
+				</script>
+				<!-- //region3 -->
+			</div>
+			<!-- digCreditTendency-edu -->
+			
+			
+			<h4 class="h4Type">내신용교육</h4>
+			<p class="ulType">
+				<span class="ft-point1">신용교육 이수로 30 K-Point를 획득</span>하였습니다.
+				신용교육을 추가로 받고 싶으시면 <span class="ft-point1">'이수하기'</span>를 클릭하세요.
+			</p>
+			
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="교육명, 이수일자, 이수여부 정보">
+				<caption>내신용교육</caption>
+				<colgroup>
+					<col /><col width="153" /><col width="232" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">교육명</th>
+						<th scope="col">이수일자</th>
+						<th scope="col" class="last-child">이수여부</th>
+					</tr>
+				</thead>
+				<tbody class="al-c">
+					<tr>
+						<td class="al-l"><span class="ft-point3">1장 신용에 대한 이해</span></td>
+						<td><span class="ft-point2">2013년 12월 20일</span></td>
+						<td class="last-child">
+							<span class="ft-point2">이수</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="al-l"><span class="ft-point3">2장 신용정보에 대한 이해</span></td>
+						<td><span class="ft-point2">2013년 12월 20일</span></td>
+						<td class="last-child">
+							<span class="ft-point2">이수</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="al-l"><span class="ft-point3">3장 신용평가에 대한 이해</span></td>
+						<td><span class="ft-point2">2013년 12월 20일</span></td>
+						<td class="last-child">
+							<span class="ft-point2">미이수</span>&nbsp;&nbsp;
+							<a class="buttonType default" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 이수하기</span>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="al-l"><span class="ft-point3">4장 신용관리 방법 배우기</span></td>
+						<td><span class="ft-point2">2013년 12월 20일</span></td>
+						<td class="last-child">
+							<span class="ft-point2">이수</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- tableType -->
+			
+			
+			
+			<h4 class="h4Type">약속이행</h4>
+			<ul class="ulType udrH3">
+				<li>
+					최근 1년간 본인신용관리 경험이 있고, 1년 이상 장기간 꾸준히 신용관리서비스를 이용하여 연체 없이(1년내) 성공적인 신용관리를 하고 있어,
+					신용관리도가 85점으로 측정되어 신용관리가 적절합니다. 지금처럼 꾸준히 신용관리를 해 나간다면, 신용 향상에 도움이 됩니다.
+				</li>
+			</ul>
+			
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="구분, 내용, 정보등록여부, 납부내역기간(월), 성실납부여부, 정보등록 정보">
+				<caption>약속이행</caption>
+				<colgroup>
+					<col width="140" /><col width="174" /><col width="117" />
+					<col width="131" /><col width="117" /><col />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">구 분</th>
+						<th scope="col">내 용</th>
+						<th scope="col">정보등록여부</th>
+						<th scope="col">납부내역기간(월)</th>
+						<th scope="col">성실납부여부</th>
+						<th scope="col" class="last-child">정보등록</th>
+					</tr>
+				</thead>
+				<tbody class="depth al-th-c al-c">
+					<tr>
+						<th scope="row" rowspan="2">국세성실납부</th>
+						<td>소득금액증명</td>
+						<td>등록</td>
+						<td>-</td>
+						<td>성실납부</td>
+						<td class="last-child">
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>납세사실증명</td>
+						<td>등록</td>
+						<td>-</td>
+						<td>성실납부</td>
+						<td class="last-child">
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<th scope="row" rowspan="2">사회보장제도<br/>성실납부</th>
+						<td>건강보험</td>
+						<td>등록</td>
+						<td>-</td>
+						<td>성실납부</td>
+						<td class="last-child">
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>국민연금</td>
+						<td>등록</td>
+						<td>-</td>
+						<td>성실납부</td>
+						<td class="last-child">
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<th scope="row">지방세성실납부</th>
+						<td>(지방세) 모범납세자 증명</td>
+						<td>등록</td>
+						<td>-</td>
+						<td>성실납부</td>
+						<td class="last-child">
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- tableType -->
+			<p class="tableType-explain">(※ 등록된 정보의 활용기간이 지난 경우 미등록으로 표시됩니다.)</p>
+			
+			<!-- 신용여력이란 -->
+			<div class="collapseType">
+				<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+				<div class="box-m">
+					<h4 class="head">
+						<a href="collapseType" onclick="return collapseType(this);">
+							<span class="iconType iconType-document"></span>
+							<span class="txt">신용성향이란?</span>
+							<span class="txt-add">클릭하면 확인하실 수 있습니다.</span>
+							<span class="btn-collapse"><span class="hidden">내용 열기/닫기</span></span>
+						</a>
+					</h4>
+					
+					<!-- body -->
+					<div class="body">
+						<!-- 내용 -->
+						<p class="para">
+							신용성향은 신용거래정보 이외의 정보(신용관리 내역, 신용교육, 직접 등록한 비 금융정보 등)를 활용하여
+							기존의 신용거래로부터 파악하지 못한 긍정적인 요소를 신용도에 반영하는 또 하나의 척도입니다.
+						</p>
+						<p class="para">
+							신용관리 노력을 나타내는 신용관리 내역과 신용교육 이수여부, 비 금융정보 등록으로 약속이행 정도를 진단하고 개선점을 제공 해드립니다
+						</p>
+						<div class="dividerType"></div>
+						<ul class="ulType">
+							<li>신용관리: 신용관리서비스 이용 및 신용교육 이수 등 신용을 관리하기 위한 적극적 노력을 신용도에 반영합니다.</li>
+							<li>내신용관리: 본인의 신용을 관리하기 위하여 신용관리서비스를 꾸준히 이용하면 신용도 향상에 도움이 됩니다.</li>
+							<li>신용교육: 본 웹사이트에서 제공하는 신용교육을 이수하면 K-Point를 획득할 수 있습니다.</li>
+							<li>약속이행: 성실한 납부내역을 입증하면 K-Point를 획득할 수 있습니다.</li>
+						</ul>
+					</div>
+					<!-- //body -->
+				</div>
+				<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+			</div>
+			<!-- //신용여력이란 -->			
+
+			<!-- sns공유 -->
+			<p class="digSty-sns">
+				<span class="txt">신용진단을 받아보신 소감을 친구들과 나눠보세요.</span>
+				<a title="새창" target="_blank" href="../popup/popShare-twitter.html"
+					onclick="popup({ url:this.href, name:'popup', width:560, height:370, position:'center', scroll:true });return false;">
+					<span class="iconType iconType-twitter"><span class="hidden">트위터</span></span>
+				</a>
+				<a title="새창" target="_blank" href="../popup/popShare-facebook.html"
+					onclick="popup({ url:this.href, name:'popup', width:560, height:370, position:'center', scroll:true });return false;">
+					<span class="iconType iconType-facebook"><span class="hidden">페이스북</span></span>
+				</a>
+				<a title="새창" target="_blank" href="../popup/popShare-me2day.html"
+					onclick="popup({ url:this.href, name:'popup', width:560, height:370, position:'center', scroll:true });return false;">
+					<span class="iconType iconType-me2day"><span class="hidden">미투데이</span></span>
+				</a>
+				<a title="새창" target="_blank" href="../popup/popShare-email.html"
+					onclick="popup({ url:this.href, name:'popup', width:560, height:600, position:'center', scroll:true });return false;">
+					<span class="iconType iconType-email"><span class="hidden">메일공유</span></span>
+				</a>
+			</p>
+			<!-- //sns공유 -->
+		</div>
+		<!-- digSty -->
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

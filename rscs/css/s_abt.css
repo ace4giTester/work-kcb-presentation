@@ -1,0 +1,32 @@
+@charset "euc-kr";
+
+/* ========== [서비스소개] ========== */
+/* 신용과 사람 */
+.abtKcare {}
+.abtKcare-topmsg {margin:16px 0 32px; padding-top:10px; line-height:20px; color:#888;}
+.abtKcare-list {position:relative; width:798px; height:226px; margin-bottom:9px; background:url("../images/abt/abtKcare_list_bg.gif") 0 0 no-repeat;}
+.abtKcare-list li {position:absolute; width:389px; height:108px;}
+.abtKcare-list li.n1 {top:0; left:0;}
+.abtKcare-list li.n2 {top:0; left:409px;}
+.abtKcare-list li.n3 {top:118px; left:0;}
+.abtKcare-list li.n4 {top:118px; left:409px;}
+.abtKcare-list li dl {position:absolute; top:20px; left:120px;}
+.abtKcare-list li dl dt {margin-bottom:9px; font-size:16px; font-family:webfontNGB; color:#555;}
+.abtKcare-list li dl dd {line-height:18px; color:#888;}
+
+.abtKcare-article {padding:28px 0 28px 0; border-bottom:1px solid #e5e3e0; background-position:right bottom; background-repeat:no-repeat;}
+.abtKcare-article .h3Type {margin:0 0 22px;}
+.abtKcare-article .txt1 {margin-bottom:14px; font-size:20px; line-height:25px; color:#555;}
+.abtKcare-article .txt2 {margin-bottom:16px; line-height:20px; color:#888;}
+.abtKcare-article .buttons {}
+.abtKcare-article .buttons .bg {width:150px;}
+.abtKcare-article1 {background-image:url("../images/abt/abtKcare_article_img1.gif");}
+.abtKcare-article2 {background-image:url("../images/abt/abtKcare_article_img2.gif");}
+.abtKcare-article3 {background-image:url("../images/abt/abtKcare_article_img3.gif");}
+.abtKcare-article4 {}
+
+
+
+
+
+

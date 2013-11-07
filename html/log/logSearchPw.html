@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> 로그인 <span class="arr">&gt;</span> <span class="here">비밀번호 찾기</span></p>
+		<h2 class="page-title" id="skip-contents">비밀번호 찾기/재설정</h2>
+	
+		<p class="topMsgType">본인 인증 유형에 따라 아래 정보를 입력하세요. 정보 확인 후 비밀번호를 새롭게 설정할 수 있습니다.</p>
+
+		<ul class="tabType col-2" id="js-tab">
+			<li class="first-child"><a class="tab" href="#logSearchPwJumin"><span class="bg">주민등록번호</span></a></li>
+			<li class="last-child"><a class="tab" href="#logSearchPwIpin"><span class="bg">아이핀</span></a></li>
+		</ul>
+		
+		<!-- 주민등록번호 -->
+		<div class="boxType" id="logSearchPwJumin">
+			<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+			<div class="box-m">
+				<form action="">
+					<h3 class="hidden">이름/주민등록번호로 비밀번호 찾기/재설정</h3>
+					<p class="ctrl ctrl-id">
+						<label for="l-name">이름</label>
+						<input type="text" class="input-text" id="l-name" />
+					</p>
+					<p class="ctrl ctrl-pw">
+						<label for="l-pw">주민등록번호</label>
+						<input type="text" class="input-text" id="l-pw" title="주민등록번호 앞자리" />
+						<span class="dash">-</span>
+						<input type="password" class="input-text" title="주민등록번호 뒷자리" />
+						
+						<span class="ctrl-btnLogin">
+							<a class="buttonType primary" href="#"><span class="bg">확인</span></a>
+						</span>
+					</p>
+				</form>
+			</div>
+			<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+		</div>
+		<!-- //주민등록번호 -->
+		
+		<!-- 아이핀 -->
+		<div class="boxType" id="logSearchPwIpin">
+			<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+			<div class="box-m">
+				<h3 class="hidden">아이핀으로 비밀번호 찾기/재설정</h3>
+				<p class="para">
+					<span class="bul">아이핀 인증으로 실명 확인을 진행하려면 아이핀 인증을 클릭해주세요.</span>
+					<a class="buttonType primary" href="#"><span class="bg">아이핀인증</span></a>
+				</p>
+			</div>
+			<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+		</div>
+		<!-- //아이핀 -->
+		
+		<script type="text/javascript">
+			// 탭활성화
+			$("#js-tab").tabList({ active : 0 });
+		</script>
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

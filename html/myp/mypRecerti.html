@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> 마이페이지 <span class="arr">&gt;</span> <span class="here">개인정보 변경</span></p>
+		<h2 class="page-title" id="skip-contents">개인정보 변경</h2>
+	
+		<p class="topMsgType">
+			회원님의 개인정보를 변경할 수 있습니다.<br />
+			중요한 신용정보 관련 소식을 전해드리므로, 항상 최근의 연락처로 업데이트해 주세요.
+		</p>
+		<p class="topMsgType-expl">등록한 개인정보는 회원님의 동의 없이 공개, 또는 제3자에게 제공되지 않으며, 개인정보보호를 위한 보안시스템을 통해 보호되고 있습니다.</p>
+		
+		<!-- msgBoxType -->
+		<div class="msgBoxType">
+			<div class="box box-t"><span class="l"></span><span class="r"></span></div>
+			<ul class="list">
+				<li>외부로부터 <span class="ft-point1">정현미</span> 님의 개인정보를 안전하게 보호하기 위해 비밀번호 확인이 필요합니다.</li>
+				<li>비밀번호가 타인에게 노출되지 않도록 주의해주세요.</li>
+			</ul>
+			<div class="box box-b"><span class="l"></span><span class="r"></span></div>
+		</div>
+		<!-- //msgBoxType -->
+		
+		<ul class="tabType col-2" id="js-tab">
+			<li class="first-child"><a class="tab" href="#mypRecerti-pw"><span class="bg">비밀번호확인</span></a></li>
+			<li class="last-child"><a class="tab" href="#mypRecerti-certi"><span class="bg">공인인증서확인</span></a></li>
+		</ul>
+		
+		<!-- 비밀번호확인 -->
+		<form action="">
+			<div id="mypRecerti-pw">
+				<h3 class="hidden">개인정보 변경을 위한 비밀번호 확인</h3>
+				
+				<!-- tableType -->
+				<div class="tableType-topLine"><div></div></div>
+				<table class="tableType" summary="개인정보 확인을 위한 비밀번호 입력 확인 테이블">
+					<caption>비밀번호확인</caption>
+					<colgroup>
+						<col width="142" />
+						<col />
+					</colgroup>
+					<tbody class="padding-insert">
+						<tr>
+							<th scope="row"><span class="required">*</span> 아이디</th>
+							<td class="last-child">test1234홍길동</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="l-pw"><span class="required" title="필수입력">*</span> 비밀번호</label></th>
+							<td class="last-child"><input type="password" class="input-text" id="l-pw" /></td>
+						</tr>					
+					</tbody>
+				</table>
+				<div class="tableType-bottomLine"><div></div></div>
+				<!-- //tableType -->
+				
+				<div class="buttonWrapType">
+					<a class="buttonType primary lg" href="#">
+						<span class="bg"><span class="icon icon-check"></span> 확인</span>
+					</a> 
+				</div>
+			</div>
+		</form>
+		<!-- //비밀번호확인 -->
+		
+		<!-- 공인인증서확인 -->
+		<form action="">
+			<div id="mypRecerti-certi">
+				<h3 class="hidden">개인정보 변경을 위한 공인인증서 확인</h3>
+				
+				<!-- tableType -->
+				<div class="tableType-topLine"><div></div></div>
+				<table class="tableType" summary="개인정보 확인을 위한 주민등록번호/외국인등록번호 입력 확인 테이블">
+					<caption>공인인증서확인</caption>
+					<colgroup>
+						<col width="242" />
+						<col />
+					</colgroup>
+					<tbody class="padding-insert">
+						<tr>
+							<th scope="row"><label for="l-jumin">주민등록번호ㆍ외국인등록번호</label></th>
+							<td>
+								<input type="text" class="input-text" id="l-jumin" title="주민등록번호 앞자리" />
+								<span class="dash">-</span>
+								<input type="text" class="input-text" title="주민등록번호 뒷자리" />
+							</td>
+						</tr>					
+					</tbody>
+				</table>
+				<div class="tableType-bottomLine"><div></div></div>
+				<!-- //tableType -->
+				
+				<div class="buttonWrapType">
+					<a class="buttonType primary lg" href="#">
+						<span class="bg"><span class="icon icon-check"></span> 확인</span>
+					</a> 
+				</div>
+			</div>
+		</form>
+		<!-- 공인인증서확인 -->
+
+		<script type="text/javascript">
+			// 탭활성화
+			$("#js-tab").tabList({ active : 0 });
+		</script>
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

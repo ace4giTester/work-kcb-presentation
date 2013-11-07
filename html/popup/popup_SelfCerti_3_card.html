@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람 | 본인인증-카드정보입력</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/popup.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<div id="popup-header">
+	<h1>본인인증</h1>
+	<p class="close"><button type="button" onclick="self.close();"><span>닫기</span></button></p>
+</div>
+<!-- //header -->
+
+<!-- contents -->
+<div id="popup-contents">
+	
+	<!-- 본인인증 -->
+	<div class="popSelfCerti">
+		<form action="">
+			<div class="popSelfCerti-topMsg">
+				<h2>신용카드 본인확인</h2>
+				<p class="txt">본인명의의 신용카드 정보를 입력해주세요.</p>
+			</div>
+			
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="카드정보 정보 입력">
+				<caption>카드정보 정보 입력</caption>
+				<colgroup>
+					<col width="132" /><col />
+				</colgroup>
+				<tbody class="padding-insert">
+					<tr>
+						<th scope="row">주민등록번호</th>
+						<td class="last-child">901543 - *******</td>
+					</tr>
+
+					<tr class="popSelfCerti-insertCardInfo">
+						<th scope="row"><label for="l-cardNum"></label>카드번호</th>
+						<td class="last-child">
+							<input type="text" class="input-text" id="l-cardNum" title="카드 첫번째 그룹번호" />
+							
+							<span class="dash">-</span>
+							<input type="text" class="input-text" title="카드 두번째 그룹번호" />
+							
+							<span class="dash">-</span>
+							<input type="text" class="input-text" title="카드 세번째 그룹번호" />
+							
+							<span class="dash">-</span>
+							<input type="text" class="input-text" title="카드 네번째 그룹번호" />
+						</td>
+					</tr>
+					
+					<tr class="popSelfCerti-insertCardInfo">
+						<th scope="row"><label for="l-certiDuring">유효기간</label></th>
+						<td class="last-child">
+							<select class="select select1" id="l-certiDuring" title="카드 유효기간 월">
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+							
+							<select class="select select2" id="l-phone" title="카드 유효기간 년도">
+								<option>2012</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr class="popSelfCerti-insertCardInfo">
+						<th scope="row"><label for="l-pw"></label>비밀번호</th>
+						<td class="last-child">
+							<input type="password" class="input-text" id="l-pw" />
+							<span class="note">앞에 2자리</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- //tableType -->
+			
+			<p class="popSelfCerti-agree">
+				<input type="checkbox" class="input-check" id="l-agree" />
+				<label for="l-agree">개인정보 이용 및 활용에 동의합니다.</label>
+			</p>
+
+			<p class="buttonWrapType">
+				<a class="buttonType primary lg" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 확인</span>
+				</a>
+				<a class="buttonType default lg" href="#">
+					<span class="bg"><span class="icon icon-close"></span> 취소</span>
+				</a>
+			</p>
+		</form>
+	</div>
+	<!-- //본인인증 -->
+	
+</div>
+<!-- //contents -->
+
+</body>
+</html>

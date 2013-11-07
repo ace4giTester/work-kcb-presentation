@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>버튼</title>
+<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+<link rel="stylesheet" type="text/css" href="./htmlGuide.css" />
+<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+
+<!-- SyntaxHighlighter -->
+<link type="text/css" rel="stylesheet" href="./SyntaxHighlighter/styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="./SyntaxHighlighter/styles/shThemeEmacs.css" />
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shCore.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushAS3.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushBash.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCSharp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCpp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCss.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushDelphi.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushDiff.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushGroovy.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJScript.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJava.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJavaFX.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPerl.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPhp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPlain.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPowerShell.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPython.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushRuby.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushScala.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushSql.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushVb.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushXml.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shLegacy.js"></SCRIPT> 
+<script type="text/javascript">
+$(document).ready(function(){
+	dp.SyntaxHighlighter.ClipboardSwf = './SyntaxHighlighter/scripts/clipboard.swf';
+	dp.SyntaxHighlighter.HighlightAll('code');
+});
+</script>
+</head>
+<body class="htmlGuide">
+
+<h1 class="htmlGuide">class="buttonWrapType" (버튼 정렬하기)</h1>
+<ul class="htmlGuide">
+	<li>버튼은 이미지로 되어 있고 class="buttonWrapType" 으로 위치조정</li>
+	<li>기본은 가운데 정렬이고 al-l, al-c, al-r 으로 조정가능</li>
+</ul>
+
+<p class="buttonWrapType">
+	<a class="buttonType default lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 텍스트 다다다 버튼1</span>
+	</a>
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼2</span>
+	</a>
+</p>
+	
+<p class="buttonWrapType">	
+	<a class="buttonType default" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼3</span>
+	</a>
+	<a class="buttonType default2" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼4</span>
+	</a>
+	<a class="buttonType primary" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼5</span>
+	</a>
+</p>
+
+<p class="buttonWrapType">	
+	<a class="buttonType default sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼6</span>
+	</a>
+	<a class="buttonType default2 sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼7</span>
+	</a>
+	<a class="buttonType primary sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼8</span>
+	</a>
+</p>
+
+<p class="buttonWrapType al-r">
+	<a class="buttonType default lg block" href="#"><span class="bg">버튼 block 요소(한줄모두사용) - 컨텐츠사이즈 818까지 보이게 이미지자름</span></a>
+</p>
+	
+	
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<p class="buttonWrapType">
+	<a class="buttonType default lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 텍스트 다다다 버튼1</span>
+	</a>
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼2</span>
+	</a>
+</p>
+	
+<p class="buttonWrapType">	
+	<a class="buttonType default" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼3</span>
+	</a>
+	<a class="buttonType default2" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼4</span>
+	</a>
+	<a class="buttonType primary" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼5</span>
+	</a>
+</p>
+
+<p class="buttonWrapType">	
+	<a class="buttonType default sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼6</span>
+	</a>
+	<a class="buttonType default2 sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼7</span>
+	</a>
+	<a class="buttonType primary sm" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼8</span>
+	</a>
+</p>
+
+<p class="buttonWrapType al-r">
+	<a class="buttonType default lg block" href="#"><span class="bg">버튼 block 요소(한줄모두사용) - 컨텐츠사이즈 818까지 보이게 이미지자름</span></a>
+</p>
+</textarea>
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+
+
+<h1 class="htmlGuide">class="buttonWrapType al-r" 버튼정렬</h1>
+<ul class="htmlGuide">
+	<li>기본은 가운데 정렬됨</li>
+	<li>class="buttonWrapType al-l" 왼쪽정렬</li>
+	<li>class="buttonWrapType al-c" 가운데정렬</li>
+	<li>class="buttonWrapType al-r" 오른쪽정렬</li>
+</ul>
+
+
+<p class="buttonWrapType al-r">
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼1</span>
+	</a>
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼2</span>
+	</a>
+</p>
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<p class="buttonWrapType al-r">
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼1</span>
+	</a>
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> 버튼2</span>
+	</a>
+</p>	
+</textarea>
+
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+
+<h1 class="htmlGuide">class="buttonWrapType" (버튼 절대위치 놓기)</h1>
+<ul class="htmlGuide">
+	<li>부모에 buttonPosType 선언하여 절대위치 기준점 설정</li>
+	<li>좌표값
+		<ol>
+			<li>posT - 상</li>
+			<li>posB - 하</li>
+			<li>posL - 좌</li>
+			<li>posR - 우</li>
+			<li>posTR</li>
+			<li>posTL</li>
+			<li>posBR</li>
+			<li>posBL</li>
+		</ol>	
+	</li>
+</ul>
+
+<div class="buttonPosType" style="border:1px solid red">
+	<p>1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1</p>
+	
+	<p class="buttonWrapType posBR">
+		<a class="buttonType default lg" href="#"><span class="bg">버튼1</span></a>
+		<a class="buttonType primary lg" href="#"><span class="bg">버튼1</span></a>
+		
+		<a class="buttonType default" href="#"><span class="bg">버튼1</span></a>
+		<a class="buttonType primary" href="#"><span class="bg">버튼1</span></a>
+	</p>	
+</div>
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<div class="buttonPosType" style="border:1px solid red">
+	<p>1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1<br />1</p>
+	
+	<p class="buttonWrapType posBR">
+		<a class="buttonType default lg" href="#"><span class="bg">버튼1</span></a>
+		<a class="buttonType primary lg" href="#"><span class="bg">버튼1</span></a>
+		
+		<a class="buttonType default" href="#"><span class="bg">버튼1</span></a>
+		<a class="buttonType primary" href="#"><span class="bg">버튼1</span></a>
+	</p>	
+</div>
+</textarea>
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+
+
+
+
+
+
+
+<h1 class="htmlGuide">class="icon icon-아이콘네임"</h1>
+<ul class="htmlGuide">
+	<li>흰색과 검정색 두가지 종류 버튼 색에 맞게 들어가도록 css에서 설정됩니다.</li>
+</ul>
+
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-close"></span> class="icon icon-close"</span>
+	</a>
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-check"></span> class="icon-check"</span>
+	</a>
+
+	<a class="buttonType default sm" href="#">
+		<span class="bg"><span class="icon icon-check"></span> class="icon-check"</span>
+	</a>
+		
+	<a class="buttonType default sm" href="#">
+		<span class="bg"><span class="icon icon-check2"></span> class="icon-check2"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-arrT"></span> class="icon-arrT"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-arrR"></span> class="icon-arrR"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-arrB"></span> class="icon-arrB"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-arrL"></span> class="icon-arrL"</span>
+	</a>
+
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-refresh"></span> class="icon-refresh"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-write"></span> class="icon-write"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-home"></span> class="icon-home"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-zoom"></span> class="icon-zoom"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-down"></span> class="icon-down"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-list"></span> class="icon-list"</span>
+	</a>
+
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-delete"></span> class="icon-delete"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-document"></span> class="icon-document"</span>
+	</a>
+	
+	<a class="buttonType primary lg" href="#">
+		<span class="bg"><span class="icon icon-submit"></span> class="icon-submit"</span>
+	</a>
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+
+</body>
+</html>

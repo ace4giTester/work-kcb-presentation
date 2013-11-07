@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		
+		<!-- digSty -->
+		<div class="digSty digMain">
+			<p class="page-path">
+				<span class="home">홈</span>
+				<span class="arr">&gt;</span> 신용진단
+				<span class="arr">&gt;</span> <span class="here">종합진단</span>
+			</p>
+			<h2 class="page-title" id="skip-contents">종합진단</h2>
+			
+			<p class="digTopMsgSty">
+				<span class="iconType iconType-arrB"></span>
+				<strong class="nickName">정현미</strong> 님의 종합진단 결과입니다. 
+			</p>
+
+			<!-- 진단결과 -->
+			<h3 class="h3Type-first">진단결과</h3>
+			<div class="digMain-result">
+				
+				<!-- kscore -->
+				<div class="kscore">
+					<h4>K-Score</h4>
+					<p class="more"><a href="../abt/abtKcare.html"><em>K-Score</em>는 뭔가요?</a></p>
+					
+					<table class="table" summary="k-score 신용평점, 등급, 성실상환가능성 정보">
+						<caption>k-score점수</caption>
+						<colgroup>
+							<col width="180" /><col width="180" /><col />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">신용평점</th>
+								<th scope="col">등 급</th>
+								<th scope="col" class="last-child">성실상환가능성</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><em>770</em>점</td>
+								<td><em>2</em>등급</td>
+								<td class="last-child"><em>94</em>%</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<!-- graph -->
+					<div class="graph" id="js-graph-kscore"></div>
+					<!-- //graph -->
+
+					<p class="expl">
+						신용평점은 개인에 대한 신용정보를 종합하여 1~1000점으로 점수화 한 것으로 점수가 높을수록 대출/신용카드를 연체없이
+						성실하게 상환할 가능성이 높음을 의미합니다. 신용등급은 성실상환 가능성에 따라 신용평점을 10개의 그룹으로 분할한 것으로
+						1등급에 가까울수록 신용상태가 우량함을 나타냅니다.
+					</p>
+				</div>
+				<!-- //kscore -->
+				
+				<!-- kpoint -->
+				<div class="kpoint">
+					<h4>K-Point</h4>
+					<p class="more"><a href="../abt/abtKcare.html"><em>K-Point</em>는 뭔가요?</a></p>
+					<p class="cnt"><em>74</em>점</p>
+					
+					<!-- graph -->
+					<div class="graph" id="js-graph-kpoint"></div>
+					<!-- //graph -->
+					
+					<p class="expl">
+						K-Point는 개인이 등록한 비신용정보와 신용교육 이수정보를 종합하여 1~1000점으로 점수화한 것으로 점수가 높을수록 신용관리를
+						위해 노력하고 있음을 나타냅니다. 세금 등을 성실하게 납부한 이력을 보유하고 있거나 신용관리 교육을 이수하였을 시 K-Point가
+						높아집니다. 
+					</p>
+				</div>
+				<!-- //kpoint -->
+			</div>
+			
+			<script type="text/javascript" src="../../rscs/jquery/raphael-min.js"></script>
+			<script type="text/javascript" src="../../rscs/jquery/jquery.graphAverage.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#js-graph-kscore").graphAverage({
+						positive : "high", // 점수가 낮아야 좋은지 높아야 좋은지 체크 ( low(default) or high )
+						axisX : [0, 200, 400, 600, 800, 1000],
+						average : {
+							value : 200,
+							text : "평균",
+							img : "../../rscs/images/common/graph_average.png"
+						},
+						my : {
+							value : 800,
+							text : "나",
+							img : {
+								good : "../../rscs/images/common/graph_my_good.png",
+								bad  : "../../rscs/images/common/graph_my_bad.png"	
+							}
+						}
+					});
+
+					$("#js-graph-kpoint").graphAverage({
+						axisX : [0, 25, 50, 75, 100],
+						my : {
+							value : 75,
+							text : "나",
+							img : {
+								good : "../../rscs/images/common/graph_my_good.png",
+								bad  : "../../rscs/images/common/graph_my_bad.png"	
+							}
+						}
+					});
+				});
+			</script>
+			<!-- //진단결과 -->
+
+			
+			<!-- 신용진단 -->
+			<h3 class="h3Type">신용진단</h3>
+			<div class="digMain-credit">
+				<div class="dlWrap">
+					<dl class="dl">
+						<dt>신용행동</dt>
+						<dd class="txt">
+							<em>현재 상태 진단</em>
+							부채금액과 카드사용액이 모두 과다하나 소득수준이 양호하여 신용여력이 양호함.
+						</dd>
+						<dd class="more">
+							<a href="../dig/digCreditAction.html"><span class="icon"><span class="hidden">신용행동 자세히보기</span></span></a>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="dlWrap">
+					<dl class="dl">
+						<dt>신용여력</dt>
+						<dd class="txt">
+							<em>현재 상태 진단</em>
+							부채금액은 적정하며, 특히 카드 사용액은 양호하여 신용여력이 우수함.
+						</dd>
+						<dd class="more">
+							<a href="../dig/digRepay.html"><span class="icon"><span class="hidden">신용여력 자세히보기</span></span></a>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="dlWrap-last">
+					<dl class="dl">
+						<dt>신용성향</dt>
+						<dd class="txt">
+							<em>현재 상태 진단</em>
+							연체 없이(1년내) 신용관리 노력을 하고 있으나, 신용관리 이력이 1년 이내로 단기임.
+						</dd>
+						<dd class="more">
+							<a href="../dig/digCreditTendency.html"><span class="icon"><span class="hidden">신용성향 자세히보기</span></span></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- //신용진단 -->
+			
+			
+			<!-- 내용정보등록 -->
+			<h3 class="h3Type">내정보등록</h3>
+			<p class="paraType">신용과 사람에서 확인된 신용정보(국세성실납부, 지방세성실납부, 사회보장제도 성실납부) 등록 현황 및 신용교육 이수 현황입니다</p>
+
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="구분, 내용, 평가내용, 등록/이수여부 정보">
+				<caption>내정보등록</caption>
+				<colgroup>
+					<col width="144" /><col width="225" /><col width="225" /><col />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">구 분</th>
+						<th scope="col">내 용</th>
+						<th scope="col">평가내용</th>
+						<th scope="col" class="last-child">등록/ 이수여부</th>
+					</tr>
+				</thead>
+				<tbody class="depth al-th-c al-c">
+					<tr>
+						<th scope="row" rowspan="2">국세청</th>
+						<td>소득금액증명</td>
+						<td>신용여력</td>
+						<td class="last-child">
+							미등록
+							<a class="buttonType primary" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>납세사실증명</td>
+						<td>신용성향(약속이행)</td>
+						<td class="last-child">등 록</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="2">사회보장제도</th>
+						<td>건강보험</td>
+						<td>신용여력, 신용성향(약속이행)</td>
+						<td class="last-child">등 록</td>
+					</tr>
+					<tr>
+						<td>국민연금</td>
+						<td>신용여력, 신용성향(약속이행)</td>
+						<td class="last-child">등 록</td>
+					</tr>
+					<tr>
+						<th scope="row">지방세</th>
+						<td>(지방세) 모범납세자 증명</td>
+						<td>신용성향(약속이행)</td>
+						<td class="last-child">등 록</td>
+					</tr>
+					<tr>
+						<th scope="row" rowspan="4">신용교육</th>
+						<td>1장 - 신용에 대한 이해</td>
+						<td>신용성향</td>
+						<td class="last-child">
+							미이수
+							<a class="buttonType default" href="#">
+								<span class="bg"><span class="icon icon-check"></span> 이수하기</span>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2장 - 신용정보에 대한 이해</td>
+						<td>신용성향</td>
+						<td class="last-child">이 수</td>
+					</tr>
+					<tr>
+						<td>3장 - 신용평가에 대한 이해</td>
+						<td>신용성향</td>
+						<td class="last-child">이 수</td>
+					</tr>
+					<tr>
+						<td>4장 - 신용관리 방법 배우기</td>
+						<td>신용성향</td>
+						<td class="last-child">이 수</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- tableType -->
+			<!-- //내용정보등록 -->
+			
+		</div>
+		<!-- digSty -->
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

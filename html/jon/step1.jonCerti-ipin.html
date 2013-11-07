@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+	<!-- contents -->
+	<div id="page-contents">
+		<p class="page-path"><span class="home">홈</span> <span class="arr">&gt;</span> 회원가입 <span class="arr">&gt;</span> <span class="here">실명확인 및 약관동의</span></p>
+		<h2 class="page-title" id="skip-contents">회원가입</h2>
+
+		<!-- 회원가입 순서탭 -->
+		<div class="jonStepTab">
+			<ol>
+				<li class="step1 current">
+					<span class="icon"></span>
+					<span class="num"></span>
+					<span class="txt">실명확인 및 약관동의</span>
+				</li>
+				<li class="step2">
+					<span class="icon"></span>
+					<span class="num"></span>
+					<span class="txt">회원정보입력</span>
+				</li>
+				<li class="step3">
+					<span class="icon"></span>
+					<span class="num"></span>
+					<span class="txt">본인인증 &amp; 가입완료</span>
+				</li>
+			</ol>
+		</div>
+		<!-- 회원가입 순서탭 -->
+		
+		<h3 class="jonH3">실명확인 및 약관동의</h3>
+		<p class="jonPara">
+			깨끗하고 안전한 인터넷 서비스 이용을 위해 본인 실명확인을 받고 있으며, [정보통신망이용촉진 및 정보보호 등에 관한 법률]상의 개인정보
+			보호규정 및 정보통신부가 제정한 [개인정보취급방침]을 준수하고 있습니다.
+		</p>
+		
+		<!-- 탭 -->
+		<ul class="tabType col-2" id="js-tab">
+			<li class="first-child"><a class="tab" href="#"><span class="bg">주민등록번호</span></a></li>
+			<li class="last-child current"><a class="tab" href="#"><span class="bg">아이핀</span></a></li>
+		</ul>
+		<!-- 탭 -->
+
+		<form action="">
+			<!-- 아이핀 -->
+			<div class="boxType jonCerti-ipin">
+				<div class="box box-t"><div class="l"></div><div class="r"></div></div>
+				<div class="box-m">
+					<h3 class="hidden">아이핀으로 실명인증</h3>
+					<p class="txt">
+						아이핀 인증으로 실명 확인을 진행하려면 ‘아이핀 인증’ 을 클릭해 주세요.
+						<a class="buttonType primary" href="#"><span class="bg">아이핀인증</span></a>
+					</p>
+					<p class="expl">
+					   <em>* 아이핀(I-Pin)이란?</em><br />
+					   인터넷상에서 주민등록번호를 대신하여 본인임을 확인 받을 수 있는 사이버 신원 확인번호입니다.
+					</p>
+				</div>
+				<div class="box box-b"><div class="l"></div><div class="r"></div></div>
+			</div>
+			<!-- //아이핀 -->
+			
+			<!-- 약관동의 -->
+			<div class="jonAgree">
+				<!-- 서비스이용약관 -->
+				<div class="region region1">
+					<h3 class="jonH3">서비스 이용약관</h3>
+					<div class="jonAgree-box">
+						<iframe src="../agreement/service.html" frameborder="0" title="서비스 이용약관"></iframe>
+					</div>
+					<p class="jonAgree-check">
+						<input type="checkbox" class="input-check" id="l-agree-check1" />
+						<label for="l-agree-check1">위에 <em>서비스이용약관</em>에 동의합니다.</label>
+					</p>
+				</div>
+				<!-- //서비스이용약관 -->
+				
+				<!-- 개인정보수집및이용 -->
+				<div class="region region2">
+					<h3 class="jonH3">개인정보 수집 및 이용</h3>
+					<div class="jonAgree-box">
+						<iframe src="../agreement/personInfo.html" frameborder="0" title="개인정보 수집 및 이용"></iframe>
+					</div>
+					<p class="jonAgree-check">
+						<input type="checkbox" class="input-check" id="l-agree-check2" />
+						<label for="l-agree-check2">위에 <em>개인정보 수집 및 이용</em>에 동의 합니다.</label>
+					</p>
+				</div>
+				<!-- //개인정보수집및이용 -->
+				
+				<!-- 고유식별정보수집및이용 -->
+				<div class="region region3">
+					<h3 class="jonH3">고유식별정보 수집 및 이용</h3>
+					<div class="jonAgree-box">
+						<iframe src="../agreement/identification.html" frameborder="0" title="고유식별정보 수집 및 이용"></iframe>
+					</div>
+					<p class="jonAgree-check">
+						<input type="checkbox" class="input-check" id="l-agree-check3" />
+						<label for="l-agree-check3">위에 <em>고유식별정보 수집 및 이용</em>에 동의합니다.</label>
+					</p>
+				</div>
+				<!-- //고유식별정보수집및이용 -->
+			</div>
+			<!-- 약관동의 -->
+			
+			<p class="buttonWrapType">
+				<a class="buttonType primary lg" href="#">
+					<span class="bg"><span class="icon icon-write"></span> 회원정보 입력하기</span>
+				</a>
+				
+				<a class="buttonType default lg" href="#">
+					<span class="bg"><span class="icon icon-home"></span> 메인으로</span>
+				</a>
+			</p>
+		</form>
+		
+	</div>
+	<!-- //contents -->
+</body>
+</html>

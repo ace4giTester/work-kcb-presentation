@@ -1,0 +1,306 @@
+@charset "euc-kr";
+
+/* ========== [스스로 신용공부] ========== */
+/* 목차 */
+.stdMain {}
+.stdMain .region {overflow:hidden; position:relative; float:left; width:399px; height:294px; margin-bottom:29px;}
+.stdMain .region h3 {position:absolute; top:17px; left:36px; font-size:28px; line-height:38px; letter-spacing:-1px;}
+.stdMain .region h3 strong {display:block; font-size:38px; font-family:webfontNGB;}
+.stdMain .region .time {position:absolute; top:132px; left:61px; color:#999;}
+.stdMain .region .buttons {position:absolute; top:199px; left:33px; width:338px; height:40px; line-height:40px;}
+.stdMain .region .buttons .label {float:left; padding-left:31px; font-size:16px; font-family:webfontNGB; color:white;}
+.stdMain .region .buttons .btn {float:right; width:83px; height:40px; padding:0 19px 0 17px; text-decoration:none;}
+
+.stdMain .region .buttons-study {}
+.stdMain .region .buttons-study .btn {text-align:right; font-size:15px; font-family:webfontNGB; text-align:left;}
+.stdMain .region .buttons-review {background:url("../images/std/stdMain_btn_review.png") 0 0 no-repeat;}
+.stdMain .region .buttons-review .btn {text-align:right; font-size:15px; font-family:webfontNGB; color:#888 !important;}
+.stdMain .region .buttons-review .btn:hover {color:#333 !important;}
+
+/* 목차-1강 */
+.stdMain .region1 {background:url("../images/std/stdMain_region1_bg.gif") 0 0 no-repeat;}
+.stdMain .region1 h3 strong {color:#bf4d43;}
+.stdMain .region1 .buttons-study {background:url("../images/std/stdMain_btn_study1.png") 0 0 no-repeat;}
+.stdMain .region1 .buttons-study .label {color:#d47b75;}
+.stdMain .region1 .buttons-study .btn {color:#bf4d43;}
+
+/* 목차-2강 */
+.stdMain .region2 {float:right; background:url("../images/std/stdMain_region2_bg.gif") 0 0 no-repeat;}
+.stdMain .region2 h3 strong {color:#f86b0d;}
+.stdMain .region2 .buttons-study {background:url("../images/std/stdMain_btn_study2.png") 0 0 no-repeat;}
+.stdMain .region2 .buttons-study .label {color:#ffb552;}
+.stdMain .region2 .buttons-study .btn {color:#e86208;}
+
+/* 목차-3강 */
+.stdMain .region3 {background:url("../images/std/stdMain_region3_bg.gif") 0 0 no-repeat;}
+.stdMain .region3 h3 strong {color:#689911;}
+.stdMain .region3 .buttons-study {background:url("../images/std/stdMain_btn_study3.png") 0 0 no-repeat;}
+.stdMain .region3 .buttons-study .label {color:#acc54a;}
+.stdMain .region3 .buttons-study .btn {color:#5c8b08;}
+
+/* 목차-4강 */
+.stdMain .region4 {float:right; background:url("../images/std/stdMain_region4_bg.gif") 0 0 no-repeat;}
+.stdMain .region4 h3 strong {color:#4586cc;}
+.stdMain .region4 .buttons-study {background:url("../images/std/stdMain_btn_study4.png") 0 0 no-repeat;}
+.stdMain .region4 .buttons-study .label {color:#5696cd;}
+.stdMain .region4 .buttons-study .btn {color:#2e71ba;}
+
+
+/* 1,2,3,4..장 강의공통 - 레이아웃 */
+.stdChapterStyWrap {position:relative; width:100%;}
+.stdChapterStyWrap .stdChapterStyWrap-bg {position:absolute; top:0; right:0; width:350px; height:130px; background-position:100% 0; background-repeat:no-repeat;}
+.stdChapterStyWrap .page-path {margin-bottom:17px;}
+.stdChapterSty {clear:both; background:url("../images/std/stdChapterSty_bgm.gif") 0 0 repeat-y;}
+.stdChapterSty-head {min-height:1px; padding:35px 40px 5px; background:url("../images/std/stdChapterSty_head_bg.gif") 0 0 no-repeat;}
+.stdChapterSty-head .title {font-size:40px; font-family:webfontNGB; color:#444; letter-spacing:-1px;}
+.stdChapterSty-head .title em {color:#c84539;}
+.stdChapterSty-head .menuWrap {position:relative; overflow:hidden; width:100%;}
+.stdChapterSty-head .menuWrap:after {content:""; display:block; clear:both;}
+.stdChapterSty-head .menu {position:relative; float:left; margin:16px 0 0 -15px; padding-bottom:5px;}
+.stdChapterSty-head .menu li {float:left; margin:0 0 8px 14px; padding-left:15px; background:url("../images/std/stdChapterSty_head_menuBar.gif") 0 4px no-repeat;}
+.stdChapterSty-head .menu li span {float:left; height:20px; line-height:20px; white-space:nowrap; font-family:webfontNGB; text-decoration:none; letter-spacing:-1px; color:#888;}
+.stdChapterSty-head .menu li.current span {padding-right:22px; color:#c84539; background-image:url("../images/std/stdChapterSty_head_menuBul.gif"); background-position:100% 1px; background-repeat:no-repeat;}
+.stdChapterSty-body {padding:90px 0 50px; background:url("../images/std/stdChapterSty_body_bg.gif") 0 0 no-repeat;}
+.stdChapterSty-body .button-quizWrap {width:788px; margin:45px auto 0; text-align:center;}
+.stdChapterSty-body .button-quizWrap .txt-quiz {font-size:16px; color:#555; letter-spacing:-1px; background:white url("../images/std/stdChapterSty_body_quizBg.gif") 0 0 no-repeat;}
+.stdChapterSty-body .button-quizWrap .txt-quiz-add {margin-top:3px; letter-spacing:-1px; color:#999;}
+.stdChapterSty-body .button-quizWrap .button-quiz {margin-top:16px;}
+.stdChapterSty-body .button-quizWrap .button-quiz img {vertical-align:top;}
+.stdChapterSty-foot {padding-top:45px; background-color:white; background-image:url("../images/std/stdChapterSty_foot_bg.gif"); background-position:0 0; background-repeat:no-repeat;}
+.stdChapterSty-foot .buttonWrap {text-align:center;}
+.stdChapterSty-foot .button {display:inline-block; height:38px; margin:0 1px 0 2px; line-height:38px; text-decoration:none; text-align:left; font-size:15px; font-family:webfontNGB;}
+.stdChapterSty-foot .button-prev {width:52px; padding-left:38px; color:#737373; background:url("../images/std/stdChapterSty_foot_btnPrev.gif") 0 0 no-repeat;}
+.stdChapterSty-foot .button-next {width:73px; padding-left:17px; color:white; background-image:url("../images/std/stdChapterSty_foot_btnNext.gif"); background-position:0 0; background-repeat:no-repeat;}
+
+/* 1,2,3,4..장 강의공통 - 박스형식 타이틀+내용틀 */
+.stdChapterSty .region-head {width:788px; margin:0 auto;}
+.stdChapterSty .region-head:after {content:""; display:block; clear:both;}
+.stdChapterSty .region-head-num {float:left; width:104px; height:119px; margin-right:13px; background-image:url("../images/std/stdChapterSty_region_headIcon.png"); background-position:0 0; background-repeat:no-repeat;}
+.stdChapterSty .region-head-tit {margin-left:20px; font-size:28px; font-family:webfontNGB; letter-spacing:-1px; color:#444;}
+.stdChapterSty .region-head-tit strong {color:#c54236;}
+.stdChapterSty .region-head-p {margin:9px 0 21px 24px; font-size:15px; line-height:20px;}
+.stdChapterSty .region-body-topline {width:788px; height:48px; margin:0 auto; background:url("../images/std/stdChapterSty_region_bodyTopBg.gif") 0 0 no-repeat;}
+.stdChapterSty .region-body {overflow:hidden; width:786px; margin:0 auto; padding-bottom:40px; border:1px solid #d5d5d5; border-top:none; background:white;}
+
+/* 1,2,3,4..장 강의공통 - 박스형식 내용들 */
+.region-body .inc-para,
+.region-body .inc-para-anchor,
+.region-body .inc-para-last {margin:25px 0; padding:0 37px 0 27px; line-height:23px; color:#777;}
+.region-body .inc-para-anchor {background-image:url("../images/std/stdChapter_anchor.png"); background-position:0 5px; background-repeat:no-repeat;}
+
+.region-body .inc-list {width:720px; margin-left:29px;}
+.region-body .inc-list li {margin-bottom:15px; padding-bottom:15px; background-image:url("../images/std/stdChapter0102_dotline.gif"); background-position:left bottom; background-repeat:repeat-x;}
+.region-body .inc-list li.last-child {margin-bottom:0; padding-bottom:0; background:none;}
+.region-body .inc-list li dl {min-height:128px; padding-left:156px;}
+.region-body .inc-list li dl dt {margin-bottom:6px; padding-top:10px; font-size:18px; color:#c84539;}
+.region-body .inc-list li dl dd {line-height:23px; color:#777;}
+
+.region-body .inc-olist {width:720px; margin-left:29px;}
+.region-body .inc-olist li {margin-bottom:15px; padding-bottom:15px; background-image:url("../images/std/stdChapter0102_dotline.gif"); background-position:left bottom; background-repeat:repeat-x;}
+.region-body .inc-olist li.last-child {margin-bottom:0; padding-bottom:0; background:none;}
+.region-body .inc-olist li dl {min-height:128px; padding-left:128px; background-position:0 5px; background-repeat:no-repeat;}
+.region-body .inc-olist li dl dt {position:relative; margin-bottom:6px; padding-left:21px; font-size:18px; color:#555; letter-spacing:-1px;}
+.region-body .inc-olist li dl dt .bul {position:absolute; top:0; left:0; font-family:webfontNGB;}
+.region-body .inc-olist li dl dd {margin-top:12px; padding-right:25px; line-height:23px; color:#777;}
+.region-body .inc-olist li dl dd em.result {display:block; margin-bottom:3px; font-size:18px; font-family:webfontNGB;}
+.region-body .inc-olist li dl dd em.result-true {color:#ef6b09;}
+.region-body .inc-olist li dl dd em.result-false {color:#689911;}
+.region-body .inc-olist li.n1 dl {background-image:url("../images/std/stdChapter_olist_n1.gif");}
+.region-body .inc-olist li.n2 dl {background-image:url("../images/std/stdChapter_olist_n2.gif");}
+.region-body .inc-olist li.n3 dl {background-image:url("../images/std/stdChapter_olist_n3.gif");}
+.region-body .inc-olist li.n4 dl {background-image:url("../images/std/stdChapter_olist_n4.gif");}
+.region-body .inc-olist li.n5 dl {background-image:url("../images/std/stdChapter_olist_n5.gif");}
+.region-body .inc-olist li.n6 dl {background-image:url("../images/std/stdChapter_olist_n6.gif");}
+.region-body .inc-olist li.n7 dl {background-image:url("../images/std/stdChapter_olist_n7.gif");}
+
+.region-body .inc-visualImg {margin:25px 0 25px 29px;}
+.region-body .inc-visualImg img {vertical-align:top;}
+
+.region-body .inc-first-line {margin-top:0;}
+.region-body .inc-last-line {margin-bottom:0;}
+
+
+/* 스킨 */
+/* 스킨-틀 */
+.stdChapter1 .stdChapterStyWrap-bg {background-image:url("../images/std/stdChapterStyWrap_bg1.png");}
+.stdChapter1 .stdChapterSty-head .title em {color:#c84539;}
+.stdChapter1 .stdChapterSty-head .menu li.current span {color:#c84539; background-image:url("../images/std/stdChapterSty_head_menuBul.gif");}
+.stdChapter1 .stdChapterSty-foot {background-image:url("../images/std/stdChapterSty_foot_bg.gif");}
+.stdChapter1 .stdChapterSty-foot .button-next {background-image:url("../images/std/stdChapterSty_foot_btnNext.gif");}
+.stdChapter1 .region-head-tit strong {color:#c54236;}
+.stdChapter1 .region-body .inc-para-anchor {background-image:url("../images/std/stdChapter_anchor.png");}
+.stdChapter1 .region-body .inc-list li dl dt {color:#c84539;}
+
+.stdChapter2 .stdChapterStyWrap-bg {background-image:url("../images/std/stdChapterStyWrap_bg2.png");}
+.stdChapter2 .stdChapterSty-head .title em {color:#ef6b09;}
+.stdChapter2 .stdChapterSty-head .menu li.current span {color:#ef6b09; background-image:url("../images/std/stdChapterSty_head2_menuBul.gif");}
+.stdChapter2 .stdChapterSty-foot {background-image:url("../images/std/stdChapterSty_foot2_bg.gif");}
+.stdChapter2 .stdChapterSty-foot .button-next {background-image:url("../images/std/stdChapterSty_foot2_btnNext.gif");}
+.stdChapter2 .region-head-tit strong {color:#ef6b09;}
+.stdChapter2 .region-body .inc-para-anchor {background-image:url("../images/std/stdChapter_anchor2.png");}
+.stdChapter2 .region-body .inc-list li dl dt {color:#ef6b09;}
+
+.stdChapter3 .stdChapterStyWrap-bg {background-image:url("../images/std/stdChapterStyWrap_bg3.png");}
+.stdChapter3 .stdChapterSty-head .title em {color:#689911;}
+.stdChapter3 .stdChapterSty-head .menu li.current span {color:#689911; background-image:url("../images/std/stdChapterSty_head3_menuBul.gif");}
+.stdChapter3 .stdChapterSty-foot {background-image:url("../images/std/stdChapterSty_foot3_bg.gif");}
+.stdChapter3 .stdChapterSty-foot .button-next {background-image:url("../images/std/stdChapterSty_foot3_btnNext.gif");}
+.stdChapter3 .region-head-tit strong {color:#689911;}
+.stdChapter3 .region-body .inc-para-anchor {background-image:url("../images/std/stdChapter_anchor3.png");}
+.stdChapter3 .region-body .inc-list li dl dt {color:#689911;}
+
+.stdChapter4 .stdChapterStyWrap-bg {background-image:url("../images/std/stdChapterStyWrap_bg4.png");}
+.stdChapter4 .stdChapterSty-head .title em {color:#4a8acf;}
+.stdChapter4 .stdChapterSty-head .menu li.current span {color:#4a8acf; background-image:url("../images/std/stdChapterSty_head4_menuBul.gif");}
+.stdChapter4 .stdChapterSty-foot {background-image:url("../images/std/stdChapterSty_foot4_bg.gif");}
+.stdChapter4 .stdChapterSty-foot .button-next {background-image:url("../images/std/stdChapterSty_foot4_btnNext.gif");}
+.stdChapter4 .region-head-tit strong {color:#4a8acf;}
+.stdChapter4 .region-body .inc-para-anchor {background-image:url("../images/std/stdChapter_anchor4.png");}
+.stdChapter4 .region-body .inc-list li dl dt {color:#4a8acf;}
+
+/* 스킨-하나두울~! */
+.stdChapterSty.stdChapter1 .region-head-num1 {background-position:0 0;}
+.stdChapterSty.stdChapter1 .region-head-num2 {background-position:-100px 0;}
+.stdChapterSty.stdChapter1 .region-head-num3 {background-position:-200px 0;}
+.stdChapterSty.stdChapter1 .region-head-num4 {background-position:-300px 0;}
+
+.stdChapterSty.stdChapter2 .region-head-num1 {background-position:0 -150px;}
+.stdChapterSty.stdChapter2 .region-head-num2 {background-position:-100px -150px;}
+.stdChapterSty.stdChapter2 .region-head-num3 {background-position:-100px -150px;}
+.stdChapterSty.stdChapter2 .region-head-num4 {background-position:-200px -150px;}
+
+.stdChapterSty.stdChapter3 .region-head-num1 {background-position:0 -300px;}
+.stdChapterSty.stdChapter3 .region-head-num2 {background-position:-100px -300px;}
+.stdChapterSty.stdChapter3 .region-head-num3 {background-position:-200px -300px;}
+.stdChapterSty.stdChapter3 .region-head-num4 {background-position:-300px -300px;}
+
+.stdChapterSty.stdChapter4 .region-head-num1 {background-position:0 -450px;}
+.stdChapterSty.stdChapter4 .region-head-num2 {background-position:-100px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num3 {background-position:-200px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num4 {background-position:-300px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num5 {background-position:-400px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num6 {background-position:-500px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num7 {background-position:-600px -450px;}
+.stdChapterSty.stdChapter4 .region-head-num8 {background-position:-700px -450px;}
+
+/* -------------------- 강의내용 -------------------- */
+/* 1장 강의 */
+.stdChapter1-1 {}
+.stdChapter1-1 .head {background:url("../images/std/stdChapter0101_headBg.png") 489px 90px no-repeat;}
+.stdChapter1-1 .head .h3 {margin-bottom:3px; padding-left:33px; font-size:60px; color:#444; letter-spacing:-3px;}
+.stdChapter1-1 .head .h3 em {color:#c84539;}
+.stdChapter1-1 .head .txt1 {margin:0 0 33px 33px; font-size:18px; line-height:23px; color:#444;}
+.stdChapter1-1 .head .txt2 {margin:0 0 27px 33px; line-height:21px; color:#888;}
+
+.stdChapter1-2 {}
+.stdChapter1-2 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0102_thum1.gif") 0 0 no-repeat;}
+.stdChapter1-2 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0102_thum2.gif") 0 0 no-repeat;}
+.stdChapter1-2 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0102_thum3.gif") 0 0 no-repeat;}
+
+.stdChapter1-3 {}
+.stdChapter1-3 .region-body big {font-size:23px; line-height:1.4; letter-spacing:-1px; color:#000;}
+
+.stdChapter1-4 {}
+.stdChapter1-4 .thum {float:left; width:249px; height:265px;}
+.stdChapter1-4 h4 {margin:0 0 15px 275px; padding:4px 0 0; font-size:23px;}
+.stdChapter1-4 .ul {margin-left:275px;}
+.stdChapter1-4 .ul li {margin-bottom:10px; padding:3px 0 3px 30px; line-height:18px; color:#777;}
+.stdChapter1-4 .ul li.last-child {margin-bottom:0;}
+
+.stdChapter1-4 .benefit {margin:0 28px 45px;}
+.stdChapter1-4 .benefit:after {content:""; display:block; clear:both;}
+.stdChapter1-4 .benefit .thum {background:url("../images/std/stdChapter0104_thum1.jpg") 0 0 no-repeat;}
+.stdChapter1-4 .benefit h4 {color:#c74438;}
+.stdChapter1-4 .benefit .ul li {background:url("../images/std/stdChapter_icon_o.gif") 0 50% no-repeat;}
+
+.stdChapter1-4 .attention {margin:0 28px;}
+.stdChapter1-4 .attention:after {content:""; display:block; clear:both;}
+.stdChapter1-4 .attention .thum {background:url("../images/std/stdChapter0104_thum2.jpg") 0 0 no-repeat;}
+.stdChapter1-4 .attention h4 {color:#333;}
+.stdChapter1-4 .attention .ul li {background:url("../images/std/stdChapter_icon_x.gif") 0 50% no-repeat;}
+
+
+/* 2장 강의 */
+.stdChapter2-1 {}
+.stdChapter2-1 .head {background:url("../images/std/stdChapter0201_headBg.png") 388px 10px no-repeat;}
+.stdChapter2-1 .head .h3 {margin-bottom:3px; padding-left:33px; font-size:60px; color:#444; letter-spacing:-3px;}
+.stdChapter2-1 .head .h3 em {color:#ef6b09;}
+.stdChapter2-1 .head .list {margin:0 0 42px 34px;}
+.stdChapter2-1 .head .list li {line-height:21px; color:#333;}
+.stdChapter2-1 .head .txt1 {margin:0 0 33px 33px; font-size:18px; line-height:23px; color:#444;}
+.stdChapter2-1 .head .txt2 {margin:0 0 67px 33px; line-height:21px; color:#888;}
+
+.stdChapter2-2 {}
+.stdChapter2-2 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0202_thum1.gif") 0 0 no-repeat;}
+.stdChapter2-2 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0202_thum2.gif") 0 0 no-repeat;}
+.stdChapter2-2 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0202_thum3.gif") 0 0 no-repeat;}
+
+.stdChapter2-3 {}
+.stdChapter2-3 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0203_thum1.gif") 0 0 no-repeat;}
+.stdChapter2-3 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0203_thum2.gif") 0 0 no-repeat;}
+.stdChapter2-3 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0203_thum3.gif") 0 0 no-repeat;}
+.stdChapter2-3 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0203_thum4.gif") 0 0 no-repeat;}
+.stdChapter2-3 .region-body .inc-list li.n5 dl {background:url("../images/std/stdChapter0203_thum5.gif") 0 0 no-repeat;}
+
+.stdChapter2-4 {}
+
+/* 3장 강의 */
+.stdChapter3-1 {}
+.stdChapter3-1 .head {background:url("../images/std/stdChapter0201_headBg.png") 388px 10px no-repeat;}
+.stdChapter3-1 .head .h3 {margin-bottom:3px; padding-left:33px; font-size:60px; color:#444; letter-spacing:-3px;}
+.stdChapter3-1 .head .h3 em {color:#689911;}
+.stdChapter3-1 .head .txt {margin:0 25px 0 33px; line-height:23px; color:#888;}
+.stdChapter3-1 .head .txt em {font-size:28px; color:#689911;}
+.stdChapter3-1 .head .txt1 {margin-top:39px;}
+.stdChapter3-1 .head .txt2 {margin-top:26px;}
+.stdChapter3-1 .head .txt3 {margin-top:26px; margin-bottom:67px;}
+
+.stdChapter3-2 {}
+.stdChapter3-2 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0302_thum1.gif") 0 10px no-repeat;}
+.stdChapter3-2 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0302_thum1.gif") 0 10px no-repeat;}
+.stdChapter3-2 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0302_thum1.gif") 0 10px no-repeat;}
+.stdChapter3-2 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0302_thum1.gif") 0 10px no-repeat;}
+.stdChapter3-2 .region-body .inc-list li.n5 dl {background:url("../images/std/stdChapter0302_thum1.gif") 0 10px no-repeat;}
+
+.stdChapter3-3 {}
+
+.stdChapter3-4 {}
+
+/* 4장 강의 */
+.stdChapter4-1 {}
+
+.stdChapter4-2 {}
+
+.stdChapter4-3 {}
+.stdChapter4-3 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-3 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-3 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-3 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-3 .region-body .inc-list li.n5 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+
+.stdChapter4-4 {}
+
+.stdChapter4-5 {}
+.stdChapter4-5 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-5 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-5 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-5 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-5 .region-body .inc-list li.n5 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+
+.stdChapter4-6 {}
+.stdChapter4-6 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-6 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-6 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-6 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+
+.stdChapter4-7 {}
+.stdChapter4-7 .region-body .inc-list li.n1 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-7 .region-body .inc-list li.n2 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-7 .region-body .inc-list li.n3 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+.stdChapter4-7 .region-body .inc-list li.n4 dl {background:url("../images/std/stdChapter0403_thum1.gif") 0 10px no-repeat;}
+
+.stdChapter4-8 {}
+
+
+
+

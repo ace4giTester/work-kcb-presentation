@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람 | 본인인증-인증방법선택</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/popup.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<div id="popup-header">
+	<h1>본인인증</h1>
+	<p class="close"><button type="button" onclick="self.close();"><span>닫기</span></button></p>
+</div>
+<!-- //header -->
+
+<!-- contents -->
+<div id="popup-contents">
+	
+	<!-- 본인인증 -->
+	<div class="popSelfCerti">
+		<form action="">
+			<div class="popSelfCerti-topMsg">
+				<p class="txt">신용 금융정보는 안전한 정보보호를 위해 본인확인 후 열람 할 수 있습니다.<br />인증하실 방법을 선택하세요.</p>
+			</div>
+			
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="휴대폰, 신용카드, 범용공인인증서 중 본인인증 방법 선택">
+				<caption>본인인증 방법 선택</caption>
+				<colgroup>
+					<col width="132" /><col />
+				</colgroup>
+				<tbody class="padding-insert">
+					<tr>
+						<th scope="row">주민등록번호</th>
+						<td class="last-child">901543 - *******</td>
+					</tr>
+					
+					<tr class="popSelfCerti-how">
+						<th scope="row">인증방법</th>
+						<td class="last-child">
+							<div class="ctrlWrap" id="js-chgMsg">
+								<input type="radio" name="group" class="input-radio" id="l-certi1" checked="checked" />
+								<label for="l-certi1">휴대폰</label>
+								
+								<input type="radio" name="group" class="input-radio" id="l-certi2" />
+								<label for="l-certi2">신용카드</label>
+								
+								<input type="radio" name="group" class="input-radio" id="l-certi3" />
+								<label for="l-certi3">범용공인인증서</label>
+							</div>
+							
+							<p class="expl" id="js-chgMsg-target">본인명의의 휴대폰으로 인증번호를 전송받아<br />본인확인을 하실 수 있습니다.</p>
+							
+							<script type="text/javascript">
+							//<![CDATA[
+								$(document).ready(function(){
+									var $buttons = $("#js-chgMsg :radio"),
+										$target = $("#js-chgMsg-target"),
+										msg = [
+											"본인명의의 휴대폰으로 인증번호를 전송받아<br /> 본인확인을 하실 수 있습니다.",
+											"본인명의의 신용카드 상세정보 입력 후,<br /> 본인확인을 하실 수 있습니다.",
+											"본인명의의 범용공인인증서로 본인확인을<br /> 하실 수 있습니다."
+										];
+										
+									$buttons.bind("click", function(){
+										var index = $buttons.index(this);
+										$target.html( msg[index] );
+									});
+									$buttons.eq(0).trigger("click");
+								});
+							//]]>
+							</script>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- //tableType -->
+			
+			<p class="buttonWrapType">
+				<a class="buttonType primary lg" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 확인</span>
+				</a>
+				<a class="buttonType default lg" href="#">
+					<span class="bg"><span class="icon icon-close"></span> 취소</span>
+				</a>
+			</p>
+		</form>
+	</div>
+	<!-- //본인인증 -->
+	
+</div>
+<!-- //contents -->
+
+</body>
+</html>

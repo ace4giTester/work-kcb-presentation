@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>테이블</title>
+<link rel="stylesheet" type="text/css" href="../../rscs/css/sub.css" />
+<link rel="stylesheet" type="text/css" href="./htmlGuide.css" />
+<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+
+<!-- SyntaxHighlighter -->
+<link type="text/css" rel="stylesheet" href="./SyntaxHighlighter/styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="./SyntaxHighlighter/styles/shThemeEmacs.css" />
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shCore.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushAS3.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushBash.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCSharp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCpp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushCss.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushDelphi.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushDiff.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushGroovy.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJScript.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJava.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushJavaFX.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPerl.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPhp.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPlain.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPowerShell.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushPython.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushRuby.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushScala.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushSql.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushVb.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shBrushXml.js"></SCRIPT>
+<SCRIPT class="javascript" src="./SyntaxHighlighter/scripts/shLegacy.js"></SCRIPT> 
+<script type="text/javascript">
+$(document).ready(function(){
+	dp.SyntaxHighlighter.ClipboardSwf = './SyntaxHighlighter/scripts/clipboard.swf';
+	dp.SyntaxHighlighter.HighlightAll('code');
+});
+</script>
+</head>
+<body class="htmlGuide">
+
+<h1 class="htmlGuide">class="tableType" (기본)</h1>
+<ul class="htmlGuide">
+	<li>가로형 데이타 테이블</li>
+	<li>정렬
+		<ul>
+			<li>전체정렬 tbody="al-l al-c al-r" 중선택</li>
+			<li>한칸정렬    td="al-l al-c al-r" 중선택</li>
+		</ul>
+	</li>
+</ul>
+
+<h3 class="h3Type-first">자기등록 정보와 활용</h3>
+
+<div class="tableType-topInfo">
+	<div class="won">(단위: 원)</div>
+</div>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="자기정보 직접등록, 자동등록 정보별 평가내용 및 발급방법, 증명하기">
+	<caption>자기등록 정보와 활용</caption>
+	<colgroup>
+		<col width="123" /><col width="174" /><col width="183" /><col width="184" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">정보명</th>
+			<th scope="col">평가내용</th>
+			<th scope="col">발급방법</th>
+			<th scope="col" class="last-child">증명하기</th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>국세청 모범납세자</td>
+			<td>국세청 모범납세자</td>
+			<td class="al-l">신용성향(약속이행)</td>
+			<td class="al-r">국세청에서 직접<br />정보를 받아 등록</td>
+			<td class="last-child"></td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+
+<p class="tableType-explain">p타입 - 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</p>
+<ul class="tableType-explain">
+	<li>테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</li>
+	<li>테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</li>
+</ul>
+
+<div class="tableType-explainWrap">
+	<ul class="tableType-explain">
+		<li>테이블하단글과 버튼이 있는 경우</li>
+		<li>테이블하단글과 버튼이 있는 경우</li>
+	</ul>
+	
+	<div class="buttons">
+		<a class="buttonType primary lg" href="#">
+			<span class="bg"><span class="icon icon-check"></span> 건강보험 등록하기</span>
+		</a>
+		<a class="buttonType primary lg" href="#">
+			<span class="bg"><span class="icon icon-check"></span> 국민연금 등록하기</span>
+		</a>
+	</div>
+</div>
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<h3 class="h3Type-first">자기등록 정보와 활용</h3>
+
+<div class="tableType-topInfo">
+	<div class="won">(단위: 원)</div>
+</div>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="자기정보 직접등록, 자동등록 정보별 평가내용 및 발급방법, 증명하기">
+	<caption>자기등록 정보와 활용</caption>
+	<colgroup>
+		<col width="123" /><col width="174" /><col width="183" /><col width="184" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">정보명</th>
+			<th scope="col">평가내용</th>
+			<th scope="col">발급방법</th>
+			<th scope="col" class="last-child">증명하기</th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>국세청 모범납세자</td>
+			<td>국세청 모범납세자</td>
+			<td class="al-l">신용성향(약속이행)</td>
+			<td class="al-r">국세청에서 직접<br />정보를 받아 등록</td>
+			<td class="last-child"></td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+
+<p class="tableType-explain">p타입 - 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</p>
+<ul class="tableType-explain">
+	<li>테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</li>
+	<li>테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글 테이블하단글</li>
+</ul>
+
+<div class="tableType-explainWrap">
+	<ul class="tableType-explain">
+		<li>테이블하단글과 버튼이 있는 경우</li>
+		<li>테이블하단글과 버튼이 있는 경우</li>
+	</ul>
+	
+	<div class="buttons">
+		<a class="buttonType primary lg" href="#">
+			<span class="bg"><span class="icon icon-check"></span> 건강보험 등록하기</span>
+		</a>
+		<a class="buttonType primary lg" href="#">
+			<span class="bg"><span class="icon icon-check"></span> 국민연금 등록하기</span>
+		</a>
+	</div>
+</div>
+</textarea>
+
+
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">class="tableType" (thead>tr 여러줄일 경우)</h1>
+<ul class="htmlGuide">
+	<li>thead 부분이 여러줄일 경우 아래선 굵기 적용을 위해서 class적용</li>
+	<li>tr에 클래스 적용 : class="colgroup"</li>
+	<li>tr에 클래스 적용 : class="colgroup-end" (마지막 tr)</li>
+</ul>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="소득금액정보 평가내용 및 발급방법, 등록, 발급기관 보기">
+	<caption>소득금액증명 등록</caption>
+	<colgroup>
+		<col width="123" /><col width="260" /><col width="125" /><col width="125" /><col />
+	</colgroup>
+	<thead>
+		<tr class="colgroup">
+			<th rowspan="2" scope="colgroup" class="colgroup-end">정 보</th>
+			<th colspan="3" scope="colgroup">인터넷발급</th>
+			<th scope="col" class="last-child">방문발급</th>
+		</tr>
+		<tr class="colgroup-end">
+			<th scope="col"><span class="ft-n">평가내용</span></th>
+			<th scope="col"><span class="ft-n">발급방법</span></th>
+			<th scope="col"><span class="ft-n">등록하기</span></th>
+			<th scope="col" class="last-child"><span class="ft-n">발급기관</span></th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>소득금액증명</td>
+			<td class="al-l pdtb0">
+				국세청홈텍스<br />
+				<span class="ft-sp0">( <a target="_blank" title="새창" href="http://www.Hometax.go.kr">www.Hometax.go.kr</a> )</span>
+			</td>
+			<td>
+				<a class="buttonType default" href="#">
+					<span class="bg"><span class="icon icon-zoom"></span> 보 기</span>
+				</a>
+			</td>
+			<td>
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+			<td class="last-child">각 시도군청 지방 국세청</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- //tableType -->
+		
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="소득금액정보 평가내용 및 발급방법, 등록, 발급기관 보기">
+	<caption>소득금액증명 등록</caption>
+	<colgroup>
+		<col width="123" /><col width="260" /><col width="125" /><col width="125" /><col />
+	</colgroup>
+	<thead>
+		<tr class="colgroup">
+			<th rowspan="2" scope="colgroup" class="colgroup-end">정 보</th>
+			<th colspan="3" scope="colgroup">인터넷발급</th>
+			<th scope="col" class="last-child">방문발급</th>
+		</tr>
+		<tr class="colgroup-end">
+			<th scope="col"><span class="ft-n">평가내용</span></th>
+			<th scope="col"><span class="ft-n">발급방법</span></th>
+			<th scope="col"><span class="ft-n">등록하기</span></th>
+			<th scope="col" class="last-child"><span class="ft-n">발급기관</span></th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>소득금액증명</td>
+			<td class="al-l pdtb0">
+				국세청홈텍스<br />
+				<span class="ft-sp0">( <a target="_blank" title="새창" href="http://www.Hometax.go.kr">www.Hometax.go.kr</a> )</span>
+			</td>
+			<td>
+				<a class="buttonType default" href="#">
+					<span class="bg"><span class="icon icon-zoom"></span> 보 기</span>
+				</a>
+			</td>
+			<td>
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+			<td class="last-child">각 시도군청 지방 국세청</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- //tableType -->
+</textarea>
+
+
+
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">tbody class="depth"</h1>
+<ul class="htmlGuide">
+	<li>깊이가 있는 테이블 디자인</li>
+</ul>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="구분, 내용, 평가내용, 등록/이수여부 정보">
+	<caption>내정보등록</caption>
+	<colgroup>
+		<col width="144" /><col width="225" /><col width="225" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">내 용</th>
+			<th scope="col">평가내용</th>
+			<th scope="col" class="last-child">등록/ 이수여부</th>
+		</tr>
+	</thead>
+	<tbody class="depth al-th-c al-c">
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="구분, 내용, 평가내용, 등록/이수여부 정보">
+	<caption>내정보등록</caption>
+	<colgroup>
+		<col width="144" /><col width="225" /><col width="225" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">내 용</th>
+			<th scope="col">평가내용</th>
+			<th scope="col" class="last-child">등록/ 이수여부</th>
+		</tr>
+	</thead>
+	<tbody class="depth al-th-c al-c">
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+</textarea>
+
+
+
+
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">tbody class="condensed" 좁은상하간격 테이블</h1>
+<ul class="htmlGuide">
+	<li>condensed : th, td 모두</li>
+	<li>condensed-th : th만</li>
+	<li>condensed-td : td만</li>
+</ul>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="구분, 내용, 평가내용, 등록/이수여부 정보">
+	<caption>내정보등록</caption>
+	<colgroup>
+		<col width="144" /><col width="225" /><col width="225" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">내 용</th>
+			<th scope="col">평가내용</th>
+			<th scope="col" class="last-child">등록/ 이수여부</th>
+		</tr>
+	</thead>
+	<tbody class="condensed-td depth al-th-c al-c">
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력<br/>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="구분, 내용, 평가내용, 등록/이수여부 정보">
+	<caption>내정보등록</caption>
+	<colgroup>
+		<col width="144" /><col width="225" /><col width="225" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">구 분</th>
+			<th scope="col">내 용</th>
+			<th scope="col">평가내용</th>
+			<th scope="col" class="last-child">등록/ 이수여부</th>
+		</tr>
+	</thead>
+	<tbody class="condensed-td depth al-th-c al-c">
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력<br/>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">국세청</th>
+			<td>소득금액증명</td>
+			<td>신용여력</td>
+			<td class="last-child">
+				<a class="buttonType primary" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 등록하기</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- tableType -->
+</textarea>
+
+
+
+
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">class="tableType" + tbody class="padding-insert"</h1>
+<ul class="htmlGuide">
+	<li>가로형 테이블의 경우 th,td 좌우 padding : 10px 로 설정되어 있음</li>
+	<li>tbody에 .padding-insert 선언시 입력형식의 여백을 가짐</li>
+</ul>
+
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="개인정보 확인을 위한 비밀번호 입력 확인 테이블">
+	<caption>비밀번호확인</caption>
+	<colgroup>
+		<col width="142" />
+		<col />
+	</colgroup>
+	<tbody class="padding-insert">
+		<tr>
+			<th scope="row"><span class="required">*</span> 아이디</th>
+			<td class="last-child">test1234홍길동</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="l-pw"><span class="required" title="필수입력">*</span> 비밀번호</label></th>
+			<td class="last-child"><input type="password" class="input-text" id="l-pw" /></td>
+		</tr>					
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- //tableType -->
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<!-- tableType -->
+<div class="tableType-topLine"><div></div></div>
+<table class="tableType" summary="개인정보 확인을 위한 비밀번호 입력 확인 테이블">
+	<caption>비밀번호확인</caption>
+	<colgroup>
+		<col width="142" />
+		<col />
+	</colgroup>
+	<tbody class="padding-insert">
+		<tr>
+			<th scope="row"><span class="required">*</span> 아이디</th>
+			<td class="last-child">test1234홍길동</td>
+		</tr>
+		<tr>
+			<th scope="row"><label for="l-pw"><span class="required" title="필수입력">*</span> 비밀번호</label></th>
+			<td class="last-child"><input type="password" class="input-text" id="l-pw" /></td>
+		</tr>					
+	</tbody>
+</table>
+<div class="tableType-bottomLine"><div></div></div>
+<!-- //tableType -->
+</textarea>
+
+
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">class="tableType tableType-column"</h1>
+<ul class="htmlGuide">
+	<li>세로 column형식 테이블 사용</li>
+</ul>
+
+
+<!-- tableType-column -->
+<table class="tableType tableType-column" summary="자기정보 직접등록, 자동등록 정보별 평가내용 및 발급방법, 증명하기">
+	<caption>자기등록 정보와 활용</caption>
+	<colgroup>
+		<col width="123" /><col width="174" /><col width="183" /><col width="184" /><col />
+	</colgroup>
+	<thead>
+		<tr class="first-line">
+			<th scope="col">구 분</th>
+			<th scope="col" class="column">정보명</th>
+			<th scope="col">평가내용</th>
+			<th scope="col">발급방법</th>
+			<th scope="col" class="column last-child">증명하기</th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>국세청 모범납세자</td>
+			<td class="column">국세청 모범납세자</td>
+			<td>신용성향(약속이행)</td>
+			<td>국세청에서 직접<br />정보를 받아 등록</td>
+			<td class="column last-child"></td>
+		</tr>
+	</tbody>
+</table>
+<!-- //tableType-column -->
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<!-- tableType-column -->
+<table class="tableType tableType-column" summary="자기정보 직접등록, 자동등록 정보별 평가내용 및 발급방법, 증명하기">
+	<caption>자기등록 정보와 활용</caption>
+	<colgroup>
+		<col width="123" /><col width="174" /><col width="183" /><col width="184" /><col />
+	</colgroup>
+	<thead>
+		<tr class="first-line">
+			<th scope="col">구 분</th>
+			<th scope="col" class="column">정보명</th>
+			<th scope="col">평가내용</th>
+			<th scope="col">발급방법</th>
+			<th scope="col" class="column last-child">증명하기</th>
+		</tr>
+	</thead>
+	<tbody class="al-c">
+		<tr>
+			<td>국세청 모범납세자</td>
+			<td class="column">국세청 모범납세자</td>
+			<td>신용성향(약속이행)</td>
+			<td>국세청에서 직접<br />정보를 받아 등록</td>
+			<td class="column last-child"></td>
+		</tr>
+	</tbody>
+</table>
+<!-- //tableType-column -->
+</textarea>
+	
+	
+	
+	
+<div class="htmlGudie-hr">-------------------------------------------------------------------------------------</div>
+
+<h1 class="htmlGuide">class="tableType2"</h1>
+<ul class="htmlGuide">
+	<li></li>
+</ul>
+
+<table class="tableType2" summary="부채, 부채상환, 연체, 연체상환 별 활용비중 및 정의">
+	<caption>신용행동이란</caption>
+	<colgroup>
+		<col width="110" /><col width="76" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">신용행동 분류</th>
+			<th scope="col">활용비중</th>
+			<th scope="col" class="last-child">정 의</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">부 채</th>
+			<td class="bg-th al-c">32.0%</td>
+			<td class="last-child">대출 등 신용거래를 한 행위를 뜻하며, 주로 부채를 사용한 규모/ 사유/ 방식/ 시기 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">부채상환</th>
+			<td class="bg-th al-c">35.1%</td>
+			<td class="last-child">부채를 정해진 기간에 성실히 갚는 행위를 뜻하며, 주로 부채상환 규모/ 방식/ 건전한 신용거래기간 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">연 체</th>
+			<td class="bg-th al-c">20.9%</td>
+			<td class="last-child">부채를 갚아야 할 시기에 갚지 못한 행위를 뜻하며, 주로 연체횟수/ 연체유지기간/ 연체규모 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">연체상환</th>
+			<td class="bg-th al-c">12.0%</td>
+			<td class="last-child">부채를 갚아야 할 시기를 지나서 늦게 갚은 행위를 뜻하며, 주로 연체상환방식/ 연체상환시기 등이 이에 해당합니다.</td>
+		</tr>
+	</tbody>
+</table>
+<ul class="tableType2-explain">
+	<li>
+		K-Score에 활용되는 고객님의 신용행동은 크게 부채, 부채상환,연체, 연체상환으로 구분됩니다.<br/>
+		각각의 행동이  K-Score에 활용되는 비중은 개인상황에 따라 다를 수 있습니다.
+	</li>
+</ul>
+
+<textarea name="code" class="brush:c; gutter: false" cols="60" rows="10">
+<table class="tableType2" summary="부채, 부채상환, 연체, 연체상환 별 활용비중 및 정의">
+	<caption>신용행동이란</caption>
+	<colgroup>
+		<col width="110" /><col width="76" /><col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">신용행동 분류</th>
+			<th scope="col">활용비중</th>
+			<th scope="col" class="last-child">정 의</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">부 채</th>
+			<td class="bg-th al-c">32.0%</td>
+			<td class="last-child">대출 등 신용거래를 한 행위를 뜻하며, 주로 부채를 사용한 규모/ 사유/ 방식/ 시기 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">부채상환</th>
+			<td class="bg-th al-c">35.1%</td>
+			<td class="last-child">부채를 정해진 기간에 성실히 갚는 행위를 뜻하며, 주로 부채상환 규모/ 방식/ 건전한 신용거래기간 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">연 체</th>
+			<td class="bg-th al-c">20.9%</td>
+			<td class="last-child">부채를 갚아야 할 시기에 갚지 못한 행위를 뜻하며, 주로 연체횟수/ 연체유지기간/ 연체규모 등이 이에 해당합니다.</td>
+		</tr>
+		<tr>
+			<th scope="row">연체상환</th>
+			<td class="bg-th al-c">12.0%</td>
+			<td class="last-child">부채를 갚아야 할 시기를 지나서 늦게 갚은 행위를 뜻하며, 주로 연체상환방식/ 연체상환시기 등이 이에 해당합니다.</td>
+		</tr>
+	</tbody>
+</table>
+<ul class="tableType2-explain">
+	<li>
+		K-Score에 활용되는 고객님의 신용행동은 크게 부채, 부채상환,연체, 연체상환으로 구분됩니다.<br/>
+		각각의 행동이  K-Score에 활용되는 비중은 개인상황에 따라 다를 수 있습니다.
+	</li>
+</ul>
+</textarea>
+	
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,399 @@
+@charset "euc-kr";
+
+@import url("fontface.css");  /* 웹폰트 */
+
+@import url("reset.css");  /* css 초기화 */ 
+@import url("common.css"); /* 공통 */
+@import url("layout.css"); /* 레이아웃 */
+@import url("s_dig.css");  /* 신용진단 */
+
+/* ========== [팝업] ========== */
+body {background:none;}
+#page-wrap {background:none;}
+
+/* [팝업스타일1] - 레이아웃 */
+#popup-header {position:fixed; top:0; left:0; width:100%; height:48px; background:#f18000 url("../images/popup/popupHeader_bg.gif") 0 0 repeat-x; z-index:500;}
+#popup-header h1 {height:48px; padding-left:17px; border-left:1px solid #f8982d; border-right:1px solid #df7601; font-family:webfontNGB; font-size:18px; line-height:48px; color:white;}
+#popup-header .close {position:absolute; top:13px; right:20px;}
+#popup-header .close button {float:left; overflow:hidden; width:22px; height:22px; border:none; cursor:pointer; background:url("../images/popup/popupHeader_close.gif") 0 0 no-repeat;}
+#popup-header .close button span {float:left; overflow:hidden; width:100%; height:100%; text-indent:-999px;}
+#popup-contents {padding:78px 20px 30px;}
+
+
+/* ---------- 발급방법안내 ---------- */
+.popRegGuide {}
+.popRegGuide-title {position:relative; height:30px; }
+.popRegGuide h2 {float:left; font-size:16px; line-height:25px; font-family:webfontNGB; color:#333;}
+.popRegGuide .buttons {position:absolute; bottom:8px; right:0;}
+.popRegGuide-title-bg {overflow:hidden; height:2px; margin:0 0 26px; background:#a9a9a9;}
+.popRegGuide-title-bg div {overflow:hidden; width:30px; height:2px; background:#ef8233;}
+
+.popRegGuide h3 {position:relative; padding-left:40px; font-size:16px; font-family:webfontNGB; color:#555;}
+.popRegGuide h3 .bul {position:absolute; top:0; left:0; width:24px; height:21px; padding:2px 11px 0 0; font-size:14px; font-family:webfontNGB; color:white; text-align:center; vertical-align:middle; background:url("../images/popup/popRegGuide_h_bg.gif") 0 0 no-repeat;}
+
+.popRegGuide .tabType {max-width:1200px;}
+
+.popRegGuide .list {margin:0 0 0 39px;}
+.popRegGuide .list li {margin:3px 0; color:#888; line-height:18px;}
+.popRegGuide .list li a {color:#888;}
+.popRegGuide .imgType {margin:6px 0 15px; text-align:left;}
+.popRegGuide .explList {}
+.popRegGuide .explList li {margin:4px 0; font-size:13px; line-height:20px; color:#777;}
+.popRegGuide .explList li .arr {overflow:hidden; display:inline-block; width:9px; height:0px; padding-top:11px; vertical-align:middle; background:url("../images/common/arr1.png") 0 0 no-repeat;}
+.popRegGuide .explList2 {margin:20px 0 15px;}
+.popRegGuide .explList2 li {padding-left:10px; font-size:13px; line-height:20px; color:#777; background:url("../images/common/bul_dot.gif") 1px 8px no-repeat;}
+.popRegGuide .explList2 li .arr {overflow:hidden; display:inline-block; width:9px; height:0px; padding-top:11px; vertical-align:middle; background:url("../images/common/arr1.png") 0 0 no-repeat;}
+
+.popRegGuide .hr {overflow:hidden; position:relative; height:24px; margin:26px 0 21px; background:url("../images/popup/popRegGuide_hr.gif") 0 0 repeat-x;}
+.popRegGuide .hr div {position:absolute; top:0; left:50%; width:48px; height:24px; margin-left:-24px; background:url("../images/popup/popRegGuide_hr2.gif") 0 0 no-repeat;}
+
+/* 발급방법안내-소득금액증명 */
+.popRegGuide-income {}
+
+/* 발급방법안내-납세사실증명서 */
+.popRegGuide-taxCerti {}
+
+/* 발급방법안내-모범납세증명서-서울시 */
+.popRegGuide-exemplar-seoul {}
+
+/* 발급방법안내-모범납세증명서-부산시 */
+.popRegGuide-exemplar-busan {}
+
+/* 발급방법안내-모범납세증명서-인천시 */
+.popRegGuide-exemplar-incheon {}
+
+
+/* ---------- 증명서제출방법확인 ---------- */
+.certiSubmitGuid { /* popRegGuide 스타일 당겨씀 */ }
+
+/* 증명서제출방법확인 - 건강보험 */
+.certiSubmitGuid-health {}
+
+/* 증명서제출방법확인 - 국민연금 */
+.certiSubmitGuid-pension {}
+
+
+/* ---------- 등록상태확인 ---------- */
+.popRegState {}
+.popRegState .h3Type {margin-top:16px; margin-bottom:6px;}
+.popRegState .reginfo {margin-bottom:16px;}
+.popRegState .reginfo li {display:inline; padding:0 17px 0 21px; color:#888; background:url("../images/jon/jonLocalMsg_alread_bar.gif") 0 2px no-repeat;}
+.popRegState .reginfo li.req {padding-left:0; background:none;} /* 요청일 */
+.popRegState .reginfo li.reg {} /* 등록일 */
+
+/* 등록상태확인-소득금액증명 */
+.popRegState-Income {}
+
+/* 등록상태확인-납세사실증명 */
+.popRegState-taxCerti {}
+
+/* 등록상태확인-국민연금 */
+.popRegState-pension {}
+
+/* 등록상태확인-건강보험 */
+.popRegState-health {}
+.popRegState-health .selectYear {margin-bottom:10px;}
+.popRegState-health .selectYear .select {width:80px;}
+
+
+/* ---------- 인터넷등록 ---------- */
+.popRegInternet {}
+.popRegInternet .topMsg {}
+.popRegInternet .topMsg .msg {font-size:18px; color:#666; text-align:center;}
+.popRegInternet .topMsg .buttonWrapType {margin-top:15px;}
+.popRegInternet .topMsg .dividerType {margin:38px 0 25px;}
+.popRegInternet .topMsg .expl {margin-top:14px; line-height:20px; color:#888;}
+.popRegInternet .topMsg .expl .warning {display:inline-block; margin-bottom:3px; padding-left:17px; font-family:webfontNGB; color:#ef8233; background:url("../images/common/icon_attention.png") 2px 5px no-repeat;}
+.popRegInternet .imgType {margin-top:30px;}
+.popRegInternet .insert {text-align:center;}
+.popRegInternet .insert .box-m {padding:25px 0;}
+.popRegInternet .insert .txt-guide {margin-bottom:21px; font-size:16px; color:#777; font-family:webfontNGB;}
+.popRegInternet .insert .ctrl-insertWrap {position:relative; width:512px; margin:0 auto;}
+.popRegInternet .insert .ctrl-insertWrap:after {display:block; clear:both; content:"";}
+.popRegInternet .insert .ctrl-insertWrap button {width:30px; height:30px; margin:0; padding:0; border:none; background:none; cursor:pointer;}
+.popRegInternet .insert .ctrl-insertWrap button.plus {position:absolute; bottom:0; right:-34px; background:url("../images/common/icon_plus.gif") 0 0 no-repeat;}
+.popRegInternet .insert .ctrl-insertWrap button.minus {float:right; background:url("../images/common/icon_minus.gif") 0 0 no-repeat;}
+.popRegInternet .insert .ctrl-insertWrap #insertAppend {float:left; width:100%; margin-top:-8px;}
+.popRegInternet .insert .ctrl-insertWrap #insertAppend:after {display:block; clear:both; content:"";}
+.popRegInternet .insert .ctrl-insert {clear:both; float:left; width:100%; margin-top:8px; text-align:left;}
+.popRegInternet .insert .ctrl-insert .input-text {float:left; width:105px; vertical-align:top; #margin:-1px 0;}
+.popRegInternet .insert .ctrl-insert .dash {float:left; display:inline-block; width:23px; margin:0 -4px; text-align:center; font-size:20px; color:#c7c7c7;}
+.popRegInternet .insert .ctrl-region {}
+.popRegInternet .insert .ctrl-region .input-radio {margin-left:8px;}
+.popRegInternet .insert .ctrl-region label {margin-right:8px;}
+.popRegInternet .insert .dividerType {margin-bottom:26px;}
+.popRegInternet .insert .buttonWrapType {margin:20px 0 0 0;}
+
+/* 등록하기-소득금액증명 */
+.popRegInternet-Income {}
+
+/* 등록하기-납세사실증명서 */
+.popRegInternet-taxCerti {}
+
+/* 등록하기-국민연금 */
+.popRegInternet-pension {}
+.popRegInternet-pension .topMsg .msg {letter-spacing:-1px;}
+
+/* 등록하기-건강보험 */
+.popRegInternet-health {}
+.popRegInternet-health .topMsg .msg {letter-spacing:-1px;}
+
+/* 등록하기-모범납세증명서 */
+.popRegInternet-exemplar {}
+.popRegInternet-exemplar .topMsg .msg strong {display:inline-block; margin-top:10px;}
+
+/* 등록오류 */
+.popRegInternet-error {}
+.popRegInternet-error .phoneFax {margin-top:13px; color:#888;}
+.popRegInternet-error .phoneFax li {}
+
+/* ---------- 인터넷등록완료 ---------- */
+.popRegInternet-complete {}
+.popRegInternet-complete .topMsg {}
+.popRegInternet-complete .topMsg .expl {font-size:14px; line-height:1.4; color:#888;}
+
+/* ------------- 본인인증 --------------- */
+
+/* 본인인증 */
+.popSelfCerti {}
+.popSelfCerti-topMsg {letter-spacing:-1px;}
+.popSelfCerti-topMsg h2 {margin-bottom:2px; font-family:webfontNGB; font-size:16px; color:#333;}
+.popSelfCerti-topMsg .txt {margin-bottom:14px; font-size:16px; line-height:22px; color:#888;}
+.popSelfCerti {}
+.popSelfCerti .tableType {}
+.popSelfCerti .tableType th {letter-spacing:-1px; font-family:webfontNGB;}
+
+/* 본인인증-인증방법선택 */
+.popSelfCerti-how {} 
+.popSelfCerti-how .ctrlWrap {}
+.popSelfCerti-how .ctrlWrap .input-radio {}
+.popSelfCerti-how .ctrlWrap label {margin-right:5px; color:#555; letter-spacing:-1px;}
+.popSelfCerti-how .expl {margin-top:11px; font-size:13px; line-height:18px; color:#888;}
+
+/* 본인인증-휴대폰번호 입력 */
+.popSelfCerti-insertPhoneNum {} 
+.popSelfCerti-insertPhoneNum .select {width:73px;}
+.popSelfCerti-insertPhoneNum .input-text {width:71px;}
+.popSelfCerti-insertPhoneNum {} 
+
+/* 본인인증-휴대폰인증번호 입력 */
+.popSelfCerti-insertCertiNum {}
+.popSelfCerti-insertCertiNum .input-text {width:101px;}
+.popSelfCerti-insertCertiNum .note {margin-left:4px; color:#888; letter-spacing:-1px;}
+.popSelfCerti-insertCertiNum .time {margin-top:11px; color:#888;}
+.popSelfCerti-insertCertiNum .time em {color:#f78325;}
+
+/* 본인인증-신용카드 정보 입력 */
+.popSelfCerti-insertCardInfo {}
+.popSelfCerti-insertCardInfo .input-text {width:71px;}
+.popSelfCerti-insertCardInfo .select1 {width:73px;}
+.popSelfCerti-insertCardInfo .select2 {width:84px;}
+.popSelfCerti-insertCardInfo .note {margin-left:4px;}
+
+/* 본인인증-동의 */
+.popSelfCerti-agree {margin-top:7px;} 
+.popSelfCerti-agree label {color:#888;}
+.popSelfCerti .buttonWrapType {margin-top:20px;}
+
+
+/* 퀴즈 */
+/* 퀴즈-레이아웃 */
+#popupQuiz-wrap {min-height:460px; background:url("../images/popup/popupQuizWrap_bg.gif") 0 0 repeat-x;}
+#popupQuiz-header {position:fixed; top:0; left:0; width:100%; height:48px; border-bottom:1px solid black; background:black; z-index:500;}
+#popupQuiz-header h1 {height:47px; padding-left:18px; font-family:webfontNGB; font-size:18px; line-height:47px; color:white; }
+#popupQuiz-header .close {position:absolute; top:13px; right:20px;}
+#popupQuiz-header .close button {float:left; overflow:hidden; width:22px; height:22px; border:none; cursor:pointer; background:url("../images/popup/popupHeader_close.gif") 0 0 no-repeat;}
+#popupQuiz-header .close button span {float:left; overflow:hidden; width:100%; height:100%; text-indent:-999px;}
+#popupQuiz-contents {padding:111px 30px 35px;}
+#popupQuiz-footer {position:fixed; bottom:0; left:0; width:100%; height:17px; background:black;}
+
+/* 퀴즈-레이아웃-스킨 */
+.popStdQuiz1 #popupQuiz-header {border-bottom:1px solid #ae4033; background:#cb4a3b;}
+.popStdQuiz1 #popupQuiz-footer {background:url("../images/popup/popupQuizFooter_bg.gif") 0 0 repeat-x;}
+.popStdQuiz1 .popStdQuiz-question .thum-chapter {background-image:url("../images/popup/popStdQuiz_thum_chapter1.png");}
+.popStdQuiz1 .popStdQuiz-question .ft-point1 {color:#cb4a3c;}
+.popStdQuiz1 .popStdQuiz-answer .box {background-image:url("../images/popup/popStdQuiz_answer_bg.gif");}
+.popStdQuiz1 .popStdQuiz-answer .box .l,
+.popStdQuiz1 .popStdQuiz-answer .box .r {background-image:url("../images/popup/popStdQuiz_answer_bgr.gif");}
+.popStdQuiz1 .popStdQuiz-answer .box-m {border-color:#e66f61; background-image:url("../images/popup/popStdQuiz_answer_bgm.gif");}
+.popStdQuiz1 .popStdQuiz-answer .answer-boolean .icon {background-image:url("../images/popup/popStdQuiz_answer_icons.gif");}
+.popStdQuiz1 .popStdQuiz-answer .answer-boolean .txt {color:#cb4a3b;}
+.popStdQuiz1 .popStdQuiz-question .questionSty-blank input.blank {border-color:#cb4a3b;}
+.popStdQuiz1  .popStdQuiz-question .buttons a.btn-nextQuestion .bg {color:#cf1600;}
+.popStdQuiz1  .popStdQuiz-question .buttons a.btn-nextQuestion .icon-nextQuestion {background-position:0 0;}
+
+.popStdQuiz2 #popupQuiz-header {border-bottom:1px solid #d77403; background:#fa8703;}
+.popStdQuiz2 #popupQuiz-footer {background:url("../images/popup/popupQuizFooter_bg2.gif") 0 0 repeat-x;}
+.popStdQuiz2 .popStdQuiz-question .thum-chapter {background-image:url("../images/popup/popStdQuiz_thum_chapter2.png");}
+.popStdQuiz2 .popStdQuiz-question .ft-point1 {color:#fb8f2b;}
+.popStdQuiz2 .popStdQuiz-answer .box {background-image:url("../images/popup/popStdQuiz_answer2_bg.gif");}
+.popStdQuiz2 .popStdQuiz-answer .box .l,
+.popStdQuiz2 .popStdQuiz-answer .box .r {background-image:url("../images/popup/popStdQuiz_answer2_bgr.gif");}
+.popStdQuiz2 .popStdQuiz-answer .box-m {border-left:3px solid #e66f61; border-right:3px solid #e66f61;}
+.popStdQuiz2 .popStdQuiz-answer .box-m {border-color:#fe9d2e; background-image:url("../images/popup/popStdQuiz_answer2_bgm.gif");}
+.popStdQuiz2 .popStdQuiz-answer .answer-boolean .icon {background-image:url("../images/popup/popStdQuiz_answer2_icons.gif");}
+.popStdQuiz2 .popStdQuiz-answer .answer-boolean .txt {color:#fb8f2b;}
+.popStdQuiz2 .popStdQuiz-question .questionSty-blank input.blank {border-color:#fb8f2b;}
+.popStdQuiz2  .popStdQuiz-question .buttons a.btn-nextQuestion .bg {color:#fb8f2b;}
+.popStdQuiz2  .popStdQuiz-question .buttons a.btn-nextQuestion .icon-nextQuestion {background-position:0 -25px;}
+
+.popStdQuiz3 #popupQuiz-header {border-bottom:1px solid #94a931; background:#acc539;}
+.popStdQuiz3 #popupQuiz-footer {background:url("../images/popup/popupQuizFooter_bg3.gif") 0 0 repeat-x;}
+.popStdQuiz3 .popStdQuiz-question .thum-chapter {background-image:url("../images/popup/popStdQuiz_thum_chapter3.png");}
+.popStdQuiz3 .popStdQuiz-question .ft-point1 {color:#689911;}
+.popStdQuiz3 .popStdQuiz-answer .box {background-image:url("../images/popup/popStdQuiz_answer3_bg.gif");}
+.popStdQuiz3 .popStdQuiz-answer .box .l,
+.popStdQuiz3 .popStdQuiz-answer .box .r {background-image:url("../images/popup/popStdQuiz_answer3_bgr.gif");}
+.popStdQuiz3 .popStdQuiz-answer .box-m {border-color:#b2c956; background-image:url("../images/popup/popStdQuiz_answer3_bgm.gif");}
+.popStdQuiz3 .popStdQuiz-answer .answer-boolean .icon {background-image:url("../images/popup/popStdQuiz_answer3_icons.gif");}
+.popStdQuiz3 .popStdQuiz-answer .answer-boolean .txt {color:#689911;}
+.popStdQuiz3 .popStdQuiz-question .questionSty-blank input.blank {border-color:#689911;}
+.popStdQuiz3  .popStdQuiz-question .buttons a.btn-nextQuestion .bg {color:#689911;}
+.popStdQuiz3  .popStdQuiz-question .buttons a.btn-nextQuestion .icon-nextQuestion {background-position:0 -50px;}
+
+.popStdQuiz4 #popupQuiz-header {border-bottom:1px solid #3e79b3; background:#488dd0;}
+.popStdQuiz4 #popupQuiz-footer {background:url("../images/popup/popupQuizFooter_bg4.gif") 0 0 repeat-x;}
+.popStdQuiz4 .popStdQuiz-question .thum-chapter {background-image:url("../images/popup/popStdQuiz_thum_chapter4.png");}
+.popStdQuiz4 .popStdQuiz-question .ft-point1 {color:#4a8acf;}
+.popStdQuiz4 .popStdQuiz-answer .box {background-image:url("../images/popup/popStdQuiz_answer4_bg.gif");}
+.popStdQuiz4 .popStdQuiz-answer .box .l,
+.popStdQuiz4 .popStdQuiz-answer .box .r {background-image:url("../images/popup/popStdQuiz_answer4_bgr.gif");}
+.popStdQuiz4 .popStdQuiz-answer .box-m {border-color:#7aafe3; background-image:url("../images/popup/popStdQuiz_answer4_bgm.gif");}
+.popStdQuiz4 .popStdQuiz-answer .answer-boolean .icon {background-image:url("../images/popup/popStdQuiz_answer4_icons.gif");}
+.popStdQuiz4 .popStdQuiz-answer .answer-boolean .txt {color:#4a8acf;}
+.popStdQuiz4 .popStdQuiz-question .questionSty-blank input.blank {border-color:#4a8acf;}
+.popStdQuiz4  .popStdQuiz-question .buttons a.btn-nextQuestion .bg {color:#4a8acf;}
+.popStdQuiz4  .popStdQuiz-question .buttons a.btn-nextQuestion .icon-nextQuestion {background-position:0 -75px;}
+
+/* 퀴즈-문제 */
+.popStdQuiz-question {position:relative; width:100%; margin-top:20px;}
+.popStdQuiz-question .thum-chapter {position:absolute; top:0; left:0; width:63px; height:63px;}
+.popStdQuiz-question .box {overflow:hidden; width:100%; height:5px; background-image:url("../images/popup/popStdQuiz_question_bg.gif"); background-repeat:repeat-x;}
+.popStdQuiz-question .box .l,
+.popStdQuiz-question .box .r {overflow:hidden; width:5px; height:5px; background-image:url("../images/popup/popStdQuiz_question_bgr.gif");}
+.popStdQuiz-question .box .l {float:left;}
+.popStdQuiz-question .box .r {float:right;}
+.popStdQuiz-question .box-t {background-position:top left;}
+.popStdQuiz-question .box-b {background-position:bottom left;}
+.popStdQuiz-question .box-t .l {background-position:top left;}
+.popStdQuiz-question .box-t .r {background-position:top right;}
+.popStdQuiz-question .box-b .l {background-position:left -5px;}
+.popStdQuiz-question .box-b .r {background-position:right -5px;}
+.popStdQuiz-question .box-m {min-height:100px; padding-bottom:27px; border-left:2px solid #dcdbdb; border-right:2px solid #dcdbdb; background:white;}
+.popStdQuiz-question .question {padding:31px 40px 0;} /* 질문 */
+.popStdQuiz-question .question h2 {position:relative; margin-bottom:23px; padding-left:30px; font-size:28px; line-height:34px; font-family:webfontNGB; letter-spacing:-1px; color:#333;}
+.popStdQuiz-question .question h2 .num {position:absolute; top:0; left:0;}
+.popStdQuiz-question .questionSty-choice {margin-left:4px;} /* 객관식 */
+.popStdQuiz-question .questionSty-choice li {position:relative; margin-bottom:5px; padding-left:51px; line-height:20px; color:#777;}
+.popStdQuiz-question .questionSty-choice li .radio {position:absolute; top:4px; left:0; line-height:20px;}
+.popStdQuiz-question .questionSty-choice li .radio .input-radio {vertical-align:top;}
+.popStdQuiz-question .questionSty-choice li .bul {position:absolute; top:0; left:30px; font-size:16px;}
+.popStdQuiz-question .questionSty-choice li .txt {}
+.popStdQuiz-question .questionSty-blank {line-height:25px; color:#777;} /* 괄호 */
+.popStdQuiz-question .questionSty-blank input.blank {width:135px; height:25px; margin:0; padding:3px 0 0 0; text-indent:4px; line-height:25px; font-size:15px; font-family:inherit; vertical-align:middle; border:1px solid #999; border-radius:2px;} *+html .popStdQuiz-question .questionSty-blank {text-indent:0;}
+.popStdQuiz-question .questionSty-OX {} /* O/X */
+.popStdQuiz-question .questionSty-OX li {margin-bottom:12px; line-height:20px; color:#777; zoom:1;}
+.popStdQuiz-question .questionSty-OX li .txt {display:block; position:relative; padding-left:18px;}
+.popStdQuiz-question .questionSty-OX li .txt .bul {position:absolute; top:0; left:0; font-size:15px;}
+.popStdQuiz-question .questionSty-OX li .options {margin-top:2px; padding-left:18px;}
+.popStdQuiz-question .questionSty-OX li .options .radio {display:inline-block; margin-right:8px; vertical-align:middle; margin-top:-3px;}
+.popStdQuiz-question .questionSty-OX li .options label {margin-right:56px;}
+.popStdQuiz-question .buttons {margin-top:20px; padding-top:21px; text-align:center; background:url("../images/common/divider.gif") 0 0 repeat-x;}  /* 정답확인 */
+.popStdQuiz-question .buttons .buttonType .bg {min-width:87px;}
+.popStdQuiz-question .buttons a.btn-nextQuestion .bg {color:#cf1600;}
+.popStdQuiz-question .buttons a.btn-nextQuestion .icon-nextQuestion {width:16px; background-image:url("../images/popup/btn_icon_nextQuestion.gif"); background-position:0 0; background-repeat:no-repeat;}
+
+/* 퀴즈-오답답변 */
+.popStdQuiz-answer {width:100%;}
+.popStdQuiz-answer .box {overflow:hidden; width:100%; background-image:url("../images/popup/popStdQuiz_answer_bg.gif"); background-repeat:repeat-x;}
+.popStdQuiz-answer .box .l,
+.popStdQuiz-answer .box .r {overflow:hidden; width:28px; height:100%; background-image:url("../images/popup/popStdQuiz_answer_bgr.gif");}
+.popStdQuiz-answer .box .l {float:left;}
+.popStdQuiz-answer .box .r {float:right;}
+.popStdQuiz-answer .box-t {height:18px; background-position:top left;}
+.popStdQuiz-answer .box-b {height:6px;  background-position:bottom left;}
+.popStdQuiz-answer .box-t .l {background-position:top left;}
+.popStdQuiz-answer .box-t .r {background-position:top right;}
+.popStdQuiz-answer .box-b .l {background-position:left -18px;}
+.popStdQuiz-answer .box-b .r {background-position:right -18px;}
+.popStdQuiz-answer .box-m {min-height:71px; border-left:3px solid #e66f61; border-right:3px solid #e66f61; background-image:url("../images/popup/popStdQuiz_answer_bgm.gif"); background-position:0 0; background-repeat:repeat-y;}
+.popStdQuiz-answer .box-m:after {content:""; display:block; clear:both;}
+.popStdQuiz-answer .answer-boolean {position:relative; float:left; width:121px; margin-right:20px; padding-top:8px;}
+.popStdQuiz-answer .answer-boolean .icon {display:block; height:32px; margin:0 auto; background-image:url("../images/popup/popStdQuiz_answer_icons.gif"); background-repeat:no-repeat;}
+.popStdQuiz-answer .answer-boolean .icon-true {width:28px; background-position:0 0;}
+.popStdQuiz-answer .answer-boolean .icon-false {width:38px; background-position:-50px 0;}
+.popStdQuiz-answer .answer-boolean .txt {margin-top:1px; text-align:center; font-size:16px; font-family:webfontNGB;}
+.popStdQuiz-answer .answer-explain {overflow:hidden; position:relative; padding:10px 15px 10px 0; white-space:nowrap; word-wrap:normal;}
+.popStdQuiz-answer .answer-explain .axis {display:inline-block; width:1px; height:51px; margin-right:-5px; vertical-align:middle;}
+.popStdQuiz-answer .answer-explain .txt {display:inline-block; vertical-align:middle; white-space:normal; color:#333;}
+
+/* ------------- 공유하기 --------------- */
+.popShare {}
+.popShare h2 {margin-bottom:10px; font-size:16px; color:#333; font-family:webfontNGB;}
+.popShare h2 .iconType {margin-right:6px;}
+.popShare .buttonWrapType {margin:20px 0 0;}
+
+/* 공유하기-트위터 */
+.popShare-twitter {}
+.popShare-twitter .ctrl-insert {position:relative; width:100%;}
+.popShare-twitter .ctrl-insert .input-w100p {}
+.popShare-twitter .ctrl-insert .input-w100p textarea {height:150px; color:#888;}
+.popShare-twitter .ctrl-insert .maxlength {position:absolute; bottom:100%; right:4px; padding-bottom:7px; font-size:13px; color:#888;}
+
+/* 공유하기-페이스북 */
+.popShare-facebook {}
+.popShare-facebook .ctrl-insert {position:relative; width:100%;}
+.popShare-facebook .ctrl-insert .input-w100p {}
+.popShare-facebook .ctrl-insert .input-w100p textarea {height:150px; color:#888;}
+.popShare-facebook .ctrl-insert .maxlength {position:absolute; bottom:100%; right:4px; padding-bottom:7px; font-size:13px; color:#888;}
+
+/* 공유하기-미투데이 */
+.popShare-me2day {}
+.popShare-me2day .ctrl-insert {position:relative; width:100%;}
+.popShare-me2day .ctrl-insert .input-w100p {}
+.popShare-me2day .ctrl-insert .input-w100p textarea {height:150px; color:#888;}
+.popShare-me2day .ctrl-insert .maxlength {position:absolute; bottom:100%; right:4px; padding-bottom:7px; font-size:13px; color:#888;}
+
+/* 공유하기-이메일 */
+.popShare-email {width:523px; margin:0 auto;}
+.popShare-email .ctrl {position:relative; margin-bottom:4px;}
+.popShare-email .ctrl label {display:inline-block; width:122px; padding-left:8px; letter-spacing:-1px; line-height:30px; color:#555; background:url("../images/common/bul_dot.gif") 0 13px no-repeat;}
+.popShare-email .ctrl .input-text {} *+html .popShare-email .ctrl .input-text {margin-top:-1px; margin-bottom:-1px;}
+.popShare-email .ctrl .domain {margin-right:1px; color:#999;}
+
+.popShare-email .ctrl-senderName {margin-bottom:5px;}
+.popShare-email .ctrl-senderName {padding-left:134px;}
+.popShare-email .ctrl-senderName label {position:absolute; top:0; left:0;}
+.popShare-email .ctrl-senderName .input-text {width:145px;}
+.popShare-email .ctrl-senderName .input-domain {width:219px;}
+
+.popShare-email .ctrl-senderEmail {white-space:nowrap;}
+.popShare-email .ctrl-senderEmail {padding-left:134px;}
+.popShare-email .ctrl-senderEmail label {position:absolute; top:0; left:0;}
+.popShare-email .ctrl-senderEmail .input-text {width:145px;}
+.popShare-email .ctrl-senderEmail .input-domain {width:219px;}
+
+.popShare-email .ctrl-receiverEmail {white-space:nowrap;}
+.popShare-email .ctrl-receiverEmail {padding-left:134px;}
+.popShare-email .ctrl-receiverEmail label {position:absolute; top:0; left:0;}
+.popShare-email .ctrl-receiverEmail .input-text {width:145px;}
+.popShare-email .ctrl-receiverEmail .input-domain {width:219px;}
+
+.popShare-email .ctrl-subject {margin-bottom:3px;}
+.popShare-email .ctrl-content {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

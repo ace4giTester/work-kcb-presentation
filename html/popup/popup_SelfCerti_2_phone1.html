@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]><html class="ie6 lt-ie9 lt-ie8 lt-ie7" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 7]>   <html class="ie7 lt-ie9 lt-ie8" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 8]>   <html class="ie8 lt-ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if IE 9]>   <html class="ie9" lang="ko" xml:lang="ko"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ko" xml:lang="ko"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	<title>신용과 사람 | 본인인증-휴대폰정보입력</title>
+	<link rel="stylesheet" type="text/css" href="../../rscs/css/popup.css" />
+	
+	<script type="text/javascript" src="../../rscs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../../rscs/js/ui.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<div id="popup-header">
+	<h1>본인인증</h1>
+	<p class="close"><button type="button" onclick="self.close();"><span>닫기</span></button></p>
+</div>
+<!-- //header -->
+
+<!-- contents -->
+<div id="popup-contents">
+	
+	<!-- 본인인증 -->
+	<div class="popSelfCerti">
+		<form action="">
+			<div class="popSelfCerti-topMsg">
+				<h2>휴대폰 본인확인</h2>
+				<p class="txt">본인명의의 휴대폰 정보를 입력해주세요.</p>
+			</div>
+			
+			<!-- tableType -->
+			<div class="tableType-topLine"><div></div></div>
+			<table class="tableType" summary="휴대폰 인증에 필요한 정보입력 - 통신사, 휴대폰번호">
+				<caption>휴대폰 인증 정보 입력</caption>
+				<colgroup>
+					<col width="132" /><col />
+				</colgroup>
+				<tbody class="padding-insert">
+					<tr>
+						<th scope="row">주민등록번호</th>
+						<td class="last-child">901543 - *******</td>
+					</tr>
+					
+					<tr class="popSelfCerti-how">
+						<th scope="row">인증방법</th>
+						<td class="last-child">
+							<div class="ctrlWrap">
+								<input type="radio" class="input-radio" id="l-certi1" checked="checked" />
+								<label for="l-certi1">SKT</label>
+								
+								<input type="radio" class="input-radio" id="l-certi2" />
+								<label for="l-certi2">KT</label>
+								
+								<input type="radio" class="input-radio" id="l-certi3" />
+								<label for="l-certi3">LG U+</label>
+								
+								<input type="radio" class="input-radio" id="l-certi4" />
+								<label for="l-certi4">별정통신사</label>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="popSelfCerti-insertPhoneNum">
+						<th scope="row"><label for="l-phone">휴대폰번호</label></th>
+						<td class="last-child">
+							<select class="select" id="l-phone">
+								<option>010</option>
+							</select>
+							
+							<span class="dash">-</span>
+							<input type="text" class="input-text" title="휴대폰번호 가운데자리" />
+							
+							<span class="dash">-</span>
+							<input type="text" class="input-text" title="휴대폰번호 끝자리" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tableType-bottomLine"><div></div></div>
+			<!-- //tableType -->
+			
+			<p class="popSelfCerti-agree">
+				<input type="checkbox" class="input-check" id="l-agree" />
+				<label for="l-agree">개인정보 이용 및 활용에 동의합니다.</label>
+			</p>
+			
+			<p class="buttonWrapType">
+				<a class="buttonType primary lg" href="#">
+					<span class="bg"><span class="icon icon-check"></span> 확인</span>
+				</a>
+				<a class="buttonType default lg" href="#">
+					<span class="bg"><span class="icon icon-close"></span> 취소</span>
+				</a>
+			</p>
+		</form>
+	</div>
+	<!-- //본인인증 -->
+	
+</div>
+<!-- //contents -->
+
+</body>
+</html>

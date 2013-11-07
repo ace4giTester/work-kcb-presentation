@@ -1,0 +1,17 @@
+
+body.htmlGuide {width:auto; padding:20px;}
+
+body.htmlGuide .syntaxhighlighter  {
+	width:auto !important;
+	margin:20px 0 !important;
+	padding:20px 10px !important;
+}
+
+
+h1.htmlGuide {margin:50px 0 15px; padding:10px 20px; font-size:27px; font-weight:600; color:white; background:black;}
+h2.htmlGuide {margin:40px 0 10px; padding:0; font-size:16px; line-height:1.5; font-weight:600;}
+ul.htmlGuide {margin:-15px 0 20px; padding:10px 20px; font-size:15px; color:white; background:black;}
+ul.htmlGuide li {list-style-type:disc; list-style-position:inside;}
+ul.htmlGuide li li {margin-left:20px; list-style-type:circle;}
+
+.htmlGudie-hr {display:block; height:1px; border-bottom:3px dotted black; margin:50px 0; overflow:hidden;}
